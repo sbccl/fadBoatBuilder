@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Boat Sold By --></label>
+    <name>Boat_Sold_By__c</name>
+    <picklistValues>
+        <masterLabel>Alex Dunson</masterLabel>
+        <translation><!-- Alex Dunson --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cameron Richardson</masterLabel>
+        <translation><!-- Cameron Richardson --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Close</masterLabel>
+        <translation><!-- Close --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Danny Tolentino</masterLabel>
+        <translation><!-- Danny Tolentino --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JJ Penninger</masterLabel>
+        <translation><!-- JJ Penninger --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Josh Smith</masterLabel>
+        <translation><!-- Josh Smith --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Robert Lowery</masterLabel>
+        <translation><!-- Robert Lowery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tanner Lawson</masterLabel>
+        <translation><!-- Tanner Lawson --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tyler Holloman</masterLabel>
+        <translation><!-- Tyler Holloman --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Manufacturer --></label>
+    <name>M_Manufacturer1__c</name>
+    <picklistValues>
+        <masterLabel>Skiers Choice(Moomba)</masterLabel>
+        <translation><!-- Skiers Choice(Moomba) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Skiers Choice(Supra)</masterLabel>
+        <translation><!-- Skiers Choice(Supra) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

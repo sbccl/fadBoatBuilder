@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <tabs>standard-Chatter</tabs>
+    <tabs>standard-Workspace</tabs>
+    <tabs>standard-ContentSearch</tabs>
+    <tabs>standard-ContentSubscriptions</tabs>
+    <tabs>ACV_Form__c</tabs>
+    <tabs>Boat_Builder_App</tabs>
+    <tabs>Module_Access__c</tabs>
+    <tabs>Work_Order__c</tabs>
+    <tabs>Work_Order_Job__c</tabs>
+    <tabs>Work_Order_Job_Line_Item__c</tabs>
+    <tabs>Work_Order_Payment__c</tabs>
+    <tabs>Work_Requested__c</tabs>
+    <tabs>DataLoadImporter</tabs>
+    <tabs>RunWorkOrderBatch</tabs>
+    <tabs>Technician_Efficiency_Report</tabs>
+    <tabs>Create_Trailer</tabs>
+    <tabs>Create_Canned_Job</tabs>
+    <tabs>Create_Outboard_Engine</tabs>
+    <tabs>Custom_Setting_Configuration</tabs>
+    <tabs>Payment_Calculator</tabs>
+    <tabs>Dealership_Form__c</tabs>
+    <tabs>Service_Inspection_Form</tabs>
+    <tabs>Promo_Code__c</tabs>
+</CustomApplication>

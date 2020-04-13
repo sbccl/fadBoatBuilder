@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Inventory</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Inventory</value>
+    </caseValues>
+    <layouts>
+        <layout>Inventory For Parts FAD</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Inventory Layout</layout>
+        <sections>
+            <label><!-- Analytics --></label>
+            <section>Analytics</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Dealer Prices --></label>
+            <section>Dealer Prices</section>
+        </sections>
+        <sections>
+            <label><!-- Exterior Design --></label>
+            <section>Exterior Design</section>
+        </sections>
+        <sections>
+            <label><!-- Interior Design --></label>
+            <section>Interior Design</section>
+        </sections>
+        <sections>
+            <label><!-- Product Details --></label>
+            <section>Product Details</section>
+        </sections>
+        <sections>
+            <label><!-- Web Boat Videos --></label>
+            <section>Web Boat Videos</section>
+        </sections>
+        <sections>
+            <label><!-- Web Details --></label>
+            <section>Web Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Inventory Layout FAD</layout>
+        <sections>
+            <label><!-- Analytics --></label>
+            <section>Analytics</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Dealer Prices --></label>
+            <section>Dealer Prices</section>
+        </sections>
+        <sections>
+            <label><!-- Exterior Design --></label>
+            <section>Exterior Design</section>
+        </sections>
+        <sections>
+            <label><!-- Product Details --></label>
+            <section>Product Details</section>
+        </sections>
+        <sections>
+            <label><!-- Web Boat Videos --></label>
+            <section>Web Boat Videos</section>
+        </sections>
+        <sections>
+            <label><!-- Web Details --></label>
+            <section>Web Details</section>
+        </sections>
+        <sections>
+            <label><!-- Window Sticker --></label>
+            <section>Window Sticker</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Used Boats Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Exterior Design --></label>
+            <section>Exterior Design</section>
+        </sections>
+        <sections>
+            <label><!-- Interior Design --></label>
+            <section>Interior Design</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Boat Builder --></label>
+        <name>Boat_Builder</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Part Swapping --></label>
+        <name>Part_Swapping</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Publish Changes On Website --></label>
+        <name>Publish_Changes_On_Website</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Schedule --></label>
+        <name>Schedule</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Select Template --></label>
+        <name>Select_Template</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Engine --></label>
+        <name>Engine</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Inventory for Parts --></label>
+        <name>Inventory_for_Parts</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- This record type stores the details of the new boats. --></description>
+        <label><!-- New Boats --></label>
+        <name>New_Boats</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Trailer --></label>
+        <name>Trailer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Trolling Motor --></label>
+        <name>Trolling_Motor</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- This record type stores the details of the used boats. --></description>
+        <label><!-- Used Boats --></label>
+        <name>Used_Boats</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Date First on Sales Lot Cannot be a future date. --></errorMessage>
+        <name>Date_First_on_Sales_Lot_Rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Part Number is Mandatory --></errorMessage>
+        <name>Part_Number_Required_Rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Selecting a Vendor is mandatory for this record type. --></errorMessage>
+        <name>Vendor_Name_Mandatory_Rule</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Boat_Builder --></label>
+        <name>Boat_Builder</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_Customer_Boat --></label>
+        <name>Create_Customer_Boat</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Publish_Changes_on_Website --></label>
+        <name>Publish_Changes_on_Website</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Schedule --></label>
+        <name>Schedule</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SelectTemplate --></label>
+        <name>SelectTemplate</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Upload_Picture --></label>
+        <name>Upload_Picture</name>
+    </webLinks>
+</CustomObjectTranslation>

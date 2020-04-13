@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Product Price For Selected Category</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Product Price For Selected Category</value>
+    </caseValues>
+    <layouts>
+        <layout>Product Price For Selected Category Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Used Boats Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Engine --></label>
+        <name>Engine</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- This record type stores the details of the new boats. --></description>
+        <label><!-- New Boats --></label>
+        <name>New_Boats</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Trailer --></label>
+        <name>Trailer</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- This record type stores the details of the used boats. --></description>
+        <label><!-- Used Boats --></label>
+        <name>Used_Boats</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Product code must be entered while creating a record for New Boats. --></errorMessage>
+        <name>Product_Code_Mandatory_Rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sorting Order is Mandatory --></errorMessage>
+        <name>Sorting_Order_Mandatory_Rule</name>
+    </validationRules>
+</CustomObjectTranslation>

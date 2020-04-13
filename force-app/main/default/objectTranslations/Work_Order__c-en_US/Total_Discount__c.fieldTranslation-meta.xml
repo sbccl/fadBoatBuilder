@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Formula : Discount on Jobs + Discount on Work Order --></help>
+    <label><!-- Total Discount --></label>
+    <name>Total_Discount__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Invoice Payment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Payments</value>
+    </caseValues>
+    <layouts>
+        <layout>Payment Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Check number must be specified only if the payment is made through check. --></errorMessage>
+        <name>Check_Number_to_be_Null</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Check number must be specified if the payment is made through check. --></errorMessage>
+        <name>Specify_Check_Number_Rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Credit Card Type must be specified if the payment is made through Credit Card. --></errorMessage>
+        <name>Specify_Credit_Card_Rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Amount of the Payment must not exceed total Balance on Invoice. --></errorMessage>
+        <name>Valid_Amount_Validation_Rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Provide a valid Routing Transit Number for the check (A valid 9 digit number). --></errorMessage>
+        <name>Valid_Check_Number_Rule</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Model --></label>
+    <name>MModel2__c</name>
+    <picklistValues>
+        <masterLabel>Craz(MG)</masterLabel>
+        <translation><!-- Craz(MG) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mojo(ME)</masterLabel>
+        <translation><!-- Mojo(ME) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mondo(MD)</masterLabel>
+        <translation><!-- Mondo(MD) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SA</masterLabel>
+        <translation><!-- SA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SC</masterLabel>
+        <translation><!-- SC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SE</masterLabel>
+        <translation><!-- SE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SER</masterLabel>
+        <translation><!-- SER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SG</masterLabel>
+        <translation><!-- SG --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

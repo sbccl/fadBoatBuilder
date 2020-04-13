@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Calculates the Total Amount on Invoice by adding the Sum of Taxable and Non Taxable Line Items along with the Sales Tax. --></help>
+    <label><!-- Total Amount on Invoice --></label>
+    <name>Total_Amount_on_Invoice__c</name>
+</CustomFieldTranslation>

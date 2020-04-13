@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Floor Plan Bank --></label>
+    <name>Floor_Plan_Bank__c</name>
+    <picklistValues>
+        <masterLabel>NorthPointe</masterLabel>
+        <translation><!-- NorthPointe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wells Fargo</masterLabel>
+        <translation><!-- Wells Fargo --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

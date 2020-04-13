@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Boat</fullName>
+        <default>false</default>
+        <label>Boat</label>
+    </customValue>
+    <customValue>
+        <fullName>Engine</fullName>
+        <default>false</default>
+        <label>Engine</label>
+    </customValue>
+    <customValue>
+        <fullName>Transmission / Gearbox</fullName>
+        <default>false</default>
+        <label>Transmission / Gearbox</label>
+    </customValue>
+    <customValue>
+        <fullName>Trailer</fullName>
+        <default>false</default>
+        <label>Trailer</label>
+    </customValue>
+    <masterLabel>Manufacturer Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

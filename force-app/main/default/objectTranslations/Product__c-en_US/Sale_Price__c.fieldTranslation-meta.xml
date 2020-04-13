@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Specifies the Price at which the product is to be sold.Goes to Quote. --></help>
+    <label><!-- Sale Price --></label>
+    <name>Sale_Price__c</name>
+</CustomFieldTranslation>

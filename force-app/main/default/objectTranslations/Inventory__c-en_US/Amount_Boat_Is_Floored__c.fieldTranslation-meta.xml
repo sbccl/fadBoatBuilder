@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Amount Boat Is Floored --></label>
+    <name>Amount_Boat_Is_Floored__c</name>
+</CustomFieldTranslation>

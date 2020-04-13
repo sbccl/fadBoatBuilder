@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Customer Boat Status --></label>
+    <name>Customer_Boat_Status__c</name>
+    <picklistValues>
+        <masterLabel>In Detail</masterLabel>
+        <translation><!-- In Detail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Service</masterLabel>
+        <translation><!-- In Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Storage</masterLabel>
+        <translation><!-- In Storage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ready for Delivery</masterLabel>
+        <translation><!-- Ready for Delivery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ready for Pickup</masterLabel>
+        <translation><!-- Ready for Pickup --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Work</masterLabel>
+        <translation><!-- Waiting for Work --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

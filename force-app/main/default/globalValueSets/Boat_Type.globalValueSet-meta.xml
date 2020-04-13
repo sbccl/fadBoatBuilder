@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Inboard</fullName>
+        <default>false</default>
+        <label>Inboard</label>
+    </customValue>
+    <customValue>
+        <fullName>V-Drive</fullName>
+        <default>false</default>
+        <label>V-Drive</label>
+    </customValue>
+    <customValue>
+        <fullName>I/O</fullName>
+        <default>false</default>
+        <label>I/O</label>
+    </customValue>
+    <customValue>
+        <fullName>Sailboat</fullName>
+        <default>false</default>
+        <label>Sailboat</label>
+    </customValue>
+    <customValue>
+        <fullName>Fishing Boat</fullName>
+        <default>false</default>
+        <label>Fishing Boat</label>
+    </customValue>
+    <customValue>
+        <fullName>Pontoon</fullName>
+        <default>false</default>
+        <label>Pontoon</label>
+    </customValue>
+    <customValue>
+        <fullName>Jet Ski</fullName>
+        <default>false</default>
+        <label>Jet Ski</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <masterLabel>Boat Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

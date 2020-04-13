@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sub-Class Pick List --></label>
+    <name>Sub_Class_Pick_List__c</name>
+    <picklistValues>
+        <masterLabel>Accessories</masterLabel>
+        <translation><!-- Accessories --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bags</masterLabel>
+        <translation><!-- Bags --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ballast</masterLabel>
+        <translation><!-- Ballast --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bearings</masterLabel>
+        <translation><!-- Bearings --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cleaning Kits</masterLabel>
+        <translation><!-- Cleaning Kits --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Completes</masterLabel>
+        <translation><!-- Completes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decks</masterLabel>
+        <translation><!-- Decks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fins</masterLabel>
+        <translation><!-- Fins --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Griptape</masterLabel>
+        <translation><!-- Griptape --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Handles</masterLabel>
+        <translation><!-- Handles --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hardware</masterLabel>
+        <translation><!-- Hardware --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Helmets</masterLabel>
+        <translation><!-- Helmets --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hoodies</masterLabel>
+        <translation><!-- Hoodies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hybrid Shorts</masterLabel>
+        <translation><!-- Hybrid Shorts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jackets</masterLabel>
+        <translation><!-- Jackets --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kits</masterLabel>
+        <translation><!-- Kits --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leashes</masterLabel>
+        <translation><!-- Leashes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Men&#39;s</masterLabel>
+        <translation><!-- Men&apos;s --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Miscellaneous</masterLabel>
+        <translation><!-- Miscellaneous --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Packages</masterLabel>
+        <translation><!-- Packages --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pants &amp; Denim</masterLabel>
+        <translation><!-- Pants &amp; Denim --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ropes</masterLabel>
+        <translation><!-- Ropes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shorts</masterLabel>
+        <translation><!-- Shorts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Skirts</masterLabel>
+        <translation><!-- Skirts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stomp Pads</masterLabel>
+        <translation><!-- Stomp Pads --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sweatshirts</masterLabel>
+        <translation><!-- Sweatshirts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>T-Shirts</masterLabel>
+        <translation><!-- T-Shirts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tanks</masterLabel>
+        <translation><!-- Tanks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tools</masterLabel>
+        <translation><!-- Tools --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tops</masterLabel>
+        <translation><!-- Tops --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trucks</masterLabel>
+        <translation><!-- Trucks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tubes</masterLabel>
+        <translation><!-- Tubes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wakesurf</masterLabel>
+        <translation><!-- Wakesurf --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Toys</masterLabel>
+        <translation><!-- Water Toys --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wax</masterLabel>
+        <translation><!-- Wax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wheels</masterLabel>
+        <translation><!-- Wheels --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Women&#39;s</masterLabel>
+        <translation><!-- Women&apos;s --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Youth</masterLabel>
+        <translation><!-- Youth --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

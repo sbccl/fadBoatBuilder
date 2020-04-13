@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Category --></label>
+    <name>Category1__c</name>
+    <picklistValues>
+        <masterLabel>API Test</masterLabel>
+        <translation><!-- API Test --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Boat Accessories</masterLabel>
+        <translation><!-- Boat Accessories --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Boat Parts</masterLabel>
+        <translation><!-- Boat Parts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engine Parts</masterLabel>
+        <translation><!-- Engine Parts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Snowboards</masterLabel>
+        <translation><!-- Snowboards --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wakeboards</masterLabel>
+        <translation><!-- Wakeboards --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wakesurf</masterLabel>
+        <translation><!-- Wakesurf --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

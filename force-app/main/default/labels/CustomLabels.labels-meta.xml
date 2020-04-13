@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>CaseId</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Dummy Case Id</shortDescription>
+        <value>5006F00001NHfJZ</value>
+    </labels>
+    <labels>
+        <fullName>DragNDropUrl</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DragNDropUrl</shortDescription>
+        <value>https://ap4.salesforce.com/services/apexrest/BOATBUILDING/DragAndDrop/v1?FileName=</value>
+    </labels>
+    <labels>
+        <fullName>Invoice_Status_Final_Val</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Invoice Status Final Val</shortDescription>
+        <value>Closed</value>
+    </labels>
+    <labels>
+        <fullName>Prospect_Part_Request_Record_Type_Id</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Prospect Part Request Record Type Id</shortDescription>
+        <value>0126F000000jSwu</value>
+    </labels>
+    <labels>
+        <fullName>QuickBookErrorHandlingwithGmail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>QuickBookErrorHandlingwithGmail</shortDescription>
+        <value>sajal@fadealership.com</value>
+    </labels>
+    <labels>
+        <fullName>Vf_Template</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Vf Template</shortDescription>
+        <value>VfTemplateOne,VfTemplateTwo,VfTemplateThree</value>
+    </labels>
+</CustomLabels>

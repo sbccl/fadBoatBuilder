@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Invoice</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Invoices</value>
+    </caseValues>
+    <layouts>
+        <layout>Invoice Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Work Related Details --></label>
+            <section>Work Related Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Invoice Layout(FAD)</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Work Related Details --></label>
+            <section>Work Related Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>New Sold Boat Invoice Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- F&amp;I --></label>
+            <section>F&amp;I</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Funding Info --></label>
+            <section>Funding Info</section>
+        </sections>
+        <sections>
+            <label><!-- Pay-off Info --></label>
+            <section>Pay-off Info</section>
+        </sections>
+        <sections>
+            <label><!-- Product Details --></label>
+            <section>Product Details</section>
+        </sections>
+        <sections>
+            <label><!-- Quick Books --></label>
+            <section>Quick Books</section>
+        </sections>
+        <sections>
+            <label><!-- Registration Fees --></label>
+            <section>Registration Fees</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Taxes --></label>
+            <section>Sales Taxes</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>New Sold Boat Invoice Layout(FAD)</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- F&amp;I --></label>
+            <section>F&amp;I</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Funding Info --></label>
+            <section>Funding Info</section>
+        </sections>
+        <sections>
+            <label><!-- Pay-off Info --></label>
+            <section>Pay-off Info</section>
+        </sections>
+        <sections>
+            <label><!-- Product Details --></label>
+            <section>Product Details</section>
+        </sections>
+        <sections>
+            <label><!-- Quick Books --></label>
+            <section>Quick Books</section>
+        </sections>
+        <sections>
+            <label><!-- Registration Fees --></label>
+            <section>Registration Fees</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Taxes --></label>
+            <section>Sales Taxes</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sold Boat Invoice Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- F&amp;I --></label>
+            <section>F&amp;I</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Funding Info --></label>
+            <section>Funding Info</section>
+        </sections>
+        <sections>
+            <label><!-- Pay-off Info --></label>
+            <section>Pay-off Info</section>
+        </sections>
+        <sections>
+            <label><!-- Product Details --></label>
+            <section>Product Details</section>
+        </sections>
+        <sections>
+            <label><!-- Quick Books --></label>
+            <section>Quick Books</section>
+        </sections>
+        <sections>
+            <label><!-- Registration Fees --></label>
+            <section>Registration Fees</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Taxes --></label>
+            <section>Sales Taxes</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Add Payment --></label>
+        <name>Add_Payment</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Refund --></label>
+        <name>Refund</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Sold Boat Invoice --></label>
+        <name>Sold_Boat_Invoice</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Standard Invoice --></label>
+        <name>Standard_Invoice</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Web Invoices --></label>
+        <name>Web_Invoices</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Refunded Amount must be specified only when Refunded checkbox is checked. --></errorMessage>
+        <name>Refunded_Amount_only_on_Refund</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Refunded Amount must be specified if the Refunded checkbox is set to True. --></errorMessage>
+        <name>Specify_Refunded_Amount_Rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Discount availed on the Product must not be more than 100% --></errorMessage>
+        <name>Valid_Discount_Rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Refunded Amount must not exceed Total Amount --></errorMessage>
+        <name>Valid_Refunded_Amount_Rule</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Print --></label>
+        <name>Print</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RefundInvoice --></label>
+        <name>RefundInvoice</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Invoice --></label>
+        <name>Send_Invoice</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Roll up Summary : Sum of Grand Total of all the Non Taxable Line Items. --></help>
+    <label><!-- Sum : Non Taxable Line Items --></label>
+    <name>Sum_Non_Taxable_Line_Items__c</name>
+</CustomFieldTranslation>

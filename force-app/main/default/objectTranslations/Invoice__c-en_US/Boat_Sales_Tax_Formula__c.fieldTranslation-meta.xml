@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Formula : Calculates the Boat Sales tax,on the basis of state. --></help>
+    <label><!-- Boat Sales Tax --></label>
+    <name>Boat_Sales_Tax_Formula__c</name>
+</CustomFieldTranslation>

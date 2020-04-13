@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Formula : Calculated by deducting the Discount Price from the sum of Total Price and MSRP Trailer Price. --></help>
+    <label><!-- Your Price --></label>
+    <name>Your_Price__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Formula : Calculates the Total Amount by adding Total Parts,Total Labor and Total Shop Supplies Fields. --></help>
+    <label><!-- Total --></label>
+    <name>Total__c</name>
+</CustomFieldTranslation>

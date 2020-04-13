@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Specifies the Sum of Prices of All the Line Items under the Invoice --></help>
+    <label><!-- Sum - Price Line Items --></label>
+    <name>Sum_Price_Line_Items__c</name>
+</CustomFieldTranslation>

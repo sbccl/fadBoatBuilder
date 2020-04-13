@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Formula : Evaluates the respective Sales Tax Amount on Taxable Line Items --></help>
+    <label><!-- Sales Tax --></label>
+    <name>Sales_Tax_Formula__c</name>
+</CustomFieldTranslation>

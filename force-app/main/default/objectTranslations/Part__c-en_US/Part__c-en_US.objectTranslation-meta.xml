@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Part</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Parts</value>
+    </caseValues>
+    <layouts>
+        <layout>Part Layout (FAD)</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Part Variation --></label>
+            <section>Part Variation</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Create Part Request --></label>
+        <name>Create_Part_Request</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Push Image to Woocommerce --></label>
+        <name>Push_Image_to_Woocommerce</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Push To Shopify --></label>
+        <name>Push_To_Shopify</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Push To Woocommerce --></label>
+        <name>Push_To_Woocommerce</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Part --></label>
+        <name>Part</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Push_To_Shopify --></label>
+        <name>Push_To_Shopify</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Push_To_Woocommerce --></label>
+        <name>Push_To_Woocommerce</name>
+    </webLinks>
+</CustomObjectTranslation>

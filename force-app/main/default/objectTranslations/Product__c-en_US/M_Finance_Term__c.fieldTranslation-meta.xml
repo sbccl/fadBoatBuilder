@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Finance Term --></label>
+    <name>M_Finance_Term__c</name>
+    <picklistValues>
+        <masterLabel>10 Years</masterLabel>
+        <translation><!-- 10 Years --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>12 Years</masterLabel>
+        <translation><!-- 12 Years --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>15 Years</masterLabel>
+        <translation><!-- 15 Years --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>20 Years</masterLabel>
+        <translation><!-- 20 Years --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5 Years</masterLabel>
+        <translation><!-- 5 Years --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

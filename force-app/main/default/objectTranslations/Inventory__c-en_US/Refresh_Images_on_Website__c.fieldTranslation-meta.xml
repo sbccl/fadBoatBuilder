@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Refresh Images on Website --></label>
+    <name>Refresh_Images_on_Website__c</name>
+</CustomFieldTranslation>

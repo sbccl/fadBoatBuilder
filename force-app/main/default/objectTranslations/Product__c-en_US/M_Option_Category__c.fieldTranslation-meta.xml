@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Option Category --></label>
+    <name>M_Option_Category__c</name>
+    <picklistValues>
+        <masterLabel>Appearance Options</masterLabel>
+        <translation><!-- Appearance Options --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Audio Options (7A)</masterLabel>
+        <translation><!-- Audio Options (7A) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Audio and Video Options</masterLabel>
+        <translation><!-- Audio and Video Options --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Audio and Video Options (7A)</masterLabel>
+        <translation><!-- Audio and Video Options (7A) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Base Color  (2A)</masterLabel>
+        <translation><!-- Base Color  (2A) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Base Trailer (9A)</masterLabel>
+        <translation><!-- Base Trailer (9A) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Base Trailer (9A).</masterLabel>
+        <translation><!-- Base Trailer (9A). --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canvas Options</masterLabel>
+        <translation><!-- Canvas Options --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canvas Options (4A)</masterLabel>
+        <translation><!-- Canvas Options (4A) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carpet Base Color Options (2G) - Must Select 1</masterLabel>
+        <translation><!-- Carpet Base Color Options (2G) - Must Select 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carpet Snap-In Options (2G) - Must Select 1</masterLabel>
+        <translation><!-- Carpet Snap-In Options (2G) - Must Select 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engine</masterLabel>
+        <translation><!-- Engine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engine Options</masterLabel>
+        <translation><!-- Engine Options --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engine Options (5B)</masterLabel>
+        <translation><!-- Engine Options (5B) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engines (5A)</masterLabel>
+        <translation><!-- Engines (5A) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gelcoat Accent Color (1C)</masterLabel>
+        <translation><!-- Gelcoat Accent Color (1C) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gelcoat Deck Color  (1B)</masterLabel>
+        <translation><!-- Gelcoat Deck Color  (1B) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gelcoat Deck Color (1B)</masterLabel>
+        <translation><!-- Gelcoat Deck Color (1B) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gelcoat Deck Forward Accent (1BB)</masterLabel>
+        <translation><!-- Gelcoat Deck Forward Accent (1BB) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gelcoat Hull Color  (1F)</masterLabel>
+        <translation><!-- Gelcoat Hull Color  (1F) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gelcoat Hull Color (1F)</masterLabel>
+        <translation><!-- Gelcoat Hull Color (1F) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gelcoat Hull Forward Accent (1DD)</masterLabel>
+        <translation><!-- Gelcoat Hull Forward Accent (1DD) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gelcoat Hull Middle Accent</masterLabel>
+        <translation><!-- Gelcoat Hull Middle Accent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gelcoat Lower Accent Color (1E)</masterLabel>
+        <translation><!-- Gelcoat Lower Accent Color (1E) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gelcoat Main Color (1D)</masterLabel>
+        <translation><!-- Gelcoat Main Color (1D) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gelcoat Main Panel Color (1D)</masterLabel>
+        <translation><!-- Gelcoat Main Panel Color (1D) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gelcoat Options</masterLabel>
+        <translation><!-- Gelcoat Options --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gelcoat Spray Pattern (1A)</masterLabel>
+        <translation><!-- Gelcoat Spray Pattern (1A) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gelcoat Upper Accent Color  (1C)</masterLabel>
+        <translation><!-- Gelcoat Upper Accent Color  (1C) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Graphic Background Options &amp; Other Graphic Options</masterLabel>
+        <translation><!-- Graphic Background Options &amp; Other Graphic Options --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Graphic Background Options (1H)</masterLabel>
+        <translation><!-- Graphic Background Options (1H) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Graphic Name Options (for Worlds, do not choose)</masterLabel>
+        <translation><!-- Graphic Name Options (for Worlds, do not choose) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Graphic Name Selections (1G)</masterLabel>
+        <translation><!-- Graphic Name Selections (1G) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insert Panel Accent Color (2F) (2 Tone)</masterLabel>
+        <translation><!-- Insert Panel Accent Color (2F) (2 Tone) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lighting Options (7B) -</masterLabel>
+        <translation><!-- Lighting Options (7B) - --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Miscellaneous Options (8A)</masterLabel>
+        <translation><!-- Miscellaneous Options (8A) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Appearance Options (3C)</masterLabel>
+        <translation><!-- Other Appearance Options (3C) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Package Options</masterLabel>
+        <translation><!-- Package Options --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Package and Trim Level Options (1A)</masterLabel>
+        <translation><!-- Package and Trim Level Options (1A) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Panel Color   (2B)</masterLabel>
+        <translation><!-- Panel Color   (2B) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Performance Options</masterLabel>
+        <translation><!-- Performance Options --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Performance Package Options - MD,MG,ME (6D)</masterLabel>
+        <translation><!-- Performance Package Options - MD,MG,ME (6D) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prop Options  (5C)</masterLabel>
+        <translation><!-- Prop Options  (5C) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prop Options (5C)</masterLabel>
+        <translation><!-- Prop Options (5C) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tower Accessories (3F)</masterLabel>
+        <translation><!-- Tower Accessories (3F) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tower Canvas (Oz) (4A)</masterLabel>
+        <translation><!-- Tower Canvas (Oz) (4A) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tower Contrast Color Options (3F)</masterLabel>
+        <translation><!-- Tower Contrast Color Options (3F) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tower Main Color Options (3E)</masterLabel>
+        <translation><!-- Tower Main Color Options (3E) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tower Options (3D)</masterLabel>
+        <translation><!-- Tower Options (3D) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trailer Axle Options.</masterLabel>
+        <translation><!-- Trailer Axle Options. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trailer Base Color (9B)</masterLabel>
+        <translation><!-- Trailer Base Color (9B) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trailer Color Selections</masterLabel>
+        <translation><!-- Trailer Color Selections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trailer Fender Options (9D)</masterLabel>
+        <translation><!-- Trailer Fender Options (9D) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trailer Light Options (9G)</masterLabel>
+        <translation><!-- Trailer Light Options (9G) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trailer Options.</masterLabel>
+        <translation><!-- Trailer Options. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trailer Other Options (9H)</masterLabel>
+        <translation><!-- Trailer Other Options (9H) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trailer Pinstrip Color (9C)</masterLabel>
+        <translation><!-- Trailer Pinstrip Color (9C) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trailer Pinstripe Color (9C)</masterLabel>
+        <translation><!-- Trailer Pinstripe Color (9C) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trailer Wheel Options (9F)</masterLabel>
+        <translation><!-- Trailer Wheel Options (9F) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Two Tone Fender Color (9E)</masterLabel>
+        <translation><!-- Two Tone Fender Color (9E) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Upholstery Color Selections</masterLabel>
+        <translation><!-- Upholstery Color Selections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Upholstery Options  (2D)</masterLabel>
+        <translation><!-- Upholstery Options  (2D) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vinyl Accent Color (2D)</masterLabel>
+        <translation><!-- Vinyl Accent Color (2D) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vinyl Back Color (2C)</masterLabel>
+        <translation><!-- Vinyl Back Color (2C) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vinyl Base Color (2A)</masterLabel>
+        <translation><!-- Vinyl Base Color (2A) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vinyl Main Color (2B)</masterLabel>
+        <translation><!-- Vinyl Main Color (2B) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wake Enhancement Options (6C)</masterLabel>
+        <translation><!-- Wake Enhancement Options (6C) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Welt Color   (2C)</masterLabel>
+        <translation><!-- Welt Color   (2C) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Welt Color (2E)</masterLabel>
+        <translation><!-- Welt Color (2E) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

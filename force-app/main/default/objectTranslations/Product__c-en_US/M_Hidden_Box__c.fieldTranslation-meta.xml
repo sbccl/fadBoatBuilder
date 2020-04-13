@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Used to perform calculations of Prices(internal purposes),not shown during Negotiation. --></help>
+    <label><!-- Hidden Box --></label>
+    <name>M_Hidden_Box__c</name>
+</CustomFieldTranslation>

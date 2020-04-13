@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>QuoteEmail</fullName>
+        <description>QuoteEmail</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ajay@swdevorg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Quote_Approval</template>
+    </alerts>
+    <alerts>
+        <fullName>QuoteMail</fullName>
+        <description>QuoteEmail</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ajay@swdevorg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Quote_Approval</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Update_Quote_Trailer_MSRP</fullName>
+        <field>Quote_MSRP_Trailer_Price__c</field>
+        <formula>Trailer__r.Total_MSRP_Price__c</formula>
+        <name>Update Quote Trailer MSRP</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Update Trailer info on Quote</fullName>
+        <actions>
+            <name>Update_Quote_Trailer_MSRP</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>DEPRECTAED NOT IN USE ANYMORE. LOIGC has been moved into TRIGGER</description>
+        <formula>ISCHANGED( Trailer__c )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <tasks>
+        <fullName>Please_follow_up_with_customer</fullName>
+        <assignedTo>Accounting</assignedTo>
+        <assignedToType>role</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Please follow up with customer</subject>
+    </tasks>
+</Workflow>

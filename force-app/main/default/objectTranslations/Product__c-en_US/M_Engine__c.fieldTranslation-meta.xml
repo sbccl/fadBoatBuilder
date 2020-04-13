@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Engine --></label>
+    <name>M_Engine__c</name>
+    <picklistValues>
+        <masterLabel>Ford Raptor 400 6.2L Engine by Indmar</masterLabel>
+        <translation><!-- Ford Raptor 400 6.2L Engine by Indmar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ford Raptor 440 6.2L Engine by Indmar</masterLabel>
+        <translation><!-- Ford Raptor 440 6.2L Engine by Indmar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ford Raptor 575 6.2L Engine by Indmar (SA, SC and SG only)</masterLabel>
+        <translation><!-- Ford Raptor 575 6.2L Engine by Indmar (SA, SC and SG only) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ford Raptor 575 6.2L Engine by Indmar (SE only)</masterLabel>
+        <translation><!-- Ford Raptor 575 6.2L Engine by Indmar (SE only) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Order</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Orders</value>
+    </caseValues>
+    <layouts>
+        <layout>Company Purchase Requests</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Order For Boats</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Order Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Part Request Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Purchase Order Approved</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Purchase Order Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Service Repair Orders</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Add Attachment --></label>
+        <name>Add_Attachment</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Company Purchase Requests --></label>
+        <name>Company_Purchase_Requests</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Contains information of Orders for Boats --></description>
+        <label><!-- Order --></label>
+        <name>Order</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Order For Boats --></label>
+        <name>Order_For_Boats</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Part Request --></label>
+        <name>Part_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Purchase Order --></label>
+        <name>Purchase_Order</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Purchase Order Approved --></label>
+        <name>Purchase_Order_Approved</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Service Repair Orders --></label>
+        <name>Service_Repair_Orders</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please select a Valid Manufacturer for Order Record Type, or a Valid Vendor for rest of the Record Types. --></errorMessage>
+        <name>Vendor_Manufacturer_Selection_Rule</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Approve --></label>
+        <name>Approve</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Approve_Order --></label>
+        <name>Approve_Order</name>
+    </webLinks>
+</CustomObjectTranslation>

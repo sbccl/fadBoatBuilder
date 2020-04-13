@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>All Payment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Payment</value>
+    </caseValues>
+    <layouts>
+        <layout>Payment Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Quote Payment --></label>
+        <name>Quote_Payment</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Related quote is not final. --></errorMessage>
+        <name>Quote_Status_Should_Be_Final</name>
+    </validationRules>
+</CustomObjectTranslation>

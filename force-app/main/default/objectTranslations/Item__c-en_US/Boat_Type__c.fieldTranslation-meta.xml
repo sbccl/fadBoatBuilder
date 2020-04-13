@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Boat Type --></label>
+    <name>Boat_Type__c</name>
+    <picklistValues>
+        <masterLabel>Center Console</masterLabel>
+        <translation><!-- Center Console --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fishing Boats</masterLabel>
+        <translation><!-- Fishing Boats --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jet Ski</masterLabel>
+        <translation><!-- Jet Ski --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pontoon Boats</masterLabel>
+        <translation><!-- Pontoon Boats --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Run About</masterLabel>
+        <translation><!-- Run About --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ski Boats</masterLabel>
+        <translation><!-- Ski Boats --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

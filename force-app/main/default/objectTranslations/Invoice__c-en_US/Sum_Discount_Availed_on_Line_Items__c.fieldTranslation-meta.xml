@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Specifies the Sum of all the Discounts availed on  the Line Items of the Product. --></help>
+    <label><!-- Sum - Discount Availed on Line Items --></label>
+    <name>Sum_Discount_Availed_on_Line_Items__c</name>
+</CustomFieldTranslation>

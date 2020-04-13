@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Initially comes from Product.Contains the value of Boat MSRP Price.Value changes on Negotiating the Prices. --></help>
+    <label><!-- MSRP Boat Price --></label>
+    <name>Quote_MSRP_Boat_Price__c</name>
+</CustomFieldTranslation>

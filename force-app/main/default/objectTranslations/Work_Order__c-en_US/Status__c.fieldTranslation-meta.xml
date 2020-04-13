@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>Closed</masterLabel>
+        <translation><!-- Closed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed Internal</masterLabel>
+        <translation><!-- Closed Internal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delivered</masterLabel>
+        <translation><!-- Delivered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Escalated</masterLabel>
+        <translation><!-- Escalated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Progress</masterLabel>
+        <translation><!-- In Progress --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New</masterLabel>
+        <translation><!-- New --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>On Hold</masterLabel>
+        <translation><!-- On Hold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ordered</masterLabel>
+        <translation><!-- Ordered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Queued</masterLabel>
+        <translation><!-- Queued --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quote</masterLabel>
+        <translation><!-- Quote --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Received</masterLabel>
+        <translation><!-- Received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scheduled</masterLabel>
+        <translation><!-- Scheduled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WO Created</masterLabel>
+        <translation><!-- WO Created --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting On Payment</masterLabel>
+        <translation><!-- Waiting On Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting To Schedule</masterLabel>
+        <translation><!-- Waiting To Schedule --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting on Customer Approval</masterLabel>
+        <translation><!-- Waiting on Customer Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting on Customer Drop Off</masterLabel>
+        <translation><!-- Waiting on Customer Drop Off --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting on Parts</masterLabel>
+        <translation><!-- Waiting on Parts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting on Sub-let</masterLabel>
+        <translation><!-- Waiting on Sub-let --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warranty Review</masterLabel>
+        <translation><!-- Warranty Review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warranty Waiting on Approval</masterLabel>
+        <translation><!-- Warranty Waiting on Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warranty Waiting on Payment</masterLabel>
+        <translation><!-- Warranty Waiting on Payment --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

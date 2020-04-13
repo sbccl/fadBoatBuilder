@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Model Variant --></label>
+    <name>M_Model_Variant__c</name>
+    <picklistValues>
+        <masterLabel>SA400</masterLabel>
+        <translation><!-- SA400 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SA450</masterLabel>
+        <translation><!-- SA450 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SA550</masterLabel>
+        <translation><!-- SA550 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SC400</masterLabel>
+        <translation><!-- SC400 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SC450</masterLabel>
+        <translation><!-- SC450 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SC550</masterLabel>
+        <translation><!-- SC550 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SE450</masterLabel>
+        <translation><!-- SE450 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SE550</masterLabel>
+        <translation><!-- SE550 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SE550 Roush Edition</masterLabel>
+        <translation><!-- SE550 Roush Edition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SG400</masterLabel>
+        <translation><!-- SG400 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SG450</masterLabel>
+        <translation><!-- SG450 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SG550</masterLabel>
+        <translation><!-- SG550 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

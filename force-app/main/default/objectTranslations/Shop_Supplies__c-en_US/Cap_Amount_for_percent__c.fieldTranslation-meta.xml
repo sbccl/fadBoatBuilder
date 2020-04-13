@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Specify the maximum amount that can be availed as Shop Supply Corresponding to the percentage specified --></help>
+    <label><!-- Cap Amount for percent --></label>
+    <name>Cap_Amount_for_percent__c</name>
+</CustomFieldTranslation>

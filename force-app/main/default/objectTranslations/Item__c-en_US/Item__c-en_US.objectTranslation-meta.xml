@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Item</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Items</value>
+    </caseValues>
+    <layouts>
+        <layout>Item Layout</layout>
+        <sections>
+            <label><!-- Boat Details --></label>
+            <section>Boat Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Trade-In Information --></label>
+            <section>Customer Trade-In Information</section>
+        </sections>
+        <sections>
+            <label><!-- Dealer Network Inventory Trade Price --></label>
+            <section>Dealer Network Inventory Trade Price</section>
+        </sections>
+        <sections>
+            <label><!-- Engine Details --></label>
+            <section>Engine Details</section>
+        </sections>
+        <sections>
+            <label><!-- Payment Details --></label>
+            <section>Payment Details</section>
+        </sections>
+        <sections>
+            <label><!-- Trailer Details --></label>
+            <section>Trailer Details</section>
+        </sections>
+        <sections>
+            <label><!-- Transmission &amp; Gearbox Details --></label>
+            <section>Transmission &amp; Gearbox Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Item Layout(FAD)</layout>
+        <sections>
+            <label><!-- Boat Details --></label>
+            <section>Boat Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Trade-In Information --></label>
+            <section>Customer Trade-In Information</section>
+        </sections>
+        <sections>
+            <label><!-- Dealer Network Inventory Trade Price --></label>
+            <section>Dealer Network Inventory Trade Price</section>
+        </sections>
+        <sections>
+            <label><!-- Engine Details --></label>
+            <section>Engine Details</section>
+        </sections>
+        <sections>
+            <label><!-- Payment Details --></label>
+            <section>Payment Details</section>
+        </sections>
+        <sections>
+            <label><!-- Trailer Details --></label>
+            <section>Trailer Details</section>
+        </sections>
+        <sections>
+            <label><!-- Transmission &amp; Gearbox Details --></label>
+            <section>Transmission &amp; Gearbox Details</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Update Item --></label>
+        <name>UpdateItem</name>
+    </quickActions>
+    <startsWith>Vowel</startsWith>
+    <webLinks>
+        <label><!-- Create_Used_Boat_Inventory --></label>
+        <name>Create_Used_Boat_Inventory</name>
+    </webLinks>
+</CustomObjectTranslation>

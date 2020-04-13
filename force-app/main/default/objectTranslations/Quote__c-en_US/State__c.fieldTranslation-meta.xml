@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- State --></label>
+    <name>State__c</name>
+    <picklistValues>
+        <masterLabel>Indiana</masterLabel>
+        <translation><!-- Indiana --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>North Carolina</masterLabel>
+        <translation><!-- North Carolina --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>South Carolina</masterLabel>
+        <translation><!-- South Carolina --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

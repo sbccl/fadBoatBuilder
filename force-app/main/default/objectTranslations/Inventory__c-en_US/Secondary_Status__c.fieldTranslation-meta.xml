@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Secondary Status --></label>
+    <name>Secondary_Status__c</name>
+    <picklistValues>
+        <masterLabel>Presold</masterLabel>
+        <translation><!-- Presold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stock</masterLabel>
+        <translation><!-- Stock --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

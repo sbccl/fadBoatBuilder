@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Payments</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Payments</value>
+    </caseValues>
+    <recordTypes>
+        <label><!-- Quote --></label>
+        <name>Quote</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sold Boat Invoice --></label>
+        <name>Sold_Boat_Invoice</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Standard Invoice --></label>
+        <name>Standard_Invoice</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Warranty Work Order --></label>
+        <name>Warranty_Work_Order</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Work Order --></label>
+        <name>Work_Order</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

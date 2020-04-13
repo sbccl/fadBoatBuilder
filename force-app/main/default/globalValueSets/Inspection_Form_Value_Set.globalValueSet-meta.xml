@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Need Now</fullName>
+        <default>false</default>
+        <label>Need Now</label>
+    </customValue>
+    <customValue>
+        <fullName>Need Soon</fullName>
+        <default>false</default>
+        <label>Need Soon</label>
+    </customValue>
+    <customValue>
+        <fullName>OK</fullName>
+        <default>false</default>
+        <label>OK</label>
+    </customValue>
+    <customValue>
+        <fullName>N/A</fullName>
+        <default>false</default>
+        <label>N/A</label>
+    </customValue>
+    <masterLabel>Inspection Form Value Set</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

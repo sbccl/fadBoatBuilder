@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Other</label>
+    <protected>false</protected>
+    <values>
+        <field>City__c</field>
+        <value xsi:type="xsd:string">BEAVERTON</value>
+    </values>
+    <values>
+        <field>Country__c</field>
+        <value xsi:type="xsd:string">USA</value>
+    </values>
+    <values>
+        <field>New_Boat_Disclaimer__c</field>
+        <value xsi:type="xsd:string">New Boat Dis</value>
+    </values>
+    <values>
+        <field>Phone__c</field>
+        <value xsi:type="xsd:string">(503) 643-5018</value>
+    </values>
+    <values>
+        <field>Priority__c</field>
+        <value xsi:type="xsd:double">1.0</value>
+    </values>
+    <values>
+        <field>State__c</field>
+        <value xsi:type="xsd:string">OR</value>
+    </values>
+    <values>
+        <field>Street__c</field>
+        <value xsi:type="xsd:string">12050 SW CANYON RD</value>
+    </values>
+    <values>
+        <field>Used_Boat_Disclaimer__c</field>
+        <value xsi:type="xsd:string">Used Boat Dis</value>
+    </values>
+    <values>
+        <field>Website_Store_location__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Zip_Postal_Code__c</field>
+        <value xsi:type="xsd:string">97005</value>
+    </values>
+</CustomMetadata>

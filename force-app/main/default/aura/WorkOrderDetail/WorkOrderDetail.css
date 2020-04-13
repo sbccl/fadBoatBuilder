@@ -1,0 +1,32 @@
+.THIS .addNewJob {
+    float: right;
+    margin-top: -35px;
+}
+.THIS .taxableToggle{
+    float:right;
+}
+.THIS .saveJobs{
+    float: right;
+    margin-right: 41%;
+    margin-top: -4%;
+}
+
+.THIS .slds-truncate{
+    white-space: normal;
+}
+
+.THIS .slds-spinner_container  {
+    
+        position: fixed;
+        top: 50%;
+        bottom: 50%;
+        
+}
+.THIS .spins::after {
+    position: absolute;
+    content: 'Please wait while loading';
+    width: 100%;
+    text-align: center;
+    top: calc(50% + 3em);
+    font-weight: bold;
+}

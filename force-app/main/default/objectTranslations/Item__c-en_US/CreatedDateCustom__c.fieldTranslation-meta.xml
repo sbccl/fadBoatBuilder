@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Displays the Created Date in short Date Format. --></help>
+    <label><!-- CreatedDateCustom --></label>
+    <name>CreatedDateCustom__c</name>
+</CustomFieldTranslation>

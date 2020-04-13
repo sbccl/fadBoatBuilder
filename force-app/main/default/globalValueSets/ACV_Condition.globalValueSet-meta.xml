@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Excellent</fullName>
+        <default>false</default>
+        <label>Excellent</label>
+    </customValue>
+    <customValue>
+        <fullName>Great</fullName>
+        <default>false</default>
+        <label>Great</label>
+    </customValue>
+    <customValue>
+        <fullName>Average</fullName>
+        <default>false</default>
+        <label>Average</label>
+    </customValue>
+    <customValue>
+        <fullName>Poor</fullName>
+        <default>false</default>
+        <label>Poor</label>
+    </customValue>
+    <masterLabel>ACV Condition</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

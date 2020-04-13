@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Trolling Motor --></label>
+    <name>Trolling_Motor__c</name>
+    <relationshipLabel><!-- Quote (Trolling Motor) --></relationshipLabel>
+</CustomFieldTranslation>

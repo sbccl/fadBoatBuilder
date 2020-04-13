@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Lending Bank --></label>
+    <name>Lending_Bank__c</name>
+    <picklistValues>
+        <masterLabel>Aqua Finance</masterLabel>
+        <translation><!-- Aqua Finance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BB&amp;T</masterLabel>
+        <translation><!-- BB&amp;T --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bank of the West</masterLabel>
+        <translation><!-- Bank of the West --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Huntington Bank</masterLabel>
+        <translation><!-- Huntington Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marathon Bank</masterLabel>
+        <translation><!-- Marathon Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medalion Bank</masterLabel>
+        <translation><!-- Medalion Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Merrick Bank</masterLabel>
+        <translation><!-- Merrick Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>South State Bank</masterLabel>
+        <translation><!-- South State Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>State Farm</masterLabel>
+        <translation><!-- State Farm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>US Bank</masterLabel>
+        <translation><!-- US Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>USAA</masterLabel>
+        <translation><!-- USAA --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

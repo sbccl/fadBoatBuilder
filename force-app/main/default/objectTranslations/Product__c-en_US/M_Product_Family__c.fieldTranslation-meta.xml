@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Product Family --></label>
+    <name>M_Product_Family__c</name>
+    <picklistValues>
+        <masterLabel>Boat</masterLabel>
+        <translation><!-- Boat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engine</masterLabel>
+        <translation><!-- Engine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gearboxes</masterLabel>
+        <translation><!-- Gearboxes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trailers</masterLabel>
+        <translation><!-- Trailers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transmissions</masterLabel>
+        <translation><!-- Transmissions --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

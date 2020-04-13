@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Woocommerce Status --></label>
+    <name>Woocommerce_Status__c</name>
+    <picklistValues>
+        <masterLabel>cancelled</masterLabel>
+        <translation><!-- cancelled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>completed</masterLabel>
+        <translation><!-- completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>failed</masterLabel>
+        <translation><!-- failed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>on-hold</masterLabel>
+        <translation><!-- on-hold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>pending</masterLabel>
+        <translation><!-- pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>processing</masterLabel>
+        <translation><!-- processing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>refunded</masterLabel>
+        <translation><!-- refunded --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

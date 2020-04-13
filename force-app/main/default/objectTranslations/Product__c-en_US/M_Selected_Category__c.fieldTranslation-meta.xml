@@ -1,0 +1,1053 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Selected Category --></label>
+    <name>M_Selected_Category__c</name>
+    <picklistValues>
+        <masterLabel>&quot;Supra&quot; Verge 2-Tone</masterLabel>
+        <translation><!-- &quot;Supra&quot; Verge 2-Tone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&quot;Supra&quot; Verge Blacked Out</masterLabel>
+        <translation><!-- &quot;Supra&quot; Verge Blacked Out --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&quot;Supra&quot; Verge Chrome</masterLabel>
+        <translation><!-- &quot;Supra&quot; Verge Chrome --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>14&quot; Spare Tire with Bracket (T6 Aluminum) (Tandem)</masterLabel>
+        <translation><!-- 14&quot; Spare Tire with Bracket (T6 Aluminum) (Tandem) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>14&quot; Spare Tire, Frame Side Mount (SC Tandem; SG, SE Triple)</masterLabel>
+        <translation><!-- 14&quot; Spare Tire, Frame Side Mount (SC Tandem; SG, SE Triple) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>14&quot; Spare Tire, Underbelly Mount (SC Tandem; SG, SE Triple)</masterLabel>
+        <translation><!-- 14&quot; Spare Tire, Underbelly Mount (SC Tandem; SG, SE Triple) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>15&quot; Spare Tire with Bracket (T6 Aluminum) (Single)</masterLabel>
+        <translation><!-- 15&quot; Spare Tire with Bracket (T6 Aluminum) (Single) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>15&quot; Spare Tire, Frame Side Mount (SA, SG, SE Tandem)</masterLabel>
+        <translation><!-- 15&quot; Spare Tire, Frame Side Mount (SA, SG, SE Tandem) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>15&quot; Spare Tire, Underbelly Mount (SA, SG, SE Tandem)</masterLabel>
+        <translation><!-- 15&quot; Spare Tire, Underbelly Mount (SA, SG, SE Tandem) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>18&quot; Spare Tire with Bracket (18&quot; Wheel Upgrade)</masterLabel>
+        <translation><!-- 18&quot; Spare Tire with Bracket (18&quot; Wheel Upgrade) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>18&quot; Spare Tire, Framed Side Mount</masterLabel>
+        <translation><!-- 18&quot; Spare Tire, Framed Side Mount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>18&quot; Spare Tire, Underbelly Mount</masterLabel>
+        <translation><!-- 18&quot; Spare Tire, Underbelly Mount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>18&quot; Spare Tire, Underbelly Mount, World&#39;s Edition only</masterLabel>
+        <translation><!-- 18&quot; Spare Tire, Underbelly Mount, World&apos;s Edition only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>18&quot; Wheels Upgrade (Tandem only)</masterLabel>
+        <translation><!-- 18&quot; Wheels Upgrade (Tandem only) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>18&quot; Wheels Upgrade (Triple only)</masterLabel>
+        <translation><!-- 18&quot; Wheels Upgrade (Triple only) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>7-way Round Trailer Plug w/ Holder</masterLabel>
+        <translation><!-- 7-way Round Trailer Plug w/ Holder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A AM/FM/BT Aux input 4 speakers no amp</masterLabel>
+        <translation><!-- A AM/FM/BT Aux input 4 speakers no amp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aluminum Step Plates</masterLabel>
+        <translation><!-- Aluminum Step Plates --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aluminum Tread Plates - Steps Only</masterLabel>
+        <translation><!-- Aluminum Tread Plates - Steps Only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aluminum Tread Plates - Steps and Fenders</masterLabel>
+        <translation><!-- Aluminum Tread Plates - Steps and Fenders --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aluminum Wheels (per axle)</masterLabel>
+        <translation><!-- Aluminum Wheels (per axle) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Atomic Orange</masterLabel>
+        <translation><!-- Atomic Orange --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Atomic Orange Bases and Arms</masterLabel>
+        <translation><!-- Atomic Orange Bases and Arms --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Atomic Orange Metal Flake</masterLabel>
+        <translation><!-- Atomic Orange Metal Flake --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Audio Remote - Transom Location</masterLabel>
+        <translation><!-- Audio Remote - Transom Location --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Auster</masterLabel>
+        <translation><!-- Auster --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AutoFlow 2 Surf Package (AutoFlow Sys, Bow Bag, Decal)</masterLabel>
+        <translation><!-- AutoFlow 2 Surf Package (AutoFlow Sys, Bow Bag, Decal) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AutoFlow 2 Surf System</masterLabel>
+        <translation><!-- AutoFlow 2 Surf System --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Automatic Fire Suppression System</masterLabel>
+        <translation><!-- Automatic Fire Suppression System --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aviator Tower (Black)</masterLabel>
+        <translation><!-- Aviator Tower (Black) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aviator Tower (White)</masterLabel>
+        <translation><!-- Aviator Tower (White) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B Add 2 Bow Speakers with Amplifier</masterLabel>
+        <translation><!-- B Add 2 Bow Speakers with Amplifier --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bimini, Z5 Cargo Rack, S-Bend (Black)</masterLabel>
+        <translation><!-- Bimini, Z5 Cargo Rack, S-Bend (Black) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Black</masterLabel>
+        <translation><!-- Black --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Black (Bimini / Z-5 Arm Upgrade Only)</masterLabel>
+        <translation><!-- Black (Bimini / Z-5 Arm Upgrade Only) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Black (Standard)</masterLabel>
+        <translation><!-- Black (Standard) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Black Bases w/ Brushed Arms (Standard)</masterLabel>
+        <translation><!-- Black Bases w/ Brushed Arms (Standard) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Black Pinstripe</masterLabel>
+        <translation><!-- Black Pinstripe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Boat Cover w/ ProEdge Tower, Charcoal</masterLabel>
+        <translation><!-- Boat Cover w/ ProEdge Tower, Charcoal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bow Filler Cushion</masterLabel>
+        <translation><!-- Bow Filler Cushion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bow Mood Lights</masterLabel>
+        <translation><!-- Bow Mood Lights --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bow Step Ladder w/ Tongue Step Pad, 3 Step</masterLabel>
+        <translation><!-- Bow Step Ladder w/ Tongue Step Pad, 3 Step --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Brittany Blue</masterLabel>
+        <translation><!-- Brittany Blue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Brittany Blue Bases and Arms</masterLabel>
+        <translation><!-- Brittany Blue Bases and Arms --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Brittany Blue Metal Flake</masterLabel>
+        <translation><!-- Brittany Blue Metal Flake --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C Add 2 Bow Speakers and Sub with Amplifier</masterLabel>
+        <translation><!-- C Add 2 Bow Speakers and Sub with Amplifier --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carpet, Snap In (Midnight Star)</masterLabel>
+        <translation><!-- Carpet, Snap In (Midnight Star) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Celestial Blue</masterLabel>
+        <translation><!-- Celestial Blue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Celestial Blue Bases and Arms</masterLabel>
+        <translation><!-- Celestial Blue Bases and Arms --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Charcoal</masterLabel>
+        <translation><!-- Charcoal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Charcoal Bases and Arms</masterLabel>
+        <translation><!-- Charcoal Bases and Arms --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cockpit &amp; Tonneau Cover w/ ProEdge Tower - Black</masterLabel>
+        <translation><!-- Cockpit &amp; Tonneau Cover w/ ProEdge Tower - Black --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cooler, Softside w/ Logo</masterLabel>
+        <translation><!-- Cooler, Softside w/ Logo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cruise, Zero Off, GPS Upgrade (Requires new cruise)</masterLabel>
+        <translation><!-- Cruise, Zero Off, GPS Upgrade (Requires new cruise) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D Add 2 Tower Speakers with Amplifier (Aviator)</masterLabel>
+        <translation><!-- D Add 2 Tower Speakers with Amplifier (Aviator) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dark Graphite</masterLabel>
+        <translation><!-- Dark Graphite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Depth Finder</masterLabel>
+        <translation><!-- Depth Finder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digital Cruise Pro II (Display)</masterLabel>
+        <translation><!-- Digital Cruise Pro II (Display) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Docking Lights</masterLabel>
+        <translation><!-- Docking Lights --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dove Grey/Silver Moquetta</masterLabel>
+        <translation><!-- Dove Grey/Silver Moquetta --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dove Grey/White Moquetta</masterLabel>
+        <translation><!-- Dove Grey/White Moquetta --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dual Battery Set-up w/ Charger</masterLabel>
+        <translation><!-- Dual Battery Set-up w/ Charger --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dual Battery Setup with Onboard Battery Charger</masterLabel>
+        <translation><!-- Dual Battery Setup with Onboard Battery Charger --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E Add Wiring and Amp for 2 Tower Speakers (no speakers)</masterLabel>
+        <translation><!-- E Add Wiring and Amp for 2 Tower Speakers (no speakers) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eclipse Black Metal Flake</masterLabel>
+        <translation><!-- Eclipse Black Metal Flake --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Elite Shield Coating, Select Color (No Two Tone or Pin Stripes)</masterLabel>
+        <translation><!-- Elite Shield Coating, Select Color (No Two Tone or Pin Stripes) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Extended Mirror Bracket</masterLabel>
+        <translation><!-- Extended Mirror Bracket --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>F1 Add 4 Tower Speakers (Spin) with Amplifier (Aviator)</masterLabel>
+        <translation><!-- F1 Add 4 Tower Speakers (Spin) with Amplifier (Aviator) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>F2 Add 4 Tower Speakers (Spin) with Amplifier (S-Bend)</masterLabel>
+        <translation><!-- F2 Add 4 Tower Speakers (Spin) with Amplifier (S-Bend) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fire Red</masterLabel>
+        <translation><!-- Fire Red --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fire Red Bases and Arms</masterLabel>
+        <translation><!-- Fire Red Bases and Arms --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fire Red Metal Flake</masterLabel>
+        <translation><!-- Fire Red Metal Flake --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flush Kit</masterLabel>
+        <translation><!-- Flush Kit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ford Raptor 400 6.2L Engine by Indmar</masterLabel>
+        <translation><!-- Ford Raptor 400 6.2L Engine by Indmar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ford Raptor 440 6.2L Engine by Indmar</masterLabel>
+        <translation><!-- Ford Raptor 440 6.2L Engine by Indmar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ford Raptor 575 6.2L Engine by Indmar (SA, SC and SG only)</masterLabel>
+        <translation><!-- Ford Raptor 575 6.2L Engine by Indmar (SA, SC and SG only) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ford Raptor 575 6.2L Engine by Indmar (SE only)</masterLabel>
+        <translation><!-- Ford Raptor 575 6.2L Engine by Indmar (SE only) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Full Boat Cover w/ Hangtyte (Charcoal)</masterLabel>
+        <translation><!-- Full Boat Cover w/ Hangtyte (Charcoal) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fulton F2 Jack Upgrade</masterLabel>
+        <translation><!-- Fulton F2 Jack Upgrade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Galvanized - No Color (Single or Tandem)</masterLabel>
+        <translation><!-- Galvanized - No Color (Single or Tandem) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Graphic - &quot;Moomba&quot; Black Chrome</masterLabel>
+        <translation><!-- Graphic - &quot;Moomba&quot; Black Chrome --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Graphic - &quot;Moomba&quot; Chrome</masterLabel>
+        <translation><!-- Graphic - &quot;Moomba&quot; Chrome --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Graphic - Moomba Distortion</masterLabel>
+        <translation><!-- Graphic - Moomba Distortion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Graphic - Moomba Rally</masterLabel>
+        <translation><!-- Graphic - Moomba Rally --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Graphic - Moomba Striker</masterLabel>
+        <translation><!-- Graphic - Moomba Striker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Grow Boating Ad Campaign</masterLabel>
+        <translation><!-- Grow Boating Ad Campaign --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Grow Boating Fund</masterLabel>
+        <translation><!-- Grow Boating Fund --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Guide Pole Covers</masterLabel>
+        <translation><!-- Guide Pole Covers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gunmetal Metal Flake</masterLabel>
+        <translation><!-- Gunmetal Metal Flake --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Heater (6.2L engines)</masterLabel>
+        <translation><!-- Heater (6.2L engines) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Heater with 6.2L Engine</masterLabel>
+        <translation><!-- Heater with 6.2L Engine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hull Forward Accent Color Matches Deck Forward Accent</masterLabel>
+        <translation><!-- Hull Forward Accent Color Matches Deck Forward Accent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hull Forward Accent Color Matches Main Panel Color</masterLabel>
+        <translation><!-- Hull Forward Accent Color Matches Main Panel Color --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hull Forward Accent Color Matches Upper Accent Color</masterLabel>
+        <translation><!-- Hull Forward Accent Color Matches Upper Accent Color --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hull Middle Accent Color Matches Lower Accent Color</masterLabel>
+        <translation><!-- Hull Middle Accent Color Matches Lower Accent Color --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hull Middle Accent Color Matches Main Panel Color</masterLabel>
+        <translation><!-- Hull Middle Accent Color Matches Main Panel Color --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Illuminated Laser-Cut Steps</masterLabel>
+        <translation><!-- Illuminated Laser-Cut Steps --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Integrated Bow Sac</masterLabel>
+        <translation><!-- Integrated Bow Sac --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intense Green</masterLabel>
+        <translation><!-- Intense Green --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intense Green Bases and Arms</masterLabel>
+        <translation><!-- Intense Green Bases and Arms --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intense Green Metal Flake</masterLabel>
+        <translation><!-- Intense Green Metal Flake --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LED Back-up Lights</masterLabel>
+        <translation><!-- LED Back-up Lights --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LED Bar Docking Lights</masterLabel>
+        <translation><!-- LED Bar Docking Lights --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LED Docking Lights</masterLabel>
+        <translation><!-- LED Docking Lights --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Light Graphite</masterLabel>
+        <translation><!-- Light Graphite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Light Graphite Bases and Arms</masterLabel>
+        <translation><!-- Light Graphite Bases and Arms --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Liquid Lead Flex Ballast, 3 Bags-2000 lbs - (1 front, 2 rear)</masterLabel>
+        <translation><!-- Liquid Lead Flex Ballast, 3 Bags-2000 lbs - (1 front, 2 rear) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Midnight Star</masterLabel>
+        <translation><!-- Midnight Star --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multisport Wakeplate w/ Gravity III Ballast</masterLabel>
+        <translation><!-- Multisport Wakeplate w/ Gravity III Ballast --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mystic White</masterLabel>
+        <translation><!-- Mystic White --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mystic White/Silver Moquetta</masterLabel>
+        <translation><!-- Mystic White/Silver Moquetta --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mystic White/White Moquetta</masterLabel>
+        <translation><!-- Mystic White/White Moquetta --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Navionics Map Card - Austrailia</masterLabel>
+        <translation><!-- Navionics Map Card - Austrailia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Navionics Map Card - Canada</masterLabel>
+        <translation><!-- Navionics Map Card - Canada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Background Graphic</masterLabel>
+        <translation><!-- No Background Graphic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Pinstripe</masterLabel>
+        <translation><!-- No Pinstripe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Prop Credit</masterLabel>
+        <translation><!-- No Prop Credit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Tower Speaker Credit, Worlds Edition only</masterLabel>
+        <translation><!-- No Tower Speaker Credit, Worlds Edition only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Trailer (World&#39;s Only)</masterLabel>
+        <translation><!-- No Trailer (World&apos;s Only) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Trailer Credit</masterLabel>
+        <translation><!-- No Trailer Credit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No-Tower Credit</masterLabel>
+        <translation><!-- No-Tower Credit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No-Tower Credit (also deletes swivel, bimini)</masterLabel>
+        <translation><!-- No-Tower Credit (also deletes swivel, bimini) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nonskid Package for Gunnels and Bow</masterLabel>
+        <translation><!-- Nonskid Package for Gunnels and Bow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nonskid, Snap in with Logo (Light Grey)</masterLabel>
+        <translation><!-- Nonskid, Snap in with Logo (Light Grey) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PTMEdge VR-140 Mirror Upgrade w/ Mirror Arm, Black</masterLabel>
+        <translation><!-- PTMEdge VR-140 Mirror Upgrade w/ Mirror Arm, Black --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pacific Blue</masterLabel>
+        <translation><!-- Pacific Blue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pacific Blue Bases and Arms</masterLabel>
+        <translation><!-- Pacific Blue Bases and Arms --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Platinum</masterLabel>
+        <translation><!-- Platinum --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Platinum Bases and Arms</masterLabel>
+        <translation><!-- Platinum Bases and Arms --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Platinum Pinstripe</masterLabel>
+        <translation><!-- Platinum Pinstripe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plum Crazy Purple</masterLabel>
+        <translation><!-- Plum Crazy Purple --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plum Crazy Purple Flake</masterLabel>
+        <translation><!-- Plum Crazy Purple Flake --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plum Crazy Purple Metal Flake</masterLabel>
+        <translation><!-- Plum Crazy Purple Metal Flake --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pop-up Cleats (set of 4)</masterLabel>
+        <translation><!-- Pop-up Cleats (set of 4) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prop, CNC 14.50x14.25, 4 Bld (Acme 1235) - Std 400, 450</masterLabel>
+        <translation><!-- Prop, CNC 14.50x14.25, 4 Bld (Acme 1235) - Std 400, 450 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prop, CNC 15.00x12.50, 4 Bld (Acme 2775) - Wake 400, 450</masterLabel>
+        <translation><!-- Prop, CNC 15.00x12.50, 4 Bld (Acme 2775) - Wake 400, 450 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prop, CNC, 15.00x14.25, 4 Bld (ACME 2247) - Wake 550</masterLabel>
+        <translation><!-- Prop, CNC, 15.00x14.25, 4 Bld (ACME 2247) - Wake 550 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prop, CNC, 15.00x15.75, 4 Bld (ACME 2277) - Std 550</masterLabel>
+        <translation><!-- Prop, CNC, 15.00x15.75, 4 Bld (ACME 2277) - Std 550 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prop, Nibral, 14.25x14.5 4 Blade  (Standard)</masterLabel>
+        <translation><!-- Prop, Nibral, 14.25x14.5 4 Blade  (Standard) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prop, Nibral, 15x13 4 Blade (OJ 945, Wakeboard V Drive)</masterLabel>
+        <translation><!-- Prop, Nibral, 15x13 4 Blade (OJ 945, Wakeboard V Drive) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Purple Passion</masterLabel>
+        <translation><!-- Purple Passion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rack, Fixed Wake/Surf  (set of 2)</masterLabel>
+        <translation><!-- Rack, Fixed Wake/Surf  (set of 2) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rack, Quick Release Swivel Mechanism</masterLabel>
+        <translation><!-- Rack, Quick Release Swivel Mechanism --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rear Mounted Camera w/ VSION Integration</masterLabel>
+        <translation><!-- Rear Mounted Camera w/ VSION Integration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Registration Fee</masterLabel>
+        <translation><!-- Registration Fee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Removable Seat Back Kit, Rear Seat and Stbd Cockpit Seat</masterLabel>
+        <translation><!-- Removable Seat Back Kit, Rear Seat and Stbd Cockpit Seat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reuben Red</masterLabel>
+        <translation><!-- Reuben Red --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reuben Red Bases and Arms</masterLabel>
+        <translation><!-- Reuben Red Bases and Arms --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Roush Edition Trailer - Tandem Axle</masterLabel>
+        <translation><!-- Roush Edition Trailer - Tandem Axle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Roush Edition Trailer - Triple Axle Upgrade</masterLabel>
+        <translation><!-- Roush Edition Trailer - Triple Axle Upgrade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Runway Lighting</masterLabel>
+        <translation><!-- Runway Lighting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Runway Lighting - Blue</masterLabel>
+        <translation><!-- Runway Lighting - Blue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Runway Lighting - Green</masterLabel>
+        <translation><!-- Runway Lighting - Green --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Runway Lighting - Red</masterLabel>
+        <translation><!-- Runway Lighting - Red --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Runway Lighting - White</masterLabel>
+        <translation><!-- Runway Lighting - White --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S-Bend Tower (Black)</masterLabel>
+        <translation><!-- S-Bend Tower (Black) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SE550 Roush Limited Edition</masterLabel>
+        <translation><!-- SE550 Roush Limited Edition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SeaDek Nonskid Floor</masterLabel>
+        <translation><!-- SeaDek Nonskid Floor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shipping Cover and Package Materials</masterLabel>
+        <translation><!-- Shipping Cover and Package Materials --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shipping Cover and Packaging Materials</masterLabel>
+        <translation><!-- Shipping Cover and Packaging Materials --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Silver</masterLabel>
+        <translation><!-- Silver --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Silver Metal Flake</masterLabel>
+        <translation><!-- Silver Metal Flake --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Single Battery Set-up w/ Charger</masterLabel>
+        <translation><!-- Single Battery Set-up w/ Charger --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Single Battery Setup with Onboard Battery Charger</masterLabel>
+        <translation><!-- Single Battery Setup with Onboard Battery Charger --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Single Spring Axle w/ Disc Brakes</masterLabel>
+        <translation><!-- Single Spring Axle w/ Disc Brakes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sky Grey</masterLabel>
+        <translation><!-- Sky Grey --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sky Grey/Silver Moquetta</masterLabel>
+        <translation><!-- Sky Grey/Silver Moquetta --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sky Grey/White Moquetta</masterLabel>
+        <translation><!-- Sky Grey/White Moquetta --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Snap-In Carpet, Midnight Star Tufted Design</masterLabel>
+        <translation><!-- Snap-In Carpet, Midnight Star Tufted Design --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Snap-In Carpet, Sterling Grey Tufted Design</masterLabel>
+        <translation><!-- Snap-In Carpet, Sterling Grey Tufted Design --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Snap-In Liner, Compass Gunmetal</masterLabel>
+        <translation><!-- Snap-In Liner, Compass Gunmetal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spare Tire Bracket (Mounting Bracket Only, No Tire)</masterLabel>
+        <translation><!-- Spare Tire Bracket (Mounting Bracket Only, No Tire) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Speaker Box Logo Lights</masterLabel>
+        <translation><!-- Speaker Box Logo Lights --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spray Pattern &quot;Classic&quot;</masterLabel>
+        <translation><!-- Spray Pattern &quot;Classic&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spray Pattern &quot;Striker&quot;</masterLabel>
+        <translation><!-- Spray Pattern &quot;Striker&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spray Pattern &quot;Torqued&quot;</masterLabel>
+        <translation><!-- Spray Pattern &quot;Torqued&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spray Pattern Roush Limited Edition</masterLabel>
+        <translation><!-- Spray Pattern Roush Limited Edition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spray Pattern Worlds (required Worlds Package)</masterLabel>
+        <translation><!-- Spray Pattern Worlds (required Worlds Package) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stainless Steel Fenders - Tandem Axle</masterLabel>
+        <translation><!-- Stainless Steel Fenders - Tandem Axle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stainless Steel Fenders - Triple Axle</masterLabel>
+        <translation><!-- Stainless Steel Fenders - Triple Axle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stainless Steel Fenders-Single Axle</masterLabel>
+        <translation><!-- Stainless Steel Fenders-Single Axle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stainless Steel Fenders-Tandem Axle</masterLabel>
+        <translation><!-- Stainless Steel Fenders-Tandem Axle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stainless Steel Rubrail (Black)</masterLabel>
+        <translation><!-- Stainless Steel Rubrail (Black) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stainless Steel Rubrail (White)</masterLabel>
+        <translation><!-- Stainless Steel Rubrail (White) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Standard Black</masterLabel>
+        <translation><!-- Standard Black --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Steering Wheel with Controls, Gussi Ettore</masterLabel>
+        <translation><!-- Steering Wheel with Controls, Gussi Ettore --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sterling Grey</masterLabel>
+        <translation><!-- Sterling Grey --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Substitute Base Trailer for Std World&#39;s Trailer</masterLabel>
+        <translation><!-- Substitute Base Trailer for Std World&apos;s Trailer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Substitute Std Bimini for Z-5, Worlds Edition only</masterLabel>
+        <translation><!-- Substitute Std Bimini for Z-5, Worlds Edition only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Subwoofer with Amplifier &amp; Enclosure, JL Audio</masterLabel>
+        <translation><!-- Subwoofer with Amplifier &amp; Enclosure, JL Audio --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sundance Yellow</masterLabel>
+        <translation><!-- Sundance Yellow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sundance Yellow Bases and Arms</masterLabel>
+        <translation><!-- Sundance Yellow Bases and Arms --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sundeck Walk Across w/ Nonskid</masterLabel>
+        <translation><!-- Sundeck Walk Across w/ Nonskid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supra Force Background</masterLabel>
+        <translation><!-- Supra Force Background --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surface Mount Clear LED</masterLabel>
+        <translation><!-- Surface Mount Clear LED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surface Mount Lighting with Clear LED&#39;s</masterLabel>
+        <translation><!-- Surface Mount Lighting with Clear LED&apos;s --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Swell Surf System</masterLabel>
+        <translation><!-- Swell Surf System --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Swing-away Tounge - Color Matched</masterLabel>
+        <translation><!-- Swing-away Tounge - Color Matched --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Swivel Board Rack Upgrade, Clamping Forks, PTMEdge</masterLabel>
+        <translation><!-- Swivel Board Rack Upgrade, Clamping Forks, PTMEdge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tandem Spring Axle w/ tandem Disc Brakes</masterLabel>
+        <translation><!-- Tandem Spring Axle w/ tandem Disc Brakes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tandem Torsion Axle w/ Disc Brakes</masterLabel>
+        <translation><!-- Tandem Torsion Axle w/ Disc Brakes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tangerine Orange</masterLabel>
+        <translation><!-- Tangerine Orange --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tonneau Cover (Black)</masterLabel>
+        <translation><!-- Tonneau Cover (Black) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tonneau Cover - Black</masterLabel>
+        <translation><!-- Tonneau Cover - Black --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tower Bimini - Rear Extending</masterLabel>
+        <translation><!-- Tower Bimini - Rear Extending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tower Bimini - Z-5 Cargo Rack, ProEdge Tower w/ Conv. Top</masterLabel>
+        <translation><!-- Tower Bimini - Z-5 Cargo Rack, ProEdge Tower w/ Conv. Top --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tower Bimini, Aviator (Black)</masterLabel>
+        <translation><!-- Tower Bimini, Aviator (Black) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tower Bimini, S-Bend (Black)</masterLabel>
+        <translation><!-- Tower Bimini, S-Bend (Black) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tower Cockpit and Tonneau Cover w/ HT (Black)</masterLabel>
+        <translation><!-- Tower Cockpit and Tonneau Cover w/ HT (Black) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tower Light Bar with Courtesy Light (Aviator tower only)</masterLabel>
+        <translation><!-- Tower Light Bar with Courtesy Light (Aviator tower only) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tower Speakers, 2-7.7&quot; Top, 2-7.7&quot; Side, JL Audio</masterLabel>
+        <translation><!-- Tower Speakers, 2-7.7&quot; Top, 2-7.7&quot; Side, JL Audio --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tower Speakers, 2-8.8&quot; Top, 2-7.7&quot; Side, JL Audio</masterLabel>
+        <translation><!-- Tower Speakers, 2-8.8&quot; Top, 2-7.7&quot; Side, JL Audio --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tower Speakers, 2-8.8&quot; Top, 2-8.8&quot; Side, JL Audio</masterLabel>
+        <translation><!-- Tower Speakers, 2-8.8&quot; Top, 2-8.8&quot; Side, JL Audio --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transom Steps</masterLabel>
+        <translation><!-- Transom Steps --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transom Trailer Straps</masterLabel>
+        <translation><!-- Transom Trailer Straps --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trim Level 400</masterLabel>
+        <translation><!-- Trim Level 400 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trim Level 450 (requires Raptor 440 engine)</masterLabel>
+        <translation><!-- Trim Level 450 (requires Raptor 440 engine) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trim Level 550 (requires Raptor 575 engine)</masterLabel>
+        <translation><!-- Trim Level 550 (requires Raptor 575 engine) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Triple Trosion Axle w/ Disc Brakes</masterLabel>
+        <translation><!-- Triple Trosion Axle w/ Disc Brakes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Two Tone Painted Fender - Atomic Orange</masterLabel>
+        <translation><!-- Two Tone Painted Fender - Atomic Orange --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Two Tone Painted Fender - Atomic Orange Metal Flake</masterLabel>
+        <translation><!-- Two Tone Painted Fender - Atomic Orange Metal Flake --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Two Tone Painted Fender - Black</masterLabel>
+        <translation><!-- Two Tone Painted Fender - Black --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Two Tone Painted Fender - Brittany Blue</masterLabel>
+        <translation><!-- Two Tone Painted Fender - Brittany Blue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Two Tone Painted Fender - Brittany Blue Metal Flake</masterLabel>
+        <translation><!-- Two Tone Painted Fender - Brittany Blue Metal Flake --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Two Tone Painted Fender - Celestial Blue</masterLabel>
+        <translation><!-- Two Tone Painted Fender - Celestial Blue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Two Tone Painted Fender - Charcoal</masterLabel>
+        <translation><!-- Two Tone Painted Fender - Charcoal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Two Tone Painted Fender - Eclipse Black Metal Flake</masterLabel>
+        <translation><!-- Two Tone Painted Fender - Eclipse Black Metal Flake --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Two Tone Painted Fender - Fire Red</masterLabel>
+        <translation><!-- Two Tone Painted Fender - Fire Red --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Two Tone Painted Fender - Fire Red Metal Flake</masterLabel>
+        <translation><!-- Two Tone Painted Fender - Fire Red Metal Flake --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Two Tone Painted Fender - Gunmetal Metal Flake</masterLabel>
+        <translation><!-- Two Tone Painted Fender - Gunmetal Metal Flake --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Two Tone Painted Fender - Intense Green</masterLabel>
+        <translation><!-- Two Tone Painted Fender - Intense Green --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Two Tone Painted Fender - Intense Green Metal Flake</masterLabel>
+        <translation><!-- Two Tone Painted Fender - Intense Green Metal Flake --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Two Tone Painted Fender - Light Graphite</masterLabel>
+        <translation><!-- Two Tone Painted Fender - Light Graphite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Two Tone Painted Fender - Pacific Blue</masterLabel>
+        <translation><!-- Two Tone Painted Fender - Pacific Blue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Two Tone Painted Fender - Platinum</masterLabel>
+        <translation><!-- Two Tone Painted Fender - Platinum --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Two Tone Painted Fender - Plum Crazy Purple Metal Flake</masterLabel>
+        <translation><!-- Two Tone Painted Fender - Plum Crazy Purple Metal Flake --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Two Tone Painted Fender - Reuben Red</masterLabel>
+        <translation><!-- Two Tone Painted Fender - Reuben Red --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Two Tone Painted Fender - Silver Metal Flake</masterLabel>
+        <translation><!-- Two Tone Painted Fender - Silver Metal Flake --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Two Tone Painted Fender - Single Axle (select color below)</masterLabel>
+        <translation><!-- Two Tone Painted Fender - Single Axle (select color below) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Two Tone Painted Fender - Sundance Yellow</masterLabel>
+        <translation><!-- Two Tone Painted Fender - Sundance Yellow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Two Tone Painted Fender - Tandem Axle (select color below)</masterLabel>
+        <translation><!-- Two Tone Painted Fender - Tandem Axle (select color below) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Two Tone Painted Fender - White</masterLabel>
+        <translation><!-- Two Tone Painted Fender - White --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Underwater Lights</masterLabel>
+        <translation><!-- Underwater Lights --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Underwater Transom Lights, Roswell L6 Stainless</masterLabel>
+        <translation><!-- Underwater Transom Lights, Roswell L6 Stainless --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Underwater Transom Lights, Roswell Pro 3&quot; Machined</masterLabel>
+        <translation><!-- Underwater Transom Lights, Roswell Pro 3&quot; Machined --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Underwater Transom Lights, Worlds Upgrade to Pro 3&quot;</masterLabel>
+        <translation><!-- Underwater Transom Lights, Worlds Upgrade to Pro 3&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Upgrade - Single Axle Torsion</masterLabel>
+        <translation><!-- Upgrade - Single Axle Torsion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Upgrade - Tandem Axle Torsion</masterLabel>
+        <translation><!-- Upgrade - Tandem Axle Torsion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Upper Board Racks, Fixed Clamping Forks, PTMEdge</masterLabel>
+        <translation><!-- Upper Board Racks, Fixed Clamping Forks, PTMEdge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Upper Board Racks, Fixed ProEdge</masterLabel>
+        <translation><!-- Upper Board Racks, Fixed ProEdge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Walk-thru Screen</masterLabel>
+        <translation><!-- Walk-thru Screen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Strainer</masterLabel>
+        <translation><!-- Water Strainer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wheel Upgrade w/ Painted Fenders - 18&quot; Wheels (Tandem)</masterLabel>
+        <translation><!-- Wheel Upgrade w/ Painted Fenders - 18&quot; Wheels (Tandem) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wheel Upgrade w/ Stainless Stl Fenders - 18&quot; Wheels (Tandem)</masterLabel>
+        <translation><!-- Wheel Upgrade w/ Stainless Stl Fenders - 18&quot; Wheels (Tandem) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>White</masterLabel>
+        <translation><!-- White --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>White Bases and Arms</masterLabel>
+        <translation><!-- White Bases and Arms --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>White Pinstripe</masterLabel>
+        <translation><!-- White Pinstripe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>World&#39;s Edition Package (see separate sheet for contents)</masterLabel>
+        <translation><!-- World&apos;s Edition Package (see separate sheet for contents) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>World&#39;s Trailer, Tandom (requires World&#39;s pkg)</masterLabel>
+        <translation><!-- World&apos;s Trailer, Tandom (requires World&apos;s pkg) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>World&#39;s Trailer, Tandom + Elite Shield (requires World&#39;s pkg)</masterLabel>
+        <translation><!-- World&apos;s Trailer, Tandom + Elite Shield (requires World&apos;s pkg) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>World&#39;s Trailer, Triple Upgrade (requires World&#39;s pkg)</masterLabel>
+        <translation><!-- World&apos;s Trailer, Triple Upgrade (requires World&apos;s pkg) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>World&#39;s Trailer, Triple Upgrade + Elite Shield (requires World&#39;s pkg)</masterLabel>
+        <translation><!-- World&apos;s Trailer, Triple Upgrade + Elite Shield (requires World&apos;s pkg) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Boat_HIN_No</fullName>
+        <field>Boat_HIN_No__c</field>
+        <formula>Related_to_Inventory__r.HIN_Number__c</formula>
+        <name>Boat HIN No</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Boat_Length</fullName>
+        <field>Boat_Length_in_Feets__c</field>
+        <formula>Related_to_Inventory__r.Boat_Length_in_feets__c</formula>
+        <name>Boat Length</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Engine_SN</fullName>
+        <field>Engine_SN__c</field>
+        <formula>Related_to_Inventory__r.Engine_SN__c</formula>
+        <name>Engine SN</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Trailer_VIN</fullName>
+        <field>Trailer_VIN__c</field>
+        <formula>Related_to_Inventory__r.Trailer_VIN__c</formula>
+        <name>Trailer VIN</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Transmission_Gearbox_SN</fullName>
+        <field>Transmission_Gearbox_Serial_Number__c</field>
+        <formula>Related_to_Inventory__r.Transmission_Gearbox_SN__c</formula>
+        <name>Transmission/Gearbox SN</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Boat_Name</fullName>
+        <field>Name</field>
+        <formula>TEXT(M_Boat_Year__c)&amp;&#39; &#39;&amp;  Boat_Manufacturer__r.Name&amp;&#39; &#39;&amp;  Boat_Model__c&amp;&#39; &#39;&amp;Boat_HIN_No__c</formula>
+        <name>Update Boat Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>ItemFieldUpdation</fullName>
+        <actions>
+            <name>Boat_HIN_No</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Boat_Length</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Engine_SN</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Trailer_VIN</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Transmission_Gearbox_SN</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>Related_to_Inventory__c  &lt;&gt; null</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Boat Name</fullName>
+        <actions>
+            <name>Update_Boat_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Item__c.Boat_HIN_No__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

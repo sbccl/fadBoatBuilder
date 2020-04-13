@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Part Request Status --></label>
+    <name>Part_Request_Status__c</name>
+    <picklistValues>
+        <masterLabel>Arrived Closed</masterLabel>
+        <translation><!-- Arrived Closed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Approved</masterLabel>
+        <translation><!-- Customer Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PO Created</masterLabel>
+        <translation><!-- PO Created --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Queued</masterLabel>
+        <translation><!-- Queued --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

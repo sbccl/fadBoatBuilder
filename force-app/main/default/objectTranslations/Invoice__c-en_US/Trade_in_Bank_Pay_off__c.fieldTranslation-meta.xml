@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Trade in Bank Pay-off --></label>
+    <name>Trade_in_Bank_Pay_off__c</name>
+    <picklistValues>
+        <masterLabel>Aqua</masterLabel>
+        <translation><!-- Aqua --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BB&amp;T</masterLabel>
+        <translation><!-- BB&amp;T --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bank of the West</masterLabel>
+        <translation><!-- Bank of the West --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Founders Credit Union</masterLabel>
+        <translation><!-- Founders Credit Union --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Huntington Bank</masterLabel>
+        <translation><!-- Huntington Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marathon Bank</masterLabel>
+        <translation><!-- Marathon Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Merrick Bank</masterLabel>
+        <translation><!-- Merrick Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>US Bank</masterLabel>
+        <translation><!-- US Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>USSA</masterLabel>
+        <translation><!-- USSA --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

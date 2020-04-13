@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Specifies the Invoice to which the Payment is being made. --></help>
+    <label><!-- Related to Invoice --></label>
+    <name>Related_to_Invoice__c</name>
+    <relationshipLabel><!-- Payments --></relationshipLabel>
+</CustomFieldTranslation>

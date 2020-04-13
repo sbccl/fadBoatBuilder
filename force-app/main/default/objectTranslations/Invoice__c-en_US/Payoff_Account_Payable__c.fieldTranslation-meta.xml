@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Payoff Account Payable --></label>
+    <name>Payoff_Account_Payable__c</name>
+    <picklistValues>
+        <masterLabel>Consignment Customer Pay-off</masterLabel>
+        <translation><!-- Consignment Customer Pay-off --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consignment Pay-off Bank</masterLabel>
+        <translation><!-- Consignment Pay-off Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>North Pointe</masterLabel>
+        <translation><!-- North Pointe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wells Fargo</masterLabel>
+        <translation><!-- Wells Fargo --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Specifies the Customer to which the Invoice is related to. --></help>
+    <label><!-- Contact Name --></label>
+    <name>Contact_Name__c</name>
+    <relationshipLabel><!-- Invoices (Contact Name) --></relationshipLabel>
+</CustomFieldTranslation>

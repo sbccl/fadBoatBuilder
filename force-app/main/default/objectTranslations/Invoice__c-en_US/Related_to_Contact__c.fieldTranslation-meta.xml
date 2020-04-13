@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Specifies the Contact to which the Customer is related with. --></help>
+    <label><!-- Related to Contact --></label>
+    <name>Related_to_Contact__c</name>
+    <relationshipLabel><!-- Invoices --></relationshipLabel>
+</CustomFieldTranslation>

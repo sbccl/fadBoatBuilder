@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Module Provided --></label>
+    <name>Module_Provided__c</name>
+    <picklistValues>
+        <masterLabel>Sales &amp; Service with All</masterLabel>
+        <translation><!-- Sales &amp; Service with All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales Only</masterLabel>
+        <translation><!-- Sales Only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales and Service with Part</masterLabel>
+        <translation><!-- Sales and Service with Part --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales and Service with Schedule</masterLabel>
+        <translation><!-- Sales and Service with Schedule --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales and Service with Time Management</masterLabel>
+        <translation><!-- Sales and Service with Time Management --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales and Service with Work</masterLabel>
+        <translation><!-- Sales and Service with Work --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service with Part</masterLabel>
+        <translation><!-- Service with Part --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service with Schedule</masterLabel>
+        <translation><!-- Service with Schedule --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service with Time Management</masterLabel>
+        <translation><!-- Service with Time Management --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service with Work</masterLabel>
+        <translation><!-- Service with Work --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

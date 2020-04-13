@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Service Location --></label>
+    <name>Service_Location__c</name>
+    <picklistValues>
+        <masterLabel>Slot 1</masterLabel>
+        <translation><!-- Slot 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Slot 10</masterLabel>
+        <translation><!-- Slot 10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Slot 11</masterLabel>
+        <translation><!-- Slot 11 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Slot 12</masterLabel>
+        <translation><!-- Slot 12 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Slot 13</masterLabel>
+        <translation><!-- Slot 13 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Slot 14</masterLabel>
+        <translation><!-- Slot 14 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Slot 15</masterLabel>
+        <translation><!-- Slot 15 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Slot 2</masterLabel>
+        <translation><!-- Slot 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Slot 3</masterLabel>
+        <translation><!-- Slot 3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Slot 4</masterLabel>
+        <translation><!-- Slot 4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Slot 5</masterLabel>
+        <translation><!-- Slot 5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Slot 6</masterLabel>
+        <translation><!-- Slot 6 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Slot 7</masterLabel>
+        <translation><!-- Slot 7 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Slot 8</masterLabel>
+        <translation><!-- Slot 8 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Slot 9</masterLabel>
+        <translation><!-- Slot 9 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

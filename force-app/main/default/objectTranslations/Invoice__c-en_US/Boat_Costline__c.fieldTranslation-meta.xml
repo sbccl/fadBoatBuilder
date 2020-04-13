@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Formula :Comes From Inventory&apos;s Boat Costline field. --></help>
+    <label><!-- Boat Costline --></label>
+    <name>Boat_Costline__c</name>
+</CustomFieldTranslation>

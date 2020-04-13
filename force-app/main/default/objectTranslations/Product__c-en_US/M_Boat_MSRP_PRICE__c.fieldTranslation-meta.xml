@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Specifies the MSRP Price of the Boat.Value of this field is mapped to Boat Builder wizard,Quotation and Inventory. --></help>
+    <label><!-- Boat MSRP PRICE --></label>
+    <name>M_Boat_MSRP_PRICE__c</name>
+</CustomFieldTranslation>

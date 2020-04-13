@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>New Boat Build For Customer</fullName>
+        <default>false</default>
+        <label>New Boat Build For Customer</label>
+    </customValue>
+    <customValue>
+        <fullName>New Boat Build For Stock</fullName>
+        <default>false</default>
+        <label>New Boat Build For Stock</label>
+    </customValue>
+    <customValue>
+        <fullName>New Boat In Stock</fullName>
+        <default>false</default>
+        <label>New Boat In Stock</label>
+    </customValue>
+    <customValue>
+        <fullName>Used Boat</fullName>
+        <default>false</default>
+        <label>Used Boat</label>
+    </customValue>
+    <masterLabel>Quote Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

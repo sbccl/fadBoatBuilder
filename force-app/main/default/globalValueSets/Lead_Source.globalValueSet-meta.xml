@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Walk In</fullName>
+        <default>false</default>
+        <label>Walk In</label>
+    </customValue>
+    <customValue>
+        <fullName>Boat Show</fullName>
+        <default>false</default>
+        <label>Boat Show</label>
+    </customValue>
+    <customValue>
+        <fullName>Boat Trader</fullName>
+        <default>false</default>
+        <label>Boat Trader</label>
+    </customValue>
+    <customValue>
+        <fullName>Surf Night</fullName>
+        <default>false</default>
+        <label>Surf Night</label>
+    </customValue>
+    <customValue>
+        <fullName>In Water Boat Show</fullName>
+        <default>false</default>
+        <label>In Water Boat Show</label>
+    </customValue>
+    <customValue>
+        <fullName>Camp Student/Parents</fullName>
+        <default>false</default>
+        <label>Camp Student/Parents</label>
+    </customValue>
+    <customValue>
+        <fullName>Only Inboards</fullName>
+        <default>false</default>
+        <label>Only Inboards</label>
+    </customValue>
+    <customValue>
+        <fullName>Service Customer</fullName>
+        <default>false</default>
+        <label>Service Customer</label>
+    </customValue>
+    <customValue>
+        <fullName>Web</fullName>
+        <default>false</default>
+        <label>Web</label>
+    </customValue>
+    <customValue>
+        <fullName>Advertisement</fullName>
+        <default>false</default>
+        <label>Advertisement</label>
+    </customValue>
+    <customValue>
+        <fullName>Employee Referral</fullName>
+        <default>false</default>
+        <label>Employee Referral</label>
+    </customValue>
+    <customValue>
+        <fullName>External Referral</fullName>
+        <default>false</default>
+        <label>External Referral</label>
+    </customValue>
+    <customValue>
+        <fullName>Trade Show</fullName>
+        <default>false</default>
+        <label>Trade Show</label>
+    </customValue>
+    <customValue>
+        <fullName>Word of mouth</fullName>
+        <default>false</default>
+        <label>Word of mouth</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <masterLabel>Lead Source</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

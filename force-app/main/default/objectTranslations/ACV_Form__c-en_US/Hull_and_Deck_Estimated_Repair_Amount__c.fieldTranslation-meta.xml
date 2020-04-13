@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Hull and Deck Estimated Repair Amount --></label>
+    <name>Hull_and_Deck_Estimated_Repair_Amount__c</name>
+</CustomFieldTranslation>

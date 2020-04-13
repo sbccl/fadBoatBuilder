@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Specifies the Routing Transit Number of the check, if payment made through check. --></help>
+    <label><!-- Check Number --></label>
+    <name>Check_Number__c</name>
+</CustomFieldTranslation>

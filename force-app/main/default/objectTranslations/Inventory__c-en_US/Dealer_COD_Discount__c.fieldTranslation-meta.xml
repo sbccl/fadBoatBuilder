@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Specifies the percentage of COD Discount.Comes from the corresponding Product. --></help>
+    <label><!-- Dealer COD Discount % --></label>
+    <name>Dealer_COD_Discount__c</name>
+</CustomFieldTranslation>

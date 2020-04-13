@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Contains the mapping of Engine SN of the product involved in Quote. --></help>
+    <label><!-- Engine SN --></label>
+    <name>Mapped_Engine_SN__c</name>
+</CustomFieldTranslation>

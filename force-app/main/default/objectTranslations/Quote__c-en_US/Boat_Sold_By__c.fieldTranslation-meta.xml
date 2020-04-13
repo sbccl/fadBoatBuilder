@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Boat Sold By --></label>
+    <name>Boat_Sold_By__c</name>
+    <picklistValues>
+        <masterLabel>FAD Admin</masterLabel>
+        <translation><!-- FAD Admin --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

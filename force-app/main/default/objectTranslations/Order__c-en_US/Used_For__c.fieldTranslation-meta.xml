@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Used For --></label>
+    <name>Used_For__c</name>
+    <picklistValues>
+        <masterLabel>Boat</masterLabel>
+        <translation><!-- Boat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer</masterLabel>
+        <translation><!-- Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Events</masterLabel>
+        <translation><!-- Events --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Food and Entertainment</masterLabel>
+        <translation><!-- Food and Entertainment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In-house</masterLabel>
+        <translation><!-- In-house --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internet</masterLabel>
+        <translation><!-- Internet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inventory Parts</masterLabel>
+        <translation><!-- Inventory Parts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inventory Pro-Shop</masterLabel>
+        <translation><!-- Inventory Pro-Shop --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Office</masterLabel>
+        <translation><!-- Office --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Project</masterLabel>
+        <translation><!-- Project --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Travel</masterLabel>
+        <translation><!-- Travel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Truck</masterLabel>
+        <translation><!-- Truck --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

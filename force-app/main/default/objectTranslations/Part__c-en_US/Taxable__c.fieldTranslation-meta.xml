@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Specifies whether the cost of the Part would be inclusive of taxes, or not. --></help>
+    <label><!-- Taxable --></label>
+    <name>Taxable__c</name>
+</CustomFieldTranslation>

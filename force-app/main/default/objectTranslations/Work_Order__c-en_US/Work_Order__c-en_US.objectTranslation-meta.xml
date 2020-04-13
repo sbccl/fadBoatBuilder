@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Work Order</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Work Orders</value>
+    </caseValues>
+    <layouts>
+        <layout>Work Order Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Web Information --></label>
+            <section>Web Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Work Request</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Work Request --></label>
+            <section>Work Request</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Add Payment --></label>
+        <name>Add_Payment</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Generate Work Order --></label>
+        <name>Generate_Work_Order</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Inspection Form --></label>
+        <name>Inspection_Form</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Open in Service --></label>
+        <name>Open_in_Service</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Redirect to Service Module --></label>
+        <name>Redirect_to_Service_Module</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Schedule --></label>
+        <name>Schedule</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Take Photos --></label>
+        <name>Take_Photos</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Warranty Work Order --></label>
+        <name>Warranty_Work_Order</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Work Order --></label>
+        <name>Work_Order</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Work Request --></label>
+        <name>Work_Request</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Print --></label>
+        <name>Print</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Redirect_To_Service_Module --></label>
+        <name>Redirect_To_Service_Module</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Email --></label>
+        <name>Send_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Work_To_QB --></label>
+        <name>Send_Work_To_QB</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- TEST_BUTTON --></label>
+        <name>TEST_BUTTON</name>
+    </webLinks>
+</CustomObjectTranslation>

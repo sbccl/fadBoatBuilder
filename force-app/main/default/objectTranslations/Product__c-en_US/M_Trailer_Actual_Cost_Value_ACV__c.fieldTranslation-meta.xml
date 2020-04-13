@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Trailer  Actual Cost Value (ACV) --></label>
+    <name>M_Trailer_Actual_Cost_Value_ACV__c</name>
+</CustomFieldTranslation>

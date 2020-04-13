@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Specifies whether the price of the item would be inclusive of taxes on Payment, or not. --></help>
+    <label><!-- Taxable --></label>
+    <name>Taxable__c</name>
+</CustomFieldTranslation>

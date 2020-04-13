@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Select Category --></label>
+    <name>Select_Category__c</name>
+    <picklistValues>
+        <masterLabel>Air Conditioning - Carry On</masterLabel>
+        <translation><!-- Air Conditioning - Carry On --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Air Conditioning - Self Contained - 12,000btu</masterLabel>
+        <translation><!-- Air Conditioning - Self Contained - 12,000btu --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Air Conditioning - Self Contained - 16,000btu</masterLabel>
+        <translation><!-- Air Conditioning - Self Contained - 16,000btu --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Air Conditioning / Heating System - 12,000btu</masterLabel>
+        <translation><!-- Air Conditioning / Heating System - 12,000btu --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Air Conditioning / Heating System - 16,000btu</masterLabel>
+        <translation><!-- Air Conditioning / Heating System - 16,000btu --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Anchor Pole (Automatic)</masterLabel>
+        <translation><!-- Anchor Pole (Automatic) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Audio Zone Control</masterLabel>
+        <translation><!-- Audio Zone Control --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Auto Pilot - 20,000 - 40,000lbs boats</masterLabel>
+        <translation><!-- Auto Pilot - 20,000 - 40,000lbs boats --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Auto Pilot - boats to 20,000lbs</masterLabel>
+        <translation><!-- Auto Pilot - boats to 20,000lbs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Auto Pilot w/Remote - 20,000 - 40,000lbs boats</masterLabel>
+        <translation><!-- Auto Pilot w/Remote - 20,000 - 40,000lbs boats --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Auto Pilot w/Remote - boats to 20,000lbs</masterLabel>
+        <translation><!-- Auto Pilot w/Remote - boats to 20,000lbs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bait Tank - 22 Gallon</masterLabel>
+        <translation><!-- Bait Tank - 22 Gallon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bait Tank - 32 Gallon</masterLabel>
+        <translation><!-- Bait Tank - 32 Gallon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bar / Console</masterLabel>
+        <translation><!-- Bar / Console --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Barefoot Ski Boom</masterLabel>
+        <translation><!-- Barefoot Ski Boom --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Barefoot Ski Training Boom</masterLabel>
+        <translation><!-- Barefoot Ski Training Boom --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Batteries - Dual w/Switch</masterLabel>
+        <translation><!-- Batteries - Dual w/Switch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Battery Charger - Dual 10 amp</masterLabel>
+        <translation><!-- Battery Charger - Dual 10 amp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Battery Charger - Triple 10 amp</masterLabel>
+        <translation><!-- Battery Charger - Triple 10 amp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bimini Top</masterLabel>
+        <translation><!-- Bimini Top --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blueprinted Jet</masterLabel>
+        <translation><!-- Blueprinted Jet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bluetooth</masterLabel>
+        <translation><!-- Bluetooth --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Boat Cover - 15 ft. thru 19 ft.</masterLabel>
+        <translation><!-- Boat Cover - 15 ft. thru 19 ft. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Boat Cover - 20 ft. thru 25 ft.</masterLabel>
+        <translation><!-- Boat Cover - 20 ft. thru 25 ft. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Boat Cover - 26 ft. thru 31 ft.</masterLabel>
+        <translation><!-- Boat Cover - 26 ft. thru 31 ft. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Boat Cover - 32 ft. thru 42 ft.</masterLabel>
+        <translation><!-- Boat Cover - 32 ft. thru 42 ft. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Boat Cover - 7 ft. thru 14 ft.</masterLabel>
+        <translation><!-- Boat Cover - 7 ft. thru 14 ft. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Boat Cover - Custom - 18 ft. thru 25 ft.</masterLabel>
+        <translation><!-- Boat Cover - Custom - 18 ft. thru 25 ft. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bow Cover</masterLabel>
+        <translation><!-- Bow Cover --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bridge Enclosure</masterLabel>
+        <translation><!-- Bridge Enclosure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carburetion Kit</masterLabel>
+        <translation><!-- Carburetion Kit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carburetion Kit - Dual</masterLabel>
+        <translation><!-- Carburetion Kit - Dual --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cavitation Plates / Adjustable</masterLabel>
+        <translation><!-- Cavitation Plates / Adjustable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cockpit Cover</masterLabel>
+        <translation><!-- Cockpit Cover --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cockpit Freezer</masterLabel>
+        <translation><!-- Cockpit Freezer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cockpit Heaters</masterLabel>
+        <translation><!-- Cockpit Heaters --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cover</masterLabel>
+        <translation><!-- Cover --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cruise Control</masterLabel>
+        <translation><!-- Cruise Control --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DVD Player</masterLabel>
+        <translation><!-- DVD Player --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Depth Sounder</masterLabel>
+        <translation><!-- Depth Sounder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dishwasher</masterLabel>
+        <translation><!-- Dishwasher --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Docking Lights</masterLabel>
+        <translation><!-- Docking Lights --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Downrigger - Electric</masterLabel>
+        <translation><!-- Downrigger - Electric --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Downrigger - Manual</masterLabel>
+        <translation><!-- Downrigger - Manual --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dual-Prop</masterLabel>
+        <translation><!-- Dual-Prop --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dual-Prop - Twin</masterLabel>
+        <translation><!-- Dual-Prop - Twin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exhaust - High Performance</masterLabel>
+        <translation><!-- Exhaust - High Performance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exhaust - Silent Choice</masterLabel>
+        <translation><!-- Exhaust - Silent Choice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Extended Pylon</masterLabel>
+        <translation><!-- Extended Pylon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>External Steering - Single Hydraulic</masterLabel>
+        <translation><!-- External Steering - Single Hydraulic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>External Steering - Twin Hydraulic</masterLabel>
+        <translation><!-- External Steering - Twin Hydraulic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fire Ext. 100 - 200 cu. ft.</masterLabel>
+        <translation><!-- Fire Ext. 100 - 200 cu. ft. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fire Ext. 75 - 100 cu. ft.</masterLabel>
+        <translation><!-- Fire Ext. 75 - 100 cu. ft. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fish Box - Insulated 10 cu. ft.</masterLabel>
+        <translation><!-- Fish Box - Insulated 10 cu. ft. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fish Finder - Max Depth 1000&#39;</masterLabel>
+        <translation><!-- Fish Finder - Max Depth 1000&apos; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fish Finder - Max Depth 1000&#39; (Color screen under 5&quot;)</masterLabel>
+        <translation><!-- Fish Finder - Max Depth 1000&apos; (Color screen under 5&quot;) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fish Finder - Max Depth 2500&#39;</masterLabel>
+        <translation><!-- Fish Finder - Max Depth 2500&apos; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fish Finder - Max Depth 600&#39;</masterLabel>
+        <translation><!-- Fish Finder - Max Depth 600&apos; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fish Finder w/GPS - Max Depth 1000&#39; (Color screen under 5&quot;)</masterLabel>
+        <translation><!-- Fish Finder w/GPS - Max Depth 1000&apos; (Color screen under 5&quot;) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fish Finder w/GPS - Max Depth 3000&#39; (Color screen over 5&quot;)</masterLabel>
+        <translation><!-- Fish Finder w/GPS - Max Depth 3000&apos; (Color screen over 5&quot;) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flat Panel T.V. 19&quot;</masterLabel>
+        <translation><!-- Flat Panel T.V. 19&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flat Panel T.V. 20&quot; - 29&quot;</masterLabel>
+        <translation><!-- Flat Panel T.V. 20&quot; - 29&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flat Panel T.V. 30&quot; - 39&quot;</masterLabel>
+        <translation><!-- Flat Panel T.V. 30&quot; - 39&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flat Panel T.V. 40&quot; - 49&quot;</masterLabel>
+        <translation><!-- Flat Panel T.V. 40&quot; - 49&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flat Panel T.V. 50&quot; - 59&quot;</masterLabel>
+        <translation><!-- Flat Panel T.V. 50&quot; - 59&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flat Panel T.V. 60&quot;</masterLabel>
+        <translation><!-- Flat Panel T.V. 60&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flooring - Snap In/Out Carpet</masterLabel>
+        <translation><!-- Flooring - Snap In/Out Carpet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flooring - Vinyl with Snap In/Out Carpet</masterLabel>
+        <translation><!-- Flooring - Vinyl with Snap In/Out Carpet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fresh Water Cooling System</masterLabel>
+        <translation><!-- Fresh Water Cooling System --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fuel Injection</masterLabel>
+        <translation><!-- Fuel Injection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GPS - Color Fixed Mount w/Cartography</masterLabel>
+        <translation><!-- GPS - Color Fixed Mount w/Cartography --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GPS - Fixed Mount</masterLabel>
+        <translation><!-- GPS - Fixed Mount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GPS - Fixed Mount w/Cartography</masterLabel>
+        <translation><!-- GPS - Fixed Mount w/Cartography --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Generator / 3 KW - Diesel</masterLabel>
+        <translation><!-- Generator / 3 KW - Diesel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Generator / 3 KW - Gas</masterLabel>
+        <translation><!-- Generator / 3 KW - Gas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Generator / 4 KW - Diesel</masterLabel>
+        <translation><!-- Generator / 4 KW - Diesel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Generator / 4 KW - Gas</masterLabel>
+        <translation><!-- Generator / 4 KW - Gas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Generator / 5 KW - Diesel</masterLabel>
+        <translation><!-- Generator / 5 KW - Diesel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Generator / 5 KW - Gas</masterLabel>
+        <translation><!-- Generator / 5 KW - Gas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Generator / 6.5 KW - Diesel</masterLabel>
+        <translation><!-- Generator / 6.5 KW - Diesel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Generator / 6.5 KW - Gas</masterLabel>
+        <translation><!-- Generator / 6.5 KW - Gas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Grate - Race</masterLabel>
+        <translation><!-- Grate - Race --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Grate - Ski</masterLabel>
+        <translation><!-- Grate - Ski --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hardtop 16&#39; - 20&#39; Boat</masterLabel>
+        <translation><!-- Hardtop 16&apos; - 20&apos; Boat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hardtop 21&#39; - 25&#39; Boat</masterLabel>
+        <translation><!-- Hardtop 21&apos; - 25&apos; Boat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hardtop 26&#39; - 30&#39; Boat</masterLabel>
+        <translation><!-- Hardtop 26&apos; - 30&apos; Boat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hardtop 31&#39; - 35&#39; Boat</masterLabel>
+        <translation><!-- Hardtop 31&apos; - 35&apos; Boat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Headers - Water Injected</masterLabel>
+        <translation><!-- Headers - Water Injected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ice Maker 20 lbs. Per Day</masterLabel>
+        <translation><!-- Ice Maker 20 lbs. Per Day --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Impeller - Stainless Steel - Installed</masterLabel>
+        <translation><!-- Impeller - Stainless Steel - Installed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inverter / Charger - 1000w</masterLabel>
+        <translation><!-- Inverter / Charger - 1000w --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inverter / Charger - 1500w</masterLabel>
+        <translation><!-- Inverter / Charger - 1500w --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inverter / Charger - 2000w</masterLabel>
+        <translation><!-- Inverter / Charger - 2000w --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inverter / Charger - 2500w</masterLabel>
+        <translation><!-- Inverter / Charger - 2500w --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inverter / Charger - 3000w</masterLabel>
+        <translation><!-- Inverter / Charger - 3000w --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inverter / Charger - 600w</masterLabel>
+        <translation><!-- Inverter / Charger - 600w --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inverter / Charger - 800w</masterLabel>
+        <translation><!-- Inverter / Charger - 800w --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jet Ski/Watercraft Trailer - 1-Craft</masterLabel>
+        <translation><!-- Jet Ski/Watercraft Trailer - 1-Craft --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jet Ski/Watercraft Trailer - 2-Craft</masterLabel>
+        <translation><!-- Jet Ski/Watercraft Trailer - 2-Craft --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jet-A-Vator - Electric</masterLabel>
+        <translation><!-- Jet-A-Vator - Electric --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jet-A-Vator - Manual</masterLabel>
+        <translation><!-- Jet-A-Vator - Manual --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LED Cupholders</masterLabel>
+        <translation><!-- LED Cupholders --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microwave Oven</masterLabel>
+        <translation><!-- Microwave Oven --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nozzle Reducer - Installed</masterLabel>
+        <translation><!-- Nozzle Reducer - Installed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outbd. Hydraulic Steering</masterLabel>
+        <translation><!-- Outbd. Hydraulic Steering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outbd. Power Tilt/Trim (101-300 HP)</masterLabel>
+        <translation><!-- Outbd. Power Tilt/Trim (101-300 HP) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outbd. Power Tilt/Trim (50-100 HP)</masterLabel>
+        <translation><!-- Outbd. Power Tilt/Trim (50-100 HP) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outriggers</masterLabel>
+        <translation><!-- Outriggers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Porta Potti</masterLabel>
+        <translation><!-- Porta Potti --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pressure Water System</masterLabel>
+        <translation><!-- Pressure Water System --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Propeller / Stainless Steel (3-Blade)</masterLabel>
+        <translation><!-- Propeller / Stainless Steel (3-Blade) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Propeller / Stainless Steel (4-Blade)</masterLabel>
+        <translation><!-- Propeller / Stainless Steel (4-Blade) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radar / 16 Mile</masterLabel>
+        <translation><!-- Radar / 16 Mile --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radar / 24 Mile CRT</masterLabel>
+        <translation><!-- Radar / 24 Mile CRT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radar / 24 Mile CRT w/Cartography</masterLabel>
+        <translation><!-- Radar / 24 Mile CRT w/Cartography --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radar / 24 Mile LCD</masterLabel>
+        <translation><!-- Radar / 24 Mile LCD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radar / 24 Mile LCD w/Cartography</masterLabel>
+        <translation><!-- Radar / 24 Mile LCD w/Cartography --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radar / 48 Mile CRT</masterLabel>
+        <translation><!-- Radar / 48 Mile CRT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radar / 48 Mile CRT w/Cartography</masterLabel>
+        <translation><!-- Radar / 48 Mile CRT w/Cartography --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radar / 48 Mile LCD</masterLabel>
+        <translation><!-- Radar / 48 Mile LCD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radar / 48 Mile LCD w/Cartography</masterLabel>
+        <translation><!-- Radar / 48 Mile LCD w/Cartography --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radar Arch</masterLabel>
+        <translation><!-- Radar Arch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radio / 25 Watt VHF - Fixed Mount</masterLabel>
+        <translation><!-- Radio / 25 Watt VHF - Fixed Mount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Range - C.N.G.</masterLabel>
+        <translation><!-- Range - C.N.G. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Range - Electric</masterLabel>
+        <translation><!-- Range - Electric --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Refrigerator - AC/DC - 6 cu. ft.</masterLabel>
+        <translation><!-- Refrigerator - AC/DC - 6 cu. ft. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Refrigerator / Freezer 10 cu. ft.</masterLabel>
+        <translation><!-- Refrigerator / Freezer 10 cu. ft. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Refrigerator / Ice Maker Combo</masterLabel>
+        <translation><!-- Refrigerator / Ice Maker Combo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salon Enclosures</masterLabel>
+        <translation><!-- Salon Enclosures --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spotlight - Remote Control</masterLabel>
+        <translation><!-- Spotlight - Remote Control --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Steering System</masterLabel>
+        <translation><!-- Steering System --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stereo - AM/FM/CD player w/4 speakers</masterLabel>
+        <translation><!-- Stereo - AM/FM/CD player w/4 speakers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stereo - AM/FM/CD/Aux Plug-in/Satellite Ready w/4 speakers</masterLabel>
+        <translation><!-- Stereo - AM/FM/CD/Aux Plug-in/Satellite Ready w/4 speakers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Storage Tackle Center - Six Drawer</masterLabel>
+        <translation><!-- Storage Tackle Center - Six Drawer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Subwoofer</masterLabel>
+        <translation><!-- Subwoofer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Swim Step - Fiberglass</masterLabel>
+        <translation><!-- Swim Step - Fiberglass --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Swim Step - Teak</masterLabel>
+        <translation><!-- Swim Step - Teak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Swim Step w/Fold Down Ladder</masterLabel>
+        <translation><!-- Swim Step w/Fold Down Ladder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>T-Tops w/Canvas</masterLabel>
+        <translation><!-- T-Tops w/Canvas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Touch Screen</masterLabel>
+        <translation><!-- Touch Screen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tournament Ski Pylon</masterLabel>
+        <translation><!-- Tournament Ski Pylon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tower</masterLabel>
+        <translation><!-- Tower --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transom Audio Remotes</masterLabel>
+        <translation><!-- Transom Audio Remotes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transom Bracket Sgl Eng w/Swim Pltfrm.</masterLabel>
+        <translation><!-- Transom Bracket Sgl Eng w/Swim Pltfrm. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transom Bracket Single Engine</masterLabel>
+        <translation><!-- Transom Bracket Single Engine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transom Bracket Twin Eng w/Swim Pltfrm.</masterLabel>
+        <translation><!-- Transom Bracket Twin Eng w/Swim Pltfrm. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transom Bracket Twin Engine</masterLabel>
+        <translation><!-- Transom Bracket Twin Engine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transom Jack / Hydraulic</masterLabel>
+        <translation><!-- Transom Jack / Hydraulic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transom Lift Bracket Sgl Eng (12&quot; to 23&quot;)</masterLabel>
+        <translation><!-- Transom Lift Bracket Sgl Eng (12&quot; to 23&quot;) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transom Lift Bracket Twin Eng (12&quot; to 23&quot;)</masterLabel>
+        <translation><!-- Transom Lift Bracket Twin Eng (12&quot; to 23&quot;) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transom Live Well</masterLabel>
+        <translation><!-- Transom Live Well --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transom Shower - Cold</masterLabel>
+        <translation><!-- Transom Shower - Cold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transom Shower - Hot &amp; Cold</masterLabel>
+        <translation><!-- Transom Shower - Hot &amp; Cold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trash Compactor</masterLabel>
+        <translation><!-- Trash Compactor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trim Indicator</masterLabel>
+        <translation><!-- Trim Indicator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trim Tabs / Hydraulic</masterLabel>
+        <translation><!-- Trim Tabs / Hydraulic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vacuum Flush Head - w/Holding Tank &amp; Pump Out</masterLabel>
+        <translation><!-- Vacuum Flush Head - w/Holding Tank &amp; Pump Out --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wake Surf System</masterLabel>
+        <translation><!-- Wake Surf System --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wake-Board Racks</masterLabel>
+        <translation><!-- Wake-Board Racks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wake-Board Tower</masterLabel>
+        <translation><!-- Wake-Board Tower --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wake-Board Tower Lights</masterLabel>
+        <translation><!-- Wake-Board Tower Lights --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wake-Board Tower Speakers</masterLabel>
+        <translation><!-- Wake-Board Tower Speakers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Washer / Dryer Combo</masterLabel>
+        <translation><!-- Washer / Dryer Combo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Ballast System</masterLabel>
+        <translation><!-- Water Ballast System --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Heater - 6 Gallon</masterLabel>
+        <translation><!-- Water Heater - 6 Gallon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Watermaker Reverse-Osmosis 1.5gph</masterLabel>
+        <translation><!-- Watermaker Reverse-Osmosis 1.5gph --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Watermaker Reverse-Osmosis 200gpd</masterLabel>
+        <translation><!-- Watermaker Reverse-Osmosis 200gpd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Watermaker Reverse-Osmosis 500gpd</masterLabel>
+        <translation><!-- Watermaker Reverse-Osmosis 500gpd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Watermaker Reverse-Osmosis 6.7gph</masterLabel>
+        <translation><!-- Watermaker Reverse-Osmosis 6.7gph --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Windlass - Boats 18&#39; - 24&#39;</masterLabel>
+        <translation><!-- Windlass - Boats 18&apos; - 24&apos; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Windlass - Boats 25&#39; - 30&#39;</masterLabel>
+        <translation><!-- Windlass - Boats 25&apos; - 30&apos; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Windlass - Boats 31&#39; - 45&#39;</masterLabel>
+        <translation><!-- Windlass - Boats 31&apos; - 45&apos; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Windlass - Boats 46&#39; - 58&#39;</masterLabel>
+        <translation><!-- Windlass - Boats 46&apos; - 58&apos; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Windlass - Boats 59&#39; - 60&#39;</masterLabel>
+        <translation><!-- Windlass - Boats 59&apos; - 60&apos; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel> Double Bimini</masterLabel>
+        <translation><!--  Double Bimini --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel> Full Enclosure</masterLabel>
+        <translation><!--  Full Enclosure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel> Hydraulic Steering System with Tilt Wheel</masterLabel>
+        <translation><!--  Hydraulic Steering System with Tilt Wheel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel> Lifting Strakes - 2&quot;</masterLabel>
+        <translation><!--  Lifting Strakes - 2&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel> Lifting Strakes - 4&quot;</masterLabel>
+        <translation><!--  Lifting Strakes - 4&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel> Lifting Strakes - 6&quot;</masterLabel>
+        <translation><!--  Lifting Strakes - 6&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel> Playpen Cover 16&#39; - 18&#39; Boat</masterLabel>
+        <translation><!--  Playpen Cover 16&apos; - 18&apos; Boat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel> Playpen Cover 19&#39; - 21&#39; Boat</masterLabel>
+        <translation><!--  Playpen Cover 19&apos; - 21&apos; Boat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel> Playpen Cover 22&#39; - 25&#39; Boat</masterLabel>
+        <translation><!--  Playpen Cover 22&apos; - 25&apos; Boat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel> Playpen Cover 26&#39; - 28&#39; Boat</masterLabel>
+        <translation><!--  Playpen Cover 26&apos; - 28&apos; Boat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel> Ski Tow Bar</masterLabel>
+        <translation><!--  Ski Tow Bar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel> Triple Pontoon - 22&#39; Boat</masterLabel>
+        <translation><!--  Triple Pontoon - 22&apos; Boat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel> Triple Pontoon - 24&#39; Boat</masterLabel>
+        <translation><!--  Triple Pontoon - 24&apos; Boat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel> Triple Pontoon - 26&#39; Boat</masterLabel>
+        <translation><!--  Triple Pontoon - 26&apos; Boat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel> Triple Pontoon - 28&#39; Boat</masterLabel>
+        <translation><!--  Triple Pontoon - 28&apos; Boat --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

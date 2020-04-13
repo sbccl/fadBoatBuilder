@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Accept</fullName>
+        <default>false</default>
+        <label>Accept</label>
+    </customValue>
+    <customValue>
+        <fullName>Do not Fix</fullName>
+        <default>false</default>
+        <label>Do not Fix</label>
+    </customValue>
+    <masterLabel>Inspection Form Value Set CD</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

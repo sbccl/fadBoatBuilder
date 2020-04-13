@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Dealer Status --></label>
+    <name>M_Dealer_Status__c</name>
+    <picklistValues>
+        <masterLabel>Dealer Stock</masterLabel>
+        <translation><!-- Dealer Stock --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Owned</masterLabel>
+        <translation><!-- Owned --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quoted</masterLabel>
+        <translation><!-- Quoted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sale Cancelled</masterLabel>
+        <translation><!-- Sale Cancelled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sale pending</masterLabel>
+        <translation><!-- Sale pending --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

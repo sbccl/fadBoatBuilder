@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Specifies the Log out time of the user who worked on the specified Job. --></help>
+    <label><!-- Clock Out --></label>
+    <name>Clock_Out__c</name>
+</CustomFieldTranslation>

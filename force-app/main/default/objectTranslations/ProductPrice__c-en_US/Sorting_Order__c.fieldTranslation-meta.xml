@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Used for Sorting the Order in which the Options must appear for a Particular model of a manufacturer. --></help>
+    <label><!-- Sorting Order --></label>
+    <name>Sorting_Order__c</name>
+</CustomFieldTranslation>

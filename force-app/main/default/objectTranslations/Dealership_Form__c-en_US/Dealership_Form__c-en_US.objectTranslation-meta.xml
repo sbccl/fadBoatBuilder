@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Dealership Form</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Dealership Forms</value>
+    </caseValues>
+    <layouts>
+        <layout>Dealership Form Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Print Form --></label>
+        <name>Print_Form</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Inspection Form --></label>
+        <name>Inspection_Form</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Print --></label>
+        <name>Print</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send --></label>
+        <name>Send</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Email --></label>
+        <name>Send_Email</name>
+    </webLinks>
+</CustomObjectTranslation>

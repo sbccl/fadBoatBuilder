@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Dealer Disclaimer --></label>
+    <name>Dealer_Disclaimer__c</name>
+    <picklistValues>
+        <masterLabel>New Boat Disclaimer</masterLabel>
+        <translation><!-- New Boat Disclaimer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Used Boat Disclaimer</masterLabel>
+        <translation><!-- Used Boat Disclaimer --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

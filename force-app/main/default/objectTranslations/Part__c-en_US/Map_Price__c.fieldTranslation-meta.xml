@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Specifies the Map Price of the Part, coming from Service Page --></help>
+    <label><!-- Map Price --></label>
+    <name>Map_Price__c</name>
+</CustomFieldTranslation>
