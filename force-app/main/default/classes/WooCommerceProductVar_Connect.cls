@@ -98,24 +98,25 @@ global class WooCommerceProductVar_Connect implements Queueable, Database.Allows
 	        if(objPart.BOATBUILDING__Barcode__c != null) {
 	            metaData += '{ "key": "_wpm_gtin_code", "value" : "'+objPart.BOATBUILDING__Barcode__c.replaceAll('"','\\\\"')+'"}';
 	            //barCodeJSON 
-	        } 
+	        }
 	        
-	        if(objPart.BOATBUILDING__Part_Color__c != null) {
-	        	if(String.isNotBlank(objPart.BOATBUILDING__Barcode__c)) {
+	        if(objPart.BOATBUILDING__Part_Color__c != null) { 
+	        	if(String.isNotBlank(objPart.BOATBUILDING__Barcode__c)) { 
 	        		metaData += ',';
 	        	} 
 	            metaData += '{ "key": "part_color", "value" : "'+objPart.BOATBUILDING__Part_Color__c.replaceAll('"','\\\\"')+'"}';
 	            //barCodeJSON
 	        }
-	        if(objPart.BOATBUILDING__Part_Size__c != null) {
-	        	if(String.isNotBlank(objPart.BOATBUILDING__Part_Color__c)) {
-	        		metaData += ',';
+	        if(objPart.BOATBUILDING__Part_Size__c != null) { 
+	        	if(String.isNotBlank(objPart.BOATBUILDING__Part_Color__c) || String.isNotBlank(objPart.BOATBUILDING__Barcode__c)) {
+	        		metaData += ','; 
 	        	}
 	            metaData += '{ "key": "part_size", "value" : "'+objPart.BOATBUILDING__Part_Size__c.replaceAll('"','\\\\"')+'"}';
 	            //barCodeJSON
 	        }
+	        
 	        if(objPart.BOATBUILDING__Part_Gender__c != null) {
-	        	if(String.isNotBlank(objPart.BOATBUILDING__Part_Size__c)) {
+	        	if(String.isNotBlank(objPart.BOATBUILDING__Part_Size__c) || String.isNotBlank(objPart.BOATBUILDING__Part_Color__c) || String.isNotBlank(objPart.BOATBUILDING__Barcode__c)) {
 	        		metaData += ',';
 	        	}
 	            metaData += '{ "key": "part_gender", "value" : "'+objPart.BOATBUILDING__Part_Gender__c.replaceAll('"','\\\\"')+'"}';
@@ -132,9 +133,9 @@ global class WooCommerceProductVar_Connect implements Queueable, Database.Allows
             if(objPart.Quantity__c != null) {
                 Quantity = String.valueOf(objPart.Quantity__c);
             }
-            if(objPart.BOATBUILDING__Web_Description_long__c != null) {
+            if(objPart.BOATBUILDING__Push_Description__c && objPart.BOATBUILDING__Web_Description_long__c != null) {
                 Description = String.valueOf(objPart.BOATBUILDING__Web_Description_long__c).replaceAll('\r\n', ' ');
-            }
+            } 
             
             if(objPart.BOATBUILDING__Part_Cost__c != null) {  
                 partCost = String.valueOf(objPart.BOATBUILDING__Part_Cost__c);

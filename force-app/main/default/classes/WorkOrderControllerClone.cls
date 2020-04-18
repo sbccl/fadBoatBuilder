@@ -1547,6 +1547,8 @@ System.debug('Debug Log For Exception : '+ex);
         objPayment.BOATBUILDING__Payment_Type__c = mapPaymentData.get('PaymentType');
         objPayment.BOATBUILDING__Credit_Card_Type__c = mapPaymentData.get('CreditCardType');
         objPayment.BOATBUILDING__Check_Number__c = mapPaymentData.get('CheckNumber');
+        objPayment.RecordTypeId = Schema.SObjectType.BOATBUILDING__Payments__c.getRecordTypeInfosByName().get('Work Order').getRecordTypeId();
+                                    
         System.debug('objPayment----'+objPayment);
         try{
             insert objPayment;

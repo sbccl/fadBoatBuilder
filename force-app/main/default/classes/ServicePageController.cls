@@ -1229,6 +1229,7 @@ public with sharing class ServicePageController {
         objPayment.BOATBUILDING__Payment_Type__c = mapPaymentData.get('PaymentType');
         objPayment.BOATBUILDING__Credit_Card_Type__c = mapPaymentData.get('CreditCardType');
         objPayment.BOATBUILDING__Check_Number__c = mapPaymentData.get('CheckNumber');
+        objPayment.RecordTypeId = Schema.SObjectType.BOATBUILDING__Payments__c.getRecordTypeInfosByName().get('Standard Invoice').getRecordTypeId();
         System.debug('objPayment----'+objPayment);
          try{
             insert objPayment;

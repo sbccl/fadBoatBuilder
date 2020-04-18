@@ -3,7 +3,7 @@
     <aura:attribute name="fromBBNav" type="Boolean" default="false"/> 
     <aura:attribute name="customSettingSobjRegFeeP" type="System_Configure__c" access="global"/> 
     <aura:attribute name="selectedLookUpRecordACVP" type="sObject" default="{}"/>
-    
+    <aura:attribute name="IventoryId" type="String" default="0"/>
     <aura:attribute name="InvId" type="String" default="0"/> 
     <aura:attribute name="ProId" type="String" default="0"/>
     <aura:attribute name="ProductPriceIdList" type="String[]"/>
@@ -12,6 +12,8 @@
     <aura:attribute name="ObjQuote" type="Quote__c" default="{'sobjectType ': 'BOATBUILDING__Quote__c'}"/>
     <aura:attribute name="ObjQuoteRR" type="Quote__c" default="{'sobjectType ': 'BOATBUILDING__Quote__c'}"/>
     <aura:registerEvent name="QuoteEVT" type="c:QuoteEvent"/> 
+    <aura:registerEvent name="invEvent" type="c:InvRedirection"/> 
+    
     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
     <aura:attribute name="NoSalesmanWithoutCost" type="boolean" default="false"/>
     
@@ -21,7 +23,8 @@
         <img src="{!$Resource.Process}" style="position: fixed; left: 48%; top: 48%;" width="50" height="50"/>
     </div>
     
-    <article class="slds-card">
+    <article class="slds-card slds-p-around_x-small">
+        <!--{!v.IventoryId}--> 
         <div class="slds-path"> 
             <div class="slds-grid slds-path__track">
                 <div class="slds-grid slds-path__scroller-container">
@@ -82,7 +85,7 @@
                                 </div>
                             </div>
                             <div id="tab-default-2" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab-default-2__item">
-                                <c:InventorySelection lstDealerOptionWraperC="{!v.lstDealerOptionWraper}" NoSalesmanWithoutCostC="{!v.NoSalesmanWithoutCost}" InvIdC="{!v.InvId}" ProIdC="{!v.ProId}" ProductPriceIdListC="{!v.ProductPriceIdList}" DealerOptionIdListC="{!v.DealerOptionIdList}"/> 
+                                <c:InventorySelection lstDealerOptionWraperC="{!v.lstDealerOptionWraper}" NoSalesmanWithoutCostC="{!v.NoSalesmanWithoutCost}" InvIdC="{!v.InvId}" ProIdC="{!v.ProId}" ProductPriceIdListC="{!v.ProductPriceIdList}" DealerOptionIdListC="{!v.DealerOptionIdList}" InvlistId="{!v.IventoryId}"/> 
                                 <br/> 
                                 <br/>
                                 <table>

@@ -91,6 +91,10 @@
                 <behavior>Edit</behavior>
                 <field>Part__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Push_Description__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

@@ -6,9 +6,9 @@
     <aura:attribute name="strObjType" type="String" access="global"/>
     <aura:attribute name="amount" type="Decimal" default="0.00" access="global"/>
     <aura:attribute name="isGateway" type="Boolean" default="false" access="global"/>
-    
+    <aura:attribute name="RecTyId" default="" type="String" access="global"/>
     <aura:if isTrue="{!v.strObjType == 'INVOICE'}">
-        <lightning:recordEditForm objectApiName="BOATBUILDING__Payments__c" aura:id="payForm"  onsuccess="{!c.onRecordSuccess}">
+        <lightning:recordEditForm objectApiName="BOATBUILDING__Payments__c" recordTypeId="{!v.RecTyId}" aura:id="payForm"  onsuccess="{!c.onRecordSuccess}">
             <div class = "slds-col slds-size--1-of-1">
                 <div class = "slds-grid slds-wrap" >
                     <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-large-size--1-of-2 slds-p-top_small">
@@ -45,7 +45,7 @@
             </div>
         </lightning:recordEditForm>
         <aura:set attribute="else">
-            <lightning:recordEditForm objectApiName="BOATBUILDING__Payments__c" aura:id="payFormWO"  onsuccess="{!c.onRecordSuccess}">
+            <lightning:recordEditForm objectApiName="BOATBUILDING__Payments__c" recordTypeId="{!v.RecTyId}" aura:id="payFormWO"  onsuccess="{!c.onRecordSuccess}">
                 <div class = "slds-col slds-size--1-of-1">
                     <div class = "slds-grid slds-wrap" >
                         <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-large-size--1-of-2 slds-p-top_small">

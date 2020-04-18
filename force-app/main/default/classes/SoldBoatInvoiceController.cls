@@ -266,7 +266,7 @@ public with sharing class SoldBoatInvoiceController {
                             
                             if(u.UserRole != null && (u.UserRole.Name == 'GM' || u.UserRole.Name == 'Accounting' || setStr.contains(u.UserRole.Name))) {
                                 insert objInvoice;
-                                if( lstQuote[0].BOATBUILDING__Payment__r != null && !lstQuote[0].BOATBUILDING__Payment__r.isEmpty()) {
+                                if( lstQuote[0].BOATBUILDING__Payments__r != null && !lstQuote[0].BOATBUILDING__Payments__r.isEmpty()) {
                                     List<BOATBUILDING__Payments__c> lstPayment = new List<BOATBUILDING__Payments__c>();
                                     Id soldBoatInvoiceRecordTypeId = Schema.SObjectType.BOATBUILDING__Payments__c.getRecordTypeInfosByName().get('Sold Boat Invoice').getRecordTypeId();
                                     for(BOATBUILDING__Payments__c objPayment: lstQuote[0].BOATBUILDING__Payments__r) {

@@ -29,7 +29,7 @@ global with sharing class WooCommerce_Connect {
                                    b.BOATBUILDING__Web_Description__c, b.BOATBUILDING__Vendor_Name__c, b.BOATBUILDING__This_is_a_Physical_Product__c, BOATBUILDING__Web_Description_long__c, 
                                    b.BOATBUILDING__Taxable__c, b.BOATBUILDING__Store_Location__c, b.BOATBUILDING__SKU__c, b.BOATBUILDING__Retail_Price__c, b.Sub_Family__c,
                                    b.BOATBUILDING__Part_Size__c, b.BOATBUILDING__Part_Number__c, b.BOATBUILDING__Part_Cost__c, b.BOATBUILDING__Part_Color__c, 
-                                   b.BOATBUILDING__Minimum_Amount__c, b.BOATBUILDING__Map_Price__c, b.BOATBUILDING__Location__c, b.BOATBUILDING__Family1__c, 
+                                   b.BOATBUILDING__Minimum_Amount__c, b.BOATBUILDING__Map_Price__c, b.BOATBUILDING__Location__c, b.BOATBUILDING__Family1__c, b.BOATBUILDING__Push_Description__c, 
                                    b.BOATBUILDING__Discount__c, b.BOATBUILDING__Dealer_Price__c, b.BOATBUILDING__Category1__c, b.BOATBUILDING__Bin__c, b.BOATBUILDING__Barcode__c,
                                     (
                                        Select
@@ -39,7 +39,7 @@ global with sharing class WooCommerce_Connect {
                                                BOATBUILDING__Web_Description__c, BOATBUILDING__Vendor_Name__c, BOATBUILDING__This_is_a_Physical_Product__c, BOATBUILDING__Web_Description_long__c, 
                                                BOATBUILDING__Taxable__c, BOATBUILDING__Store_Location__c, BOATBUILDING__SKU__c, BOATBUILDING__Retail_Price__c, Sub_Family__c,
                                                BOATBUILDING__Part_Size__c, BOATBUILDING__Part_Number__c, BOATBUILDING__Part_Cost__c, BOATBUILDING__Part_Color__c, 
-                                               BOATBUILDING__Minimum_Amount__c, BOATBUILDING__Map_Price__c, BOATBUILDING__Location__c, BOATBUILDING__Family1__c, 
+                                               BOATBUILDING__Minimum_Amount__c, BOATBUILDING__Map_Price__c, BOATBUILDING__Location__c, BOATBUILDING__Family1__c, BOATBUILDING__Push_Description__c,
                                                BOATBUILDING__Discount__c, BOATBUILDING__Dealer_Price__c, BOATBUILDING__Category1__c, BOATBUILDING__Bin__c, BOATBUILDING__Barcode__c
                                        From 
                                                Part_Variation__r
@@ -917,13 +917,13 @@ global with sharing class WooCommerce_Connect {
         
         if(objPart.BOATBUILDING__Part_Color__c != null) {
         	if(String.isNotBlank(objPart.BOATBUILDING__Barcode__c)) {
-        		metaData += ',';
+        		metaData += ',';  
         	} 
             metaData += '{ "key": "part_color", "value" : "'+objPart.BOATBUILDING__Part_Color__c.replaceAll('"','\\\\"')+'"}';
             //barCodeJSON
         }
         if(objPart.BOATBUILDING__Part_Size__c != null) {
-        	if(String.isNotBlank(objPart.BOATBUILDING__Part_Color__c)) {
+        	if(String.isNotBlank(objPart.BOATBUILDING__Part_Color__c) || String.isNotBlank(objPart.BOATBUILDING__Barcode__c)) {
         		metaData += ',';
         	}
             metaData += '{ "key": "part_size", "value" : "'+objPart.BOATBUILDING__Part_Size__c.replaceAll('"','\\\\"')+'"}';
@@ -931,7 +931,7 @@ global with sharing class WooCommerce_Connect {
         }
         
         if(objPart.BOATBUILDING__Part_Gender__c != null) {
-        	if(String.isNotBlank(objPart.BOATBUILDING__Part_Size__c)) {
+        	if(String.isNotBlank(objPart.BOATBUILDING__Part_Size__c) || String.isNotBlank(objPart.BOATBUILDING__Part_Color__c) || String.isNotBlank(objPart.BOATBUILDING__Barcode__c)) {
         		metaData += ',';
         	}
             metaData += '{ "key": "part_gender", "value" : "'+objPart.BOATBUILDING__Part_Gender__c.replaceAll('"','\\\\"')+'"}';
@@ -961,14 +961,14 @@ global with sharing class WooCommerce_Connect {
             System.debug('>>>Quantity: '+Quantity);
         }
         System.debug('>>>Quantity: '+Quantity);
-        if(objPart.BOATBUILDING__Web_Description_long__c != null) {
+        if(objPart.BOATBUILDING__Push_Description__c && objPart.BOATBUILDING__Web_Description_long__c != null) {
             Description = String.valueOf(objPart.BOATBUILDING__Web_Description_long__c).replaceAll('\r\n', '\\\\n');
         }
         
         if(objPart.BOATBUILDING__Part_Cost__c != null) {  
             partCost = String.valueOf(objPart.BOATBUILDING__Part_Cost__c);
         }
-        
+         
         
         if(mapCollectionNameId != null && !mapCollectionNameId.keySet().isEmpty() && mapCollectionNameId.containsKey(objPart.BOATBUILDING__Category1__c.toUpperCase())) {
             Category = '"categories": [';

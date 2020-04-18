@@ -8,7 +8,8 @@ public with sharing class WorkRequestControllerClone {
         Id recTypeId = Schema.SObjectType.BOATBUILDING__Work_Order__c.getRecordTypeInfosByName().get('Work Request').getRecordTypeId();
         objWO = new BOATBUILDING__Work_Order__c();
         objWO.RecordTypeId = recTypeId;
-
+		lstWOR = new List<BOATBUILDING__Work_Order__c>();
+		lstPR = new List<BOATBUILDING__Work_Order__c>();
         List<BOATBUILDING__Work_Order__c> listWorkPartRequest = [SELECT Id, Name,Contact__c,Vendor__c,CreatedDate,Part_Request_Status__c,Assigned_to__c,BOATBUILDING__Request_Type__c,
                                                                 Status__c, BOATBUILDING__Parts_Request_Form__c, BOATBUILDING__Part_Number__c, BOATBUILDING__Boat_Make__c 
                                                                 FROM BOATBUILDING__Work_Order__c 
