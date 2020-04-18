@@ -495,11 +495,6 @@
             <sortOrder>5</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>Account.Schedule</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>6</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
             <actionName>BOATBUILDING__Boat_Builder</actionName>
             <actionType>CustomButton</actionType>
             <sortOrder>7</sortOrder>
@@ -508,6 +503,11 @@
             <actionName>BOATBUILDING__New_Account_Detail</actionName>
             <actionType>CustomButton</actionType>
             <sortOrder>8</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>Account.Schedule</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>6</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
             <actionName>FeedItem.TextPost</actionName>

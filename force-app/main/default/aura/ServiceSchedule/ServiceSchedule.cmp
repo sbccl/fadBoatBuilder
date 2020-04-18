@@ -2,6 +2,7 @@
     
     <aura:attribute name="isModalOpen" type="boolean" default="false" access="global"/>
     <aura:attribute name="lstUser" type="Object[]" access="global"/>
+    <aura:attribute name="lstUserGrp" type="Object[]" access="global"/>
     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
     <aura:attribute name="recordTypeId" type="String" default=""/>
     <aura:attribute name="RecordId" type="String" default=""/>
@@ -13,7 +14,7 @@
     <aura:if isTrue="{!v.showSpinner}">
         <lightning:spinner  variant= "brand"/>
     </aura:if>
-    <meta charset='utf-8' />
+    <meta charset='utf-8' /> 
     
     <article id="articleMain" class="slds-card slds-p-around_x-small">
         <div class = "slds-col slds-size--1-of-1 slds-m-bottom_large">
@@ -21,8 +22,12 @@
                 <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-4 slds-large-size--1-of-4 slds-p-right_medium">
                     <lightning:select name="User" label="User" value="{!v.selectedUser}" onchange="{!c.getRelatedTMDetails}">
                         <option value="All">All</option>
-                        <aura:iteration items="{!v.lstUser}" var="objUsr">
-                            <option value="{!objUsr.Id}">{!objUsr.Name}</option>
+                        <aura:iteration items="{!v.lstUserGrp}" var="objUsr">
+                            <optgroup label="{!objUsr.sLocation}">
+                                <aura:iteration items="{!objUsr.lstUser}" var="objU">
+                                    <option value="{!objU.Id}">{!objU.Name}</option>
+                                </aura:iteration>
+                            </optgroup>
                         </aura:iteration>
                     </lightning:select>
                 </div> 
@@ -122,6 +127,6 @@
         </aura:if>
     </article>
       
-    <ltng:require styles="/resource/FC44/FC44/packages/core/main.css, /resource/FC44/FC44/packages/daygrid/main.css, /resource/FC44/FC44/packages/timegrid/main.css"/>
-    <ltng:require scripts="/resource/FC44/FC44/packages/core/main.js, /resource/FC44/FC44/packages/interaction/main.js, /resource/FC44/FC44/packages/daygrid/main.js, /resource/FC44/FC44/packages/timegrid/main.js, /resource/FC44/FC44/packages-premium/resource-common/main.js, /resource/FC44/FC44/packages-premium/resource-daygrid/main.js, /resource/FC44/FC44/packages-premium/resource-timegrid/main.js" afterScriptsLoaded="{!c.scriptsLoaded}"/>
+    <ltng:require styles="/resource/BOATBUILDING__FC44/FC44/packages/core/main.css, /resource/BOATBUILDING__FC44/FC44/packages/daygrid/main.css, /resource/BOATBUILDING__FC44/FC44/packages/timegrid/main.css"/>
+    <ltng:require scripts="/resource/BOATBUILDING__FC44/FC44/packages/core/main.js, /resource/BOATBUILDING__FC44/FC44/packages/interaction/main.js, /resource/BOATBUILDING__FC44/FC44/packages/daygrid/main.js, /resource/BOATBUILDING__FC44/FC44/packages/timegrid/main.js, /resource/BOATBUILDING__FC44/FC44/packages-premium/resource-common/main.js, /resource/BOATBUILDING__FC44/FC44/packages-premium/resource-daygrid/main.js, /resource/BOATBUILDING__FC44/FC44/packages-premium/resource-timegrid/main.js" afterScriptsLoaded="{!c.scriptsLoaded}"/>
 </aura:component>

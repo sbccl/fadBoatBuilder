@@ -1545,6 +1545,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>ServiceScheduleControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>ShopifyProductParse</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -2557,6 +2561,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Control_Box__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Account.Country__c</field>
         <readable>true</readable>
@@ -2774,6 +2783,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Get_A_Quote_Comments_Questions__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Hailing_Port__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3098,6 +3112,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Account.Official__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Account.Owner_IsActive__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3175,6 +3194,11 @@
         <editable>true</editable>
         <field>Account.Phone</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Port_Lower_Unit_if_applicable__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -3767,6 +3791,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Shifter__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Account.ShippingAddress</field>
         <readable>true</readable>
@@ -3812,6 +3841,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Size__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Account.SkiersChoiceLeadUid__c</field>
         <readable>true</readable>
@@ -3829,6 +3863,16 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Source__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Starboard_engine__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Stbd_Lower_Unit_if_applicable__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -9568,6 +9612,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Part__c.Push_Description__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Part__c.Push_Image__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -9834,6 +9883,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Payment__c.Store_Location__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Payments__c.Account__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -11763,12 +11817,27 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>User.Service_Writer_Bonus__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>User.StoreLocationWithRole__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>User.Store_Location__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>User.Tech_Base_Pay__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>User.Tech_Pay_Multiplier__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -14083,6 +14152,10 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>Boat_Inventories</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>Boat_Match</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
@@ -14151,7 +14224,7 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>New_Inventory_List</tab>
+        <tab>NewBoatInventoryList</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>

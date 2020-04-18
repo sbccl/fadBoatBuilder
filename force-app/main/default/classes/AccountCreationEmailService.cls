@@ -531,12 +531,14 @@ global class AccountCreationEmailService implements Messaging.InboundEmailHandle
             reqNew.setEndpoint(newURL);
             Http hNew = new Http();
             HttpResponse httpResponseNew = hNew.send(reqNew);
+            System.debug('Response: '+httpResponseNew.getBody());
             String json = httpResponseNew.getBody().substringbetween('var model = ',';');
             
             System.debug('----json'+json);
             SupraMoombaEmailJSON2Apex obj = SupraMoombaEmailJSON2Apex.parse(json);
             System.debug('---obj---'+obj.RecordData);
-            
+            System.debug('---obj---'+obj.RecordData.FirstName);
+            System.debug('---obj---'+obj.RecordData.LastName);
             Account acc = new Account();
             acc.RecordTypeId = Schema.SObjectType.Account.getRecordTypeInfosByName().get('Prospect Account Trade').getRecordTypeId();
             acc.Name = obj.RecordData.FirstName+' '+obj.RecordData.LastName;

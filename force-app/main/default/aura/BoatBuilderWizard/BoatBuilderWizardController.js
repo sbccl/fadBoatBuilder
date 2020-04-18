@@ -1,7 +1,8 @@
 ({  doInit : function(component, event, helper){
     //console.log(component.get("v.pageReference").state.redirect);
+    var InveId =  component.get("v.IventoryId");
     var urlHasParam = component.get("v.pageReference").state.redirect;
-    
+    console.log(InveId);
     if(urlHasParam == "frombbwiz") 
     { 
         var toastEvent = $A.get("e.force:showToast");
@@ -39,8 +40,7 @@
         }
     });  
     
-    $A.enqueueAction(action);
-    
+    $A.enqueueAction(action); 
     
 },
   handleClick : function(component, event, helper) {
@@ -48,11 +48,25 @@
       var ctarget = event.currentTarget;
       var id_str = parseInt(ctarget.dataset.value);
       console.log(id_str); 
+       var objInven = component.get("v.IventoryId");
+       console.log(objInven);
       if(id_str == 1) {
           var objAcc = component.get("v.selectedLookUpRecordvalueAcc");
           if(objAcc != null && objAcc != undefined && objAcc.Id != null && objAcc.Id != undefined) {
+              component.set("v.InvId", component.get("v.IventoryId"));
+              if(component.get("v.InvId") != '0') {
+                    console.log('......: '+component.get("v.InvId"))
+                    
+                    var cmpEvent = $A.get("e.c:InvRedirection");                
+                    cmpEvent.setParams({ 
+                    "invId": component.get("v.InvId")
+                    });
+                    cmpEvent.fire();
+                
+              }
+              console.log('>>>>>>>>: ',component.get("v.InvId"));
               helper.callNext(component, event, ctarget.dataset);        
-          } else {
+          } else { 
               var toastEvent = $A.get("e.force:showToast");
               toastEvent.setParams({
                   "title": "Error!",

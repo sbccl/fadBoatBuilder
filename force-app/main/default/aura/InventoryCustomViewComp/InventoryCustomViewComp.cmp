@@ -1,4 +1,5 @@
 <aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,lightning:actionOverride,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" Controller="InventoryCustomViewLightning" access="global">
+    
     <aura:attribute name="recordTypLst" type="object" />
     <aura:attribute name="fetchData" type="object" />
     <aura:attribute name="SearchData" type="object" />
@@ -15,9 +16,10 @@
     <aura:attribute name="value" type="String" />
     <aura:attribute name="spinner" type="boolean" default="FALSE"/>
     <aura:attribute name="Message" type="boolean" default="false" description="use for display no record found message"/>
-   
+    
     <aura:handler name="change" value="{!v.value}" action="{!c.getSearchData}" />
     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
     <aura:if isTrue="{!v.spinner}">
         <div aura:id="spinnerId" class="slds-spinner_container">
             <div class="slds-spinner--brand  slds-spinner slds-spinner--large slds-is-relative" role="alert">
@@ -27,37 +29,34 @@
             </div>
         </div>
     </aura:if>
-   
-  
-    <lightning:recordEditForm aura:id="recordEditForm"
-                              objectApiName="BOATBUILDING__Inventory__c">
+    
+    <lightning:recordEditForm aura:id="recordEditForm" objectApiName="BOATBUILDING__Inventory__c">
+        
+        <lightning:layout pullToBoundary="medium">
+            <lightning:layoutItem flexibility="auto" padding="horizontal-medium">
+                <div class="custom-box">
+                    <div class="slds-col slds-size--1-of-1 slds-p-bottom_medium slds-p-top_x-large slds-box slds-theme_default">
+                        <div class="slds-media__body">
+                            <header class="slds-media slds-media--center slds-has-flexi-truncate" >
+                                <lightning:icon iconName="custom:custom18" title="custom18" />
+                                <h2>
+                                    <span class="slds-text-heading--small"> &nbsp;&nbsp; <b>Inventory</b></span>
+                                </h2>
+                            </header>
+                        </div> 
+                    </div>
+                </div>
+            </lightning:layoutItem>
+        </lightning:layout>
 
-                              <lightning:layout pullToBoundary="medium">
-                                <lightning:layoutItem flexibility="auto" padding="horizontal-medium">
-                                    <div class="custom-box">
-                                        <div class="slds-col slds-size--1-of-1 slds-p-bottom_medium slds-p-top_x-large slds-box slds-theme_default">
-                                        <div class="slds-media__body">
-                
-                                            <header class="slds-media slds-media--center slds-has-flexi-truncate" style="padding: 1.5%;">
-                                                <lightning:icon iconName="custom:custom18" title="custom18" />
-                                                <h2>
-                                                    <span class="slds-text-heading--small"> &nbsp;&nbsp; <b>Inventory</b></span>
-                                                </h2>
-                                            </header>
-                                            
-                                        </div> 
-                                        </div>
-                                    </div>
-                                </lightning:layoutItem>
-                                  </lightning:layout>
         <div class="slds-col slds-size--1-of-1 slds-p-bottom_medium slds-p-top_x-large slds-box slds-theme_default">
             <div class="slds-grid slds-wrap" > 
-               
+                
                 <div class="slds-col slds-size--1-of-1 slds-medium-size--2-of-6 slds-col--padded">
                     <div class="slds-form-element">
                         <div class="slds-form-element__control">
                             <legend class="slds-form-element__legend slds-form-element__label">Type</legend>
-                            <lightning:select name="select1" aura:id="select"  onchange="{!c.getStatusValues}" >
+                            <lightning:select name="select1" aura:id="select" onchange="{!c.getAllFieldsValuesAccordingToType}" >
                                 <option value="">All</option>
                                 <aura:iteration items="{!v.recordTypLst}" var="obj">
                                     <option value="{!obj.recName}" text="{!obj.recName +' '+'('+obj.tc+')'}" /> 
@@ -65,21 +64,22 @@
                             </lightning:select>
                         </div>
                     </div>
-                </div>              
+                </div>
+                
                 <div class="slds-col slds-size--1-of-1 slds-medium-size--2-of-6 slds-col--padded">
                     <div class="slds-form-element">
                         <div class="slds-form-element__control">
                             <legend class="slds-form-element__legend slds-form-element__label">Status</legend>
-                           <!--  <lightning:inputField fieldName="BOATBUILDING__Stage__c" onchange="{!c.getdata}" aura:id="stage"/>-->
-                           <lightning:select name="select1" aura:id="stage" onchange="{!c.getdata}" >
-                            <option value="">None</option>
-    
-                          <aura:iteration items="{!v.Status}" var="obj">
-                             
-                             <option value="{!obj.stage}" text="{!obj.stage +' '+ '('+obj.count+')'}"/> 
-                            </aura:iteration>
-                        
-                        </lightning:select>
+                            <!--  <lightning:inputField fieldName="BOATBUILDING__Stage__c" onchange="{!c.getdata}" aura:id="stage"/>-->
+                            <lightning:select name="select1" aura:id="stage" onchange="{!c.getdata}" >
+                                <option value="">None</option>
+                                
+                                <aura:iteration items="{!v.Status}" var="obj">
+                                    
+                                    <option value="{!obj.stage}" text="{!obj.stage +' '+ '('+obj.count+')'}"/> 
+                                </aura:iteration>
+                                
+                            </lightning:select>
                         </div>
                     </div>
                 </div>
@@ -93,7 +93,7 @@
                                 <aura:iteration items="{!v.year}" var="obj">
                                     <option value="{!obj.Year}" text="{!obj.Year +' '+'('+obj.count+')'}" /> 
                                 </aura:iteration>
-                                 
+                                
                             </lightning:select>
                         </div>
                     </div>
@@ -103,8 +103,8 @@
                         <div class="slds-form-element__control">
                             <legend class="slds-form-element__legend slds-form-element__label">Boat Type</legend>
                             <!-- <lightning:inputField  variant="label-hidden" fieldName="BOATBUILDING__Boat_Type__c" aura:id="BoatType" onchange="{!c.getdata}"/>-->
-                           <lightning:select name="select1" aura:id="BoatType"  onchange="{!c.getdata}" >
-                            <option value="">None</option>
+                            <lightning:select name="select1" aura:id="BoatType"  onchange="{!c.getdata}" >
+                                <option value="">None</option>
                                 <aura:iteration items="{!v.BoatType}" var="obj">
                                     <option value="{!obj.BoatTypes}" text="{!obj.BoatTypes +' '+'('+obj.count+')'}" /> 
                                 </aura:iteration>
@@ -117,7 +117,7 @@
                         <div class="slds-form-element__control">
                             <legend class="slds-form-element__legend slds-form-element__label">Make</legend>
                             <lightning:select name="select1" aura:id="MakeId"  onchange="{!c.getModleValues}" >
-                                <option value="">---None---</option>
+                                <option value="">None</option>
                                 <aura:iteration items="{!v.Make}" var="obj">
                                     <option value="{!obj.Makes}" text="{!obj.Makes +' '+'('+obj.count+')'}" />  
                                 </aura:iteration>
@@ -149,18 +149,18 @@
                 <div class="slds-col slds-size--1-of-1 slds-medium-size--2-of-6 slds-col--padded">
                     <div class="slds-form-element">
                         <div class="slds-form-element__control">
-                           <!-- <lightning:input
+                            <!-- <lightning:input
                                              aura:id="entersearch"
                                              name="enter-search"
                                              label="search"
                                              type="search"
                                              oncomplete="{!c.getSearchData}"
                                              /> -->
-                                             <legend class="slds-form-element__legend slds-form-element__label">Search</legend>
-                                             <lightning:input   type="search"  value="{!v.value}" />
-
-                                           
-                                             
+                            <legend class="slds-form-element__legend slds-form-element__label">Search</legend>
+                            <lightning:input   type="search"  value="{!v.value}" />
+                            
+                            
+                            
                         </div>
                     </div>
                 </div>
@@ -181,12 +181,12 @@
                                         <div class="media-left">
                                             <aura:if isTrue="{!and(obj.Attachments[0].Id != '', obj.Attachments[0].Id != null)}">
                                                 <a href="{!'/servlet/servlet.FileDownload?file='+obj.Attachments[0].Id}">
-                                            <img src="{!'/servlet/servlet.FileDownload?file='+obj.Attachments[0].Id}"/>
-                                            </a>
-                                            <aura:set attribute="else">
-                                    
-                                                <lightning:icon iconName="action:new_note" alternativeText="New note" title="New note" />
-                                            </aura:set>
+                                                    <img src="{!'/servlet/servlet.FileDownload?file='+obj.Attachments[0].Id}"/>
+                                                </a>
+                                                <aura:set attribute="else">
+                                                    
+                                                    <lightning:icon iconName="action:new_note" alternativeText="New note" title="New note" />
+                                                </aura:set>
                                             </aura:if>
                                             
                                         </div>
@@ -301,75 +301,75 @@
                                         </div>
                                     </div>
                                     <aura:if  isTrue="{!obj.RecordType.Name =='New Boats'}" >
-                                    <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
-                                        <div class="slds-form-element">
-                                            <div class="slds-form-element__control">
-                                                <span class="key-val"><ui:outputCurrency value="{!obj.BOATBUILDING__Total_MSRP_Price__c}"/></span>
-                                               
-                                            </div>
-                                        </div>
-                                   
-                                    </div>
-                                    <aura:set attribute="else">
                                         <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
                                             <div class="slds-form-element">
                                                 <div class="slds-form-element__control">
-                                                    <span class="key-val"> <ui:outputCurrency value="{!obj.BOATBUILDING__Suggested_List_Price__c}"/></span>
+                                                    <span class="key-val"><ui:outputCurrency value="{!obj.BOATBUILDING__Total_MSRP_Price__c}"/></span>
+                                                    
                                                 </div>
                                             </div>
-                                       
+                                            
                                         </div>
-                                    </aura:set>
-                                </aura:if>
-                                <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
-                                    <div class="slds-form-element">
-                                        <div class="slds-form-element__control">
-                                            <span class="key-name"><b>Year</b></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
-                                    <div class="slds-form-element">
-                                        <div class="slds-form-element__control">
-                                            <span class="key-val">{!obj.BOATBUILDING__Year__c}</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
-                                    <div class="slds-form-element">
-                                        <div class="slds-form-element__control">
-                                            <span class="key-name"><b>Modle</b></span>
+                                        <aura:set attribute="else">
+                                            <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+                                                        <span class="key-val"> <ui:outputCurrency value="{!obj.BOATBUILDING__Suggested_List_Price__c}"/></span>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </aura:set>
+                                    </aura:if>
+                                    <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
+                                        <div class="slds-form-element">
+                                            <div class="slds-form-element__control">
+                                                <span class="key-name"><b>Year</b></span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
-                                    <div class="slds-form-element">
-                                        <div class="slds-form-element__control">
-                                            <span class="key-val">{!obj.BOATBUILDING__Model__c}</span>
+                                    <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
+                                        <div class="slds-form-element">
+                                            <div class="slds-form-element__control">
+                                                <span class="key-val">{!obj.BOATBUILDING__Year__c}</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
-                                    <div class="slds-form-element">
-                                        <div class="slds-form-element__control">
-                                            <span class="key-name"><b>Boat Type</b></span>
+                                    <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
+                                        <div class="slds-form-element">
+                                            <div class="slds-form-element__control">
+                                                <span class="key-name"><b>Modle</b></span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
-                                    <div class="slds-form-element">
-                                        <div class="slds-form-element__control">
-                                            <span class="key-val">{!obj.BOATBUILDING__Boat_Type__c}</span>
+                                    <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
+                                        <div class="slds-form-element">
+                                            <div class="slds-form-element__control">
+                                                <span class="key-val">{!obj.BOATBUILDING__Model__c}</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                
+                                    <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
+                                        <div class="slds-form-element">
+                                            <div class="slds-form-element__control">
+                                                <span class="key-name"><b>Boat Type</b></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
+                                        <div class="slds-form-element">
+                                            <div class="slds-form-element__control">
+                                                <span class="key-val">{!obj.BOATBUILDING__Boat_Type__c}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <a class="slds-button slds-button--neutral slds-button--brand"  style="border: 1px solid white; box-shadow: 3px 5px 15px #888888; right: 13%;top: calc(50% - 20px);padding:5px 12px; font-size: 14px; z-index: 1000;">Quote</a>   
-                                        
+                    <a class="slds-button slds-button--neutral slds-button--brand" onclick="{!c.navigate}"  data-recId="{!obj.Id}" target="_blank" style="position: absolute; right: 13%;top: calc(50% - 20px);padding:5px 12px; font-size: 14px; z-index: 1000;">Quote</a>       
+                    
                     <div class="slds-col slds-size--3-of-6">
                         <div class="slds-grid slds-wrap" >
                             <div class="slds-col slds-size--2-of-3">
@@ -426,7 +426,7 @@
                                     <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
                                         <div class="slds-form-element">
                                             <div class="slds-form-element__control">
-                                                <span class="key-val">{!obj.BOATBUILDING__Status_for_Days_on_the_Lot__c}</span>
+                                                <span class="key-val">{!obj.BOATBUILDING__Days_on_Lot__c}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -440,7 +440,7 @@
                                     <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
                                         <div class="slds-form-element">
                                             <div class="slds-form-element__control">
-                                                <span class="key-val">{!obj.Status_for_Interest_Start_Date__c}</span>
+                                                <span class="key-val">{!obj.BOATBUILDING__Interest_Start_Date__c}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -454,7 +454,7 @@
                                     <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
                                         <div class="slds-form-element">
                                             <div class="slds-form-element__control">
-                                                <span class="key-val">{!obj.BOATBUILDING__Status_for_Curtailment_Start_Date__c}</span>
+                                                <span class="key-val">{!obj.BOATBUILDING__Curtailment_Start_Date__c}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -512,13 +512,13 @@
         </article>
     </aura:iteration>
     <aura:if isTrue="{!v.Message}">
-            <div class="slds-notify_container slds-is-relative">
-                <div class="slds-notify slds-notify_toast slds-theme_error" role="alert">
-                    <div class="slds-notify__content">
-                        <h2 class="slds-text-heading_small">No Records Found...</h2>
-                    </div>
+        <div class="slds-notify_container slds-is-relative">
+            <div class="slds-notify slds-notify_toast slds-theme_error" role="alert">
+                <div class="slds-notify__content">
+                    <h2 class="slds-text-heading_small">No Records Found...</h2>
                 </div>
             </div>
-        </aura:if>
-
+        </div>
+    </aura:if>
+    
 </aura:component>

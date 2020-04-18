@@ -52,7 +52,7 @@
             <name>Email_Alert_to_Contact_On_Account_Creation</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Account.Contact_Email__c</field>
             <operation>notEqual</operation>
@@ -74,7 +74,7 @@
             <name>Change_Notify_Owner_checkbox_false</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <booleanFilter>1 AND 2</booleanFilter>
         <criteriaItems>
             <field>Account.RecordTypeId</field>

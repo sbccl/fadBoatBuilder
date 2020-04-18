@@ -466,13 +466,17 @@ public class WODetailPageController {
                     setJobId.add(objJobForClaim.Id);
                 }   
                 List<BOATBUILDING__Payments__c> lstPatmentTOUpsert = new List<BOATBUILDING__Payments__c>();
-                List<BOATBUILDING__Work_Order_Job__c> lstJobWithPayment = [Select Id,BOATBUILDING__Claim_Labor_Paid_Amount__c,BOATBUILDING__Misc_Charge_Paid__c,BOATBUILDING__Parts_Paid_Amount__c,(Select Id from BOATBUILDING__Work_Order_Payments__r ) from BOATBUILDING__Work_Order_Job__c where Id IN : setJobId];
+                List<BOATBUILDING__Work_Order_Job__c> lstJobWithPayment = [Select Id,BOATBUILDING__Claim_Labor_Paid_Amount__c,BOATBUILDING__Misc_Charge_Paid__c,BOATBUILDING__Parts_Paid_Amount__c,(Select Id from BOATBUILDING__Payments__r ) from BOATBUILDING__Work_Order_Job__c where Id IN : setJobId];
                 for(BOATBUILDING__Work_Order_Job__c objJobForClaim : lstJobWithPayment){
                     BOATBUILDING__Payments__c objClaimPayment = new BOATBUILDING__Payments__c();
 
-                    if(objJobForClaim.Work_Order_Payments__r.size() > 0){
-                            objClaimPayment.Id = objJobForClaim.BOATBUILDING__Work_Order_Payments__r[0].Id;
+                    if(objJobForClaim.BOATBUILDING__Payments__r.size() > 0){
+
+
+                            objClaimPayment.Id = objJobForClaim.BOATBUILDING__Payments__r[0].Id;
                     }
+                    Id workOrderPaymentRTID = Schema.SObjectType.BOATBUILDING__Payments__c.getRecordTypeInfosByName().get('Warranty Work Order').getRecordTypeId();
+                    objClaimPayment.RecordTypeId = workOrderPaymentRTID;
                     objClaimPayment.BOATBUILDING__Work_Warranty_Order__c = objWO.Id;  
                     objClaimPayment.BOATBUILDING__Claim_Labor_Paid_Amount__c = objJobForClaim.BOATBUILDING__Claim_Labor_Paid_Amount__c;
                     objClaimPayment.BOATBUILDING__Misc_Charge_Paid__c = objJobForClaim.BOATBUILDING__Misc_Charge_Paid__c;

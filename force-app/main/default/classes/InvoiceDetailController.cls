@@ -621,6 +621,7 @@ public without sharing class InvoiceDetailController {
         
         try{
             System.debug('payment to be inserted');
+            objPayment.RecordTypeId = Schema.SObjectType.BOATBUILDING__Payments__c.getRecordTypeInfosByName().get('Standard Invoice').getRecordTypeId();
             insert objPayment;
             System.debug('=====objPayment======'+objPayment.id);
         }catch(Exception ex) {

@@ -106,7 +106,7 @@
             objInvEx.BOATBUILDING__Trailer_Axles__c = objInventory.BOATBUILDING__Trailer_Axles__c;
             objInvEx.BOATBUILDING__Dealer_Boat_Stock__c = objInventory.BOATBUILDING__Dealer_Boat_Stock__c;
             objInvEx.BOATBUILDING__Dealer_Engine_Stock__c = objInventory.BOATBUILDING__Dealer_Engine_Stock__c;
-            objInvEx.BOATBUILDING__Dealer_Trailer_Stock__c = objInventory.BOATBUILDING__Dealer_Trailer_Stock__c;
+            objInvEx.BOATBUILDING__Dealer_Trailer_Stock__c = objInventory.BOATBUILDING__Boat_EST_Arrival_Date__c;
             console.log('objInventory.Dealer_Boat_Stock__c: '+objInventory.BOATBUILDING__Dealer_Boat_Stock__c);
             console.log('objInventory.Dealer_Engine_Stock__c: '+objInventory.BOATBUILDING__Dealer_Engine_Stock__c);
             console.log('objInventory.Dealer_Trailer_Stock__c: '+objInventory.BOATBUILDING__Dealer_Trailer_Stock__c);

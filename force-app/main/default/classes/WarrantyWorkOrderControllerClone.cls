@@ -966,6 +966,7 @@ delete objCase.BOATBUILDING__Work_Order_Jobs__r;
                     objWOP.BOATBUILDING__Misc_Charge_Paid__c = objWOJ.BOATBUILDING__Misc_Charge_Paid__c;
                     objWOP.BOATBUILDING__Parts_Paid_Amount__c = objWOJ.BOATBUILDING__Parts_Paid_Amount__c;
                     objWOP.BOATBUILDING__Claim_Labor_Paid_Amount__c = objWOJ.BOATBUILDING__Claim_Labor_Paid_Amount__c;
+                    objWOP.RecordTypeId = Schema.SObjectType.BOATBUILDING__Payments__c.getRecordTypeInfosByName().get('Warranty Work Order').getRecordTypeId();
                     lstWOPupsrt.add(objWOP); 
                 } else {
                     if(objWOJ.BOATBUILDING__Claim_Labor_Paid_Amount__c != null ||
@@ -977,6 +978,7 @@ delete objCase.BOATBUILDING__Work_Order_Jobs__r;
                            objWOPIns.BOATBUILDING__Misc_Charge_Paid__c = objWOJ.BOATBUILDING__Misc_Charge_Paid__c;
                            objWOPIns.BOATBUILDING__Parts_Paid_Amount__c = objWOJ.BOATBUILDING__Parts_Paid_Amount__c;
                            objWOPIns.BOATBUILDING__Claim_Labor_Paid_Amount__c = objWOJ.BOATBUILDING__Claim_Labor_Paid_Amount__c;
+                           objWOPIns.RecordTypeId = Schema.SObjectType.BOATBUILDING__Payments__c.getRecordTypeInfosByName().get('Warranty Work Order').getRecordTypeId();
                            
                            lstWOPupsrt.add(objWOPIns);
                        }

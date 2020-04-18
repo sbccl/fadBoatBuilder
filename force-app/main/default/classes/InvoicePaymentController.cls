@@ -31,6 +31,17 @@ public class InvoicePaymentController {
         return 'NONE';
     }
     @AuraEnabled
+    public static String getRecTypeId(String strType, String recId) {
+        if(strType == 'INVOICE') {
+            String recName = [Select Id, RecordType.Name From Invoice__c Where Id =: recId].RecordType.Name;
+            return Schema.SObjectType.BOATBUILDING__Payments__c.getRecordTypeInfosByName().get(recName).getRecordTypeId();
+        } else if(strType == 'WORKORDER') {
+            String recName = [Select Id, RecordType.Name From BOATBUILDING__Work_Order__c Where Id =: recId].RecordType.Name; 
+            return Schema.SObjectType.BOATBUILDING__Payments__c.getRecordTypeInfosByName().get(recName).getRecordTypeId();
+        }
+        return '';
+    } 
+    @AuraEnabled
     public static List<Object> getPaymentURLInfoWO(String strInvId) {
         List<Object> lstObj = new List<Object>();
         String baseUrl = ''; 

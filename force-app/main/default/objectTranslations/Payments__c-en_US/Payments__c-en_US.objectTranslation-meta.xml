@@ -8,6 +8,13 @@
         <plural>true</plural>
         <value>Payments</value>
     </caseValues>
+    <layouts>
+        <layout>Payments Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
     <recordTypes>
         <label><!-- Quote --></label>
         <name>Quote</name>

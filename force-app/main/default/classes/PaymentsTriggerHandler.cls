@@ -37,7 +37,7 @@ public class PaymentsTriggerHandler {
         List<Quote__c> listQuoteToProcess = [SELECT Id, BOATBUILDING__Quote_Down_Payment__c, 
                                              (SELECT Id, BOATBUILDING__Amount__c FROM BOATBUILDING__Payments__r 
                                               WHERE RecordTypeId =: strQuoteRecordTypeId) FROM BOATBUILDING__Quote__c 
-                                             WHERE Id IN: setQuoteId];
+                                             WHERE Id IN: setQuoteId AND BOATBUILDING__Status__c = 'Final'];
         
         for(Quote__c objQt: listQuoteToProcess) {
             Decimal AmountCount = 0.00;
@@ -59,5 +59,28 @@ public class PaymentsTriggerHandler {
         List<RollUpSummaryUtility.fieldDefinition> fieldDefinitions = new List<RollUpSummaryUtility.fieldDefinition>();
         fieldDefinitions.add(objRollUp);
         RollUpSummaryUtility.rollUpTrigger(fieldDefinitions, listNewPayment,'BOATBUILDING__Payments__c','BOATBUILDING__Work_Warranty_Order__c','BOATBUILDING__Work_Order__c','');
+    }
+
+    public Static void updateAccountOnPayment(List<Payments__c> listNewPayment){
+
+        Map<Id, Payments__c> mapPaymentToProcess = new Map<Id, Payments__c>(
+            [SELECT Id, 
+            BOATBUILDING__Quote__c, BOATBUILDING__Quote__r.BOATBUILDING__Account_Name__c,
+            BOATBUILDING__Work_Warranty_Order__c, BOATBUILDING__Work_Warranty_Order__r.BOATBUILDING__Account__c,
+            BOATBUILDING__Invoice__c, BOATBUILDING__Invoice__r.BOATBUILDING__Account_Name__c
+            FROM Payments__c
+            WHERE ID IN: listNewPayment]);
+
+        for(BOATBUILDING__Payments__c objPayment : listNewPayment){
+            if(mapPaymentToProcess.containsKey(objPayment.Id)){
+                if(String.isNotBlank(objPayment.BOATBUILDING__Quote__c)) {
+                    objPayment.BOATBUILDING__Account__c = mapPaymentToProcess.get(objPayment.Id).BOATBUILDING__Quote__r.BOATBUILDING__Account_Name__c;
+                } else if(String.isNotBlank(objPayment.BOATBUILDING__Work_Warranty_Order__c)) {
+                    objPayment.BOATBUILDING__Account__c = mapPaymentToProcess.get(objPayment.Id).BOATBUILDING__Work_Warranty_Order__r.BOATBUILDING__Account__c;
+                } else if(String.isNotBlank(objPayment.BOATBUILDING__Invoice__c)) {
+                    objPayment.BOATBUILDING__Account__c = mapPaymentToProcess.get(objPayment.Id).BOATBUILDING__Invoice__r.BOATBUILDING__Account_Name__c;
+                }
+            }
+        }        
     }
 }

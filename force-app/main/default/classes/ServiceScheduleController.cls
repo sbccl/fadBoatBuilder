@@ -4,10 +4,60 @@ public class ServiceScheduleController {
     public static List<User> getUserList(){
         List<User> lstUser = new List<User>();
         //Where isActive = true
-        Map<Id, UserRole> mapUR = new Map<Id, UserRole>([Select Id, Name From UserRole Where Name LIKE '%Service%']);
-        lstUser = [Select Id, Name, BOATBUILDING__Schedule_Texted_Color_Code__c, BOATBUILDING__Schedule_Color_Code__c From User WHERE UserRoleId IN: mapUR.keySet()  Limit 1000 ];
-        return lstUser;
+        Set<String> setUserRole = new Set<String>();
+        setUserRole.add('Service Tech');
+        BOATBUILDING__System_Configure__c objSC = BOATBUILDING__System_Configure__c.getOrgDefaults();
+        if(objSC != null && String.isNotBlank(objSC.BOATBUILDING__Schedule_Resource_Grid_User_Role__c)) {
+            if(objSC.BOATBUILDING__Schedule_Resource_Grid_User_Role__c.contains(',')) {
+                String [] strSplt = objSC.BOATBUILDING__Schedule_Resource_Grid_User_Role__c.split(',');
+                for(String str: strSplt) {
+                    setUserRole.add(str);
+                }
+            } else {
+                setUserRole.add(objSC.BOATBUILDING__Schedule_Resource_Grid_User_Role__c);
+            }
+        }
+        Map<Id, UserRole> mapUR = new Map<Id, UserRole>([Select Id, Name From UserRole Where Name IN: setUserRole]);
+        lstUser = [Select Id, Name, BOATBUILDING__Schedule_Texted_Color_Code__c, BOATBUILDING__Schedule_Color_Code__c, BOATBUILDING__Store_Location__c From User WHERE UserRoleId IN: mapUR.keySet() AND IsActive = true ORDER BY Name ASC  Limit 1000 ];
+        return lstUser; 
     }  
+
+    @AuraEnabled
+    public static List<UserSLGroupList> getUserListSLGroup(){
+        List<User> lstUser = getUserList();
+        Map<String, List<User>> mapVal = new Map<String, List<User>>();
+        if(!lstUser.isEmpty()) { 
+            for(User objUser: lstUser) {
+                if(String.isNotBlank(objUser.BOATBUILDING__Store_Location__c) && !mapVal.containsKey(objUser.BOATBUILDING__Store_Location__c)) {
+                    mapVal.put(objUser.BOATBUILDING__Store_Location__c, new List<User>());
+                }
+                if(String.isNotBlank(objUser.BOATBUILDING__Store_Location__c) && mapVal.containsKey(objUser.BOATBUILDING__Store_Location__c)) {
+                    mapVal.get(objUser.BOATBUILDING__Store_Location__c).add(objUser);
+                }
+                if(String.isBlank(objUser.BOATBUILDING__Store_Location__c) && !mapVal.containsKey('-None-')) {
+                    mapVal.put('-None-', new List<User>());
+                }
+                if(String.isBlank(objUser.BOATBUILDING__Store_Location__c) && mapVal.containsKey('-None-')) {
+                    mapVal.get('-None-').add(objUser);  
+                }
+            }
+        }
+        List<UserSLGroupList> lstUserSLGroupList = new List<UserSLGroupList>();
+        for(String strKey: mapVal.keySet()) {
+            UserSLGroupList objUserSLGroupList = new UserSLGroupList();
+            objUserSLGroupList.sLocation = strKey;
+            objUserSLGroupList.lstUser = mapVal.get(strKey);
+            lstUserSLGroupList.add(objUserSLGroupList);
+        } 
+        System.debug('>>>>>>>>>>>: '+lstUserSLGroupList);
+        return lstUserSLGroupList;
+    }
+
+    public class UserSLGroupList {
+        @AuraEnabled public String sLocation { get; set; }
+        @AuraEnabled public List<User> lstUser { get; set; }
+        
+    }
 
     @AuraEnabled
     public static string getrecordType(){

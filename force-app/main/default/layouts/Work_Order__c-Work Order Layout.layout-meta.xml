@@ -274,6 +274,10 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <relatedList>Payments__c.Work_Warranty_Order__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
         <relatedList>Work_Requested__c.WorkRequest__c</relatedList>
     </relatedLists>
     <relatedLists>
@@ -318,10 +322,6 @@
         <fields>NAME</fields>
         <fields>RECORDTYPE</fields>
         <relatedList>Order__c.WO_for__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>Payments__c.Work_Warranty_Order__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
