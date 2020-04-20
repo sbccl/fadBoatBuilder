@@ -71,8 +71,7 @@
             <div class="slds-p-around_medium" id="newInvCreate">
                 <c:NewProduct ProIdCC="{!v.ProIdC}"/>
             </div>
-            <hr/>
-            <div class="slds-p-around_medium" id="ProductPriceSectionDiv" >
+            <div  id="ProductPriceSectionDiv" >
                 <c:ProdcutPriceSection lstDealerOptionWraperCC="{!v.lstDealerOptionWraperC}" PrntAttP="Quote" NoSalesmanWithoutCostCC="{!v.NoSalesmanWithoutCostC}" ProductPriceIdListCC="{!v.ProductPriceIdListC}" DealerOptionIdListCC="{!v.DealerOptionIdListC}"/>
             </div>
         </div>

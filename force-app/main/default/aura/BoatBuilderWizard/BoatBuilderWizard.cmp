@@ -76,7 +76,7 @@
                                     </a>
                                 </li>
                             </ul>
-                            <div id="tab-default-1" class="slds-tabs_default__content slds-show" role="tabpanel" aria-labelledby="tab-default-1__item" style="height: 600px;">
+                            <div id="tab-default-1" class="slds-tabs_default__content slds-show" role="tabpanel" aria-labelledby="tab-default-1__item" style="height: auto;">
                                 <c:AccountComponent selectedLookUpRecord="{!v.selectedLookUpRecordvalueAcc}" fromBBNav1="{!v.fromBBNav}"/>
                                 
                                 <!-- <lightning:button variant="brand" label="Previous" iconName="utility:chevronleft" iconPosition="left" onclick="{! c.handleClick }" /> -->
