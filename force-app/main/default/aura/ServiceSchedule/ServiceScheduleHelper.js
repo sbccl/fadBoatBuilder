@@ -1,16 +1,18 @@
 ({
     loadEvents : function(component, event, usrId, type) {
         component.set("v.showSpinner", true);
+        
         var lstUser = component.get("v.lstUser");
+        console.log('lstUser: ',lstUser);
         var resources = [];
         lstUser.forEach(element => {
             var objRec = new Object();
             objRec.id = element.Id;
             objRec.title = element.Name;
             if(element.BOATBUILDING__Schedule_Color_Code__c != undefined) {   
-            objRec.eventColor = element.BOATBUILDING__Schedule_Color_Code__c;
+                objRec.eventColor = element.BOATBUILDING__Schedule_Color_Code__c;
         }
-                        if(usrId == 'All' || usrId == element.Id) {
+        if(usrId == 'All' || usrId == element.Id) {
             resources.push(objRec);
         }
     });
@@ -18,10 +20,10 @@
     console.log('Script Loaded');
     var action = component.get("c.fetchRelatedEvents");
     action.setParams({
-    "strUserId" : usrId,
-    "type" : type
-});
-action.setCallback(this, function(response){
+        "strUserId" : usrId,
+        "type" : type
+    });
+    action.setCallback(this, function(response){
     component.set("v.showSpinner", false);
     console.log('Response', response.getReturnValue());
     var result = response.getReturnValue();

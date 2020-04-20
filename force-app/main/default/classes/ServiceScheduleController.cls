@@ -1,7 +1,17 @@
 public class ServiceScheduleController {
+    @AuraEnabled
+    public static List<String> getUsersSLocation() {
+        List<String> lstObj = new List<String>();
+        Schema.DescribeFieldResult fieldResult = User.BOATBUILDING__Store_Location__c.getDescribe();
+        List<Schema.PicklistEntry> ple = fieldResult.getPicklistValues();
+        for( Schema.PicklistEntry pickListVal : ple){
+            lstObj.add(pickListVal.getLabel());
+        }  
+        return lstObj;
+    }
 
     @AuraEnabled
-    public static List<User> getUserList(){
+    public static List<User> getUserList(String sLoaction){
         List<User> lstUser = new List<User>();
         //Where isActive = true
         Set<String> setUserRole = new Set<String>();
@@ -18,16 +28,21 @@ public class ServiceScheduleController {
             }
         }
         Map<Id, UserRole> mapUR = new Map<Id, UserRole>([Select Id, Name From UserRole Where Name IN: setUserRole]);
-        lstUser = [Select Id, Name, BOATBUILDING__Schedule_Texted_Color_Code__c, BOATBUILDING__Schedule_Color_Code__c, BOATBUILDING__Store_Location__c From User WHERE UserRoleId IN: mapUR.keySet() AND IsActive = true ORDER BY Name ASC  Limit 1000 ];
+        if(sLoaction == 'All') {
+            lstUser = [Select Id, Name, BOATBUILDING__Schedule_Texted_Color_Code__c, BOATBUILDING__Schedule_Color_Code__c, BOATBUILDING__Store_Location__c From User WHERE UserRoleId IN: mapUR.keySet() AND IsActive = true ORDER BY Name ASC  Limit 1000 ];
+        } else {
+            lstUser = [Select Id, Name, BOATBUILDING__Schedule_Texted_Color_Code__c, BOATBUILDING__Schedule_Color_Code__c, BOATBUILDING__Store_Location__c From User 
+                        WHERE UserRoleId IN: mapUR.keySet() AND IsActive = true AND BOATBUILDING__Store_Location__c =: sLoaction ORDER BY Name ASC  Limit 1000 ];
+        }
         return lstUser; 
     }  
 
     @AuraEnabled
-    public static List<UserSLGroupList> getUserListSLGroup(){
-        List<User> lstUser = getUserList();
+    public static List<UserSLGroupList> getUserListSLGroup(String sLoaction){
+        List<User> lstUser = getUserList(sLoaction);
         Map<String, List<User>> mapVal = new Map<String, List<User>>();
         if(!lstUser.isEmpty()) { 
-            for(User objUser: lstUser) {
+            for(User objUser: lstUser) { 
                 if(String.isNotBlank(objUser.BOATBUILDING__Store_Location__c) && !mapVal.containsKey(objUser.BOATBUILDING__Store_Location__c)) {
                     mapVal.put(objUser.BOATBUILDING__Store_Location__c, new List<User>());
                 }

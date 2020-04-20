@@ -7,21 +7,62 @@
         });
         $A.enqueueAction(actionRec);
         
-       
-        
+        var action = component.get("c.getUsersSLocation");
+        action.setCallback(this, function(response) {
+            console.log('sLocation ', response.getReturnValue());
+            component.set("v.sLocation", response.getReturnValue());
+        });
+        $A.enqueueAction(action);
+         
     },
-    scriptsLoaded : function(component, event, helper) {
+    filterUserViaSL : function(component, event, helper) {
+        var location = component.get("v.slLoca");
+        component.set("v.selectedUser", 'All');
         var action = component.get("c.getUserList");
+        action.setParams({ 
+            "sLoaction" : location
+        });
         action.setCallback(this, function(response) {
             console.log('User List Response ', response.getReturnValue());
             component.set("v.lstUser", response.getReturnValue());
-        var selectedUser = component.get("v.selectedUser");
+            var selectedUser = component.get("v.selectedUser");
             var typeP = component.get("v.typeP");
             var calendarEl = document.getElementById('calendar');
             calendarEl.innerHTML =  '' ;
             helper.loadEvents(component, event, selectedUser, typeP);
 
             var action2 = component.get("c.getUserListSLGroup");
+            action2.setParams({ 
+                "sLoaction" : location 
+            });
+            action2.setCallback(this, function(response2) {
+                console.log('User List Response Group: ', response2.getReturnValue());
+                component.set("v.lstUserGrp", response2.getReturnValue());
+            });
+            $A.enqueueAction(action2);
+
+        });
+        $A.enqueueAction(action);
+    },
+    scriptsLoaded : function(component, event, helper) {
+        var location = component.get("v.slLoca");
+        var action = component.get("c.getUserList");
+        action.setParams({ 
+            "sLoaction" : location
+        });
+        action.setCallback(this, function(response) {
+            console.log('User List Response ', response.getReturnValue());
+            component.set("v.lstUser", response.getReturnValue());
+            var selectedUser = component.get("v.selectedUser");
+            var typeP = component.get("v.typeP");
+            var calendarEl = document.getElementById('calendar');
+            calendarEl.innerHTML =  '' ;
+            helper.loadEvents(component, event, selectedUser, typeP);
+
+            var action2 = component.get("c.getUserListSLGroup");
+            action2.setParams({ 
+                "sLoaction" : location 
+            });
             action2.setCallback(this, function(response2) {
                 console.log('User List Response Group: ', response2.getReturnValue());
                 component.set("v.lstUserGrp", response2.getReturnValue());
