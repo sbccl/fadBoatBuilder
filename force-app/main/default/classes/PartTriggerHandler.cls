@@ -20,7 +20,7 @@ public class PartTriggerHandler {
                     WooCommerce_Connect.savePartsToWooCommerce(str);
                 }
             }
-        }
+        } 
     } 
      public static void onAfterInsert(List<Part__c> lstPart){
       	addInventoryByPart(lstPart);   
