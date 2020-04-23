@@ -11,7 +11,7 @@
     <aura:attribute name="isPD" type="Boolean" default=""/>
     <aura:attribute name="showSpinner" type="boolean" default="false" access="global"/>
     <aura:attribute name="selectedUser" type="String" default="All"/>
-    <aura:attribute name="typeP" type="String" default="Work Order/Jobs"/>
+    <aura:attribute name="typeP" type="String" default=""/>
     <aura:attribute name="slLoca" type="String" default="All"/>
     <aura:if isTrue="{!v.showSpinner}">
         <lightning:spinner  variant= "brand"/>
@@ -52,7 +52,7 @@
                     </lightning:select>
                 </div>
             </div>
-        </div>      
+        </div>        
         <div id='calendar'></div>
         <aura:if isTrue="{!v.isModalOpen}">         
             <!-- Modal/Popup Box starts here-->

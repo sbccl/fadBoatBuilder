@@ -81,8 +81,8 @@ public class ServiceScheduleController {
 
     @AuraEnabled
     public static List<BOATBUILDING__Time_Management__c> fetchRelatedEvents(String strUserId, String type) {
-        System.debug('>>>>>>>>strUserId: '+strUserId);
-        System.debug('>>>>>>>>type: '+type);
+        System.debug('>>>>>>>>: '+strUserId);
+        System.debug('>>>>>>>>: '+type);
         List<BOATBUILDING__Time_Management__c> lstTM = new List<BOATBUILDING__Time_Management__c>();
         if(strUserId == 'All') {
             if(type == '0' || type == 'All') {
