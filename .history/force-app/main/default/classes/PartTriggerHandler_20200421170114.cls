@@ -14,8 +14,8 @@ public class PartTriggerHandler {
                         } 
                     }
                 } 
-                if(!setPartId.isEmpty() && setPartId.size() < 50) { 
-                    for(String str: setPartId) {  
+                if(!setPartId.isEmpty()) {
+                    for(String str: setPartId) {
                         WooCommerce_Connect.savePartsToWooCommerce(str);
                     }
                 }

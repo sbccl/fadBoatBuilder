@@ -2,25 +2,25 @@ public class PartTriggerHandler {
     public static void onAfterUpdate(Map<Id, Part__c> newMapPrt, Map<Id, Part__c> oldMapPrt) {
         if(runOnce()){
             updateInventoryFromPart(newMapPrt);
-            BOATBUILDING__WooCmmerce_Config__c objWC = BOATBUILDING__WooCmmerce_Config__c.getOrgDefaults();
-            if(objWC != null) {
-                Set<String> setPartId = new Set<String>();
-                for(Part__c objPart: newMapPrt.values()) {
-                    if(objPart.Quantity__c != null  && objPart.Quantity__c != oldMapPrt.get(objPart.Id).Quantity__c) {
-                        if(objPart.Part__c != null) {
-                            setPartId.add(objPart.Part__c);
-                        } else { 
-                            setPartId.add(objPart.Id); 
-                        } 
-                    }
-                } 
-                if(!setPartId.isEmpty() && setPartId.size() < 50) { 
-                    for(String str: setPartId) {  
-                        WooCommerce_Connect.savePartsToWooCommerce(str);
-                    }
+        }
+        BOATBUILDING__WooCmmerce_Config__c objWC = BOATBUILDING__WooCmmerce_Config__c.getOrgDefaults();
+        if(objWC != null) {
+            Set<String> setPartId = new Set<String>();
+            for(Part__c objPart: newMapPrt.values()) {
+                if(objPart.Quantity__c != null  && objPart.Quantity__c != oldMapPrt.get(objPart.Id).Quantity__c) {
+                    if(objPart.Part__c != null) {
+                        setPartId.add(objPart.Part__c);
+                    } else { 
+                        setPartId.add(objPart.Id); 
+                    } 
                 }
             } 
-        }
+            if(!setPartId.isEmpty()) {
+                for(String str: setPartId) {
+                    WooCommerce_Connect.savePartsToWooCommerce(str);
+                }
+            }
+        } 
     } 
      public static void onAfterInsert(List<Part__c> lstPart){
       	addInventoryByPart(lstPart);   

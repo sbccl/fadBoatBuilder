@@ -82,9 +82,9 @@ global class GetInvJsonWoocommerce {
 				        objInvoice.Phone_Number__c = objWOCOM.billing.phone;
 				        if(objWOCOM.customer_note != null )
 				        	objInvoice.BOATBUILDING__Woocommerce_Customer_Notes__c = String.valueOf(objWOCOM.customer_note);
-			        	if(!objWOCOM.shipping_lines.isEmpty() && objWOCOM.shipping_lines[0].method_title != null ) 
+			        	if(objWOCOM.shipping_lines != null && objWOCOM.shipping_lines[0].method_title != null ) 
 				        	objInvoice.BOATBUILDING__Shipping_Method__c = String.valueOf(objWOCOM.shipping_lines[0].method_title);
-				        if(objWOCOM.shipping_total != null ) 
+				        if(objWOCOM.shipping_total != null )
 				        	objInvoice.BOATBUILDING__Shipping_Charge__c = Decimal.valueOf(String.valueOf(objWOCOM.shipping_total));
 				        if(objWOCOM.discount_total != null )
 				        	objInvoice.BOATBUILDING__Discount_on_Invoice__c = Decimal.valueOf(String.valueOf(objWOCOM.discount_total));	
