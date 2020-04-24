@@ -212,13 +212,13 @@ public with sharing class UsedBoatFormController{
             if(totalPrice != null){
                 objInventory.Total_MSRP_Price__c = totalPrice + objInventory.Suggested_List_Price__c;
             }
-            if(totalPriceDealer != null && objInventory.BOATBUILDING__ACV__c != null){
+            if(totalPriceDealer != null){
                 objInventory.Total_Dealer_Price__c = totalPriceDealer + objInventory.BOATBUILDING__ACV__c;
             }
             insert objInventory;
         }catch(Exception ex){
             isError = true;
-            System.debug('>>>>1: '+ex.getStackTraceString()+ '  '+ex.getMessage());
+            System.debug('>>>>: '+ex.getStackTraceString());
             Apexpages.addMessage(new Apexpages.Message(Apexpages.Severity.FATAL,'Something went wrong please try again!!'));
             return null;    
         }
@@ -230,7 +230,7 @@ public with sharing class UsedBoatFormController{
                 insert lstInventoryLineItem;
             }catch(Exception ex){
                 isError = true;
-                System.debug('>>>>2: '+ex.getStackTraceString()+ '  '+ex.getMessage());
+                System.debug('>>>>: '+ex.getStackTraceString());
                 Apexpages.addMessage(new Apexpages.Message(Apexpages.Severity.FATAL,'Something went wrong please try again!!'));
                 return null;
             }

@@ -230,7 +230,7 @@ public with sharing class UsedBoatFormController{
                 insert lstInventoryLineItem;
             }catch(Exception ex){
                 isError = true;
-                System.debug('>>>>2: '+ex.getStackTraceString()+ '  '+ex.getMessage());
+                System.debug('>>>>2: '+ex.getStackTraceString());
                 Apexpages.addMessage(new Apexpages.Message(Apexpages.Severity.FATAL,'Something went wrong please try again!!'));
                 return null;
             }

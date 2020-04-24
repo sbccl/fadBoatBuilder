@@ -82,9 +82,9 @@ global class GetInvJsonWoocommerce {
 				        objInvoice.Phone_Number__c = objWOCOM.billing.phone;
 				        if(objWOCOM.customer_note != null )
 				        	objInvoice.BOATBUILDING__Woocommerce_Customer_Notes__c = String.valueOf(objWOCOM.customer_note);
-			        	if(!objWOCOM.shipping_lines.isEmpty() && objWOCOM.shipping_lines[0].method_title != null ) 
+			        	if(objWOCOM.shipping_lines != null && objWOCOM.shipping_lines[0].method_title != null ) 
 				        	objInvoice.BOATBUILDING__Shipping_Method__c = String.valueOf(objWOCOM.shipping_lines[0].method_title);
-				        if(objWOCOM.shipping_total != null ) 
+				        if(objWOCOM.shipping_total != null )
 				        	objInvoice.BOATBUILDING__Shipping_Charge__c = Decimal.valueOf(String.valueOf(objWOCOM.shipping_total));
 				        if(objWOCOM.discount_total != null )
 				        	objInvoice.BOATBUILDING__Discount_on_Invoice__c = Decimal.valueOf(String.valueOf(objWOCOM.discount_total));	
@@ -102,12 +102,7 @@ global class GetInvJsonWoocommerce {
 				        objInvoice.Zip_Code__c = objWOCOM.shipping.postcode;
 				         
 					    insert objInvoice;
-						
-						BOATBUILDING__Payments__c obj = new BOATBUILDING__Payments__c();
-						obj.BOATBUILDING__Amount__c = Decimal.valueOf(objWOCOM.total); 
-						obj.BOATBUILDING__MCSTransactionID__c = objWOCOM.transaction_id; 
-						obj.BOATBUILDING__Invoice__c = objInvoice.Id;
-						insert obj;
+					    
 					    List<WoocommerceWebhook_Invoice.Line_items> lstLI = objWOCOM.line_items;
 					    Set<String> setSFProductIds = new Set<String>();
 			    		Map<String, WoocommerceWebhook_Invoice.Line_items> mapSPIdQt = new Map<String, WoocommerceWebhook_Invoice.Line_items>();
@@ -253,7 +248,6 @@ global class GetInvJsonWoocommerce {
 									t.Subject = 'Web Invoice';
 									t.ActivityDate = Date.today();
 									t.Description = 'Web Invoice: '+objInvoice.Name;
-									t.WhatId = objInvoice.Id;
 									t.OwnerId = mapUser.values()[0].Id;
 									lstT.add(t);
 								 }
@@ -284,7 +278,7 @@ global class GetInvJsonWoocommerce {
             if(objSC != null && objSC.Enable_Debug_Mails__c)  {
                 
                 BOATBUILDING__Custom_Log__c objCL = new BOATBUILDING__Custom_Log__c();
-                objCL.Name = 'Woocommerce Rest Exception Log';
+                objCL.Name = 'Woocommerce Rest Log';
                 objCL.BOATBUILDING__Summary__c = '' + ex.getMessage() + ' : ' + ex.getLineNumber()+'\n--\n'+ex.getStackTraceString(); 
                 insert objCL;
              }
