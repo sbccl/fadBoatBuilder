@@ -290,8 +290,8 @@
                                         <div class="slds-form-element">
                                             <div class="slds-form-element__control">
                                                <!-- <apex:outputLabel value="{!dealerStatus}"/>-->
-<!--                                                <input type="text" placeholder="Length" class="slds-input" /> -->
-                                                <apex:inputField value="{!objInventory.Boat_Length_in_feets__c}" id="ifLen" onchange="fieldValidation(this);" styleClass="slds-input"/>
+<!--                                                <input type="text" placeholder="Length" class="slds-input" /> onchange="fieldValidation(this);"-->
+                                                <apex:inputField value="{!objInventory.Boat_Length_in_feets__c}" id="ifLen"  styleClass="slds-input"/>
                                                 <span id="spanlen" style="color:red;display:none;">Enter value in 0'00" format.</span>
                                             </div>
                                         </div>
@@ -367,8 +367,8 @@
                                         <div class="slds-form-element">
                                             <div class="slds-form-element__control">
                                                <!-- <apex:inputField value="{!objProduct.M_Dealer_Comments__c}"/>-->
-<!--                                                <input type="text" placeholder="Beam" class="slds-input" /> -->
-                                               <apex:inputField value="{!objInventory.Beam__c}" id="ifBm" onchange="fieldValidation(this);" styleClass="slds-input"/>
+<!--                                                <input type="text" placeholder="Beam" class="slds-input" /> onchange="fieldValidation(this);"-->
+                                               <apex:inputField value="{!objInventory.Beam__c}" id="ifBm"  styleClass="slds-input"/>
                                                <span id="spanBeam" style="color:red;display:none;">Enter value in 0'00" format.</span>
                                             </div>
                                         </div>
