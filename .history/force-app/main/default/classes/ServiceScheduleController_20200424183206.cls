@@ -183,17 +183,12 @@ public class ServiceScheduleController {
                                                                 BOATBUILDING__Related_Work_Order_Job__r.BOATBUILDING__Work_Order_Warranty_Work_Order__c        
                                                     FROM 
                                                                 BOATBUILDING__Time_Management__c Where Id =: strTMId];
-            if(!objTM.isEmpty()) {
-                if(objTM[0].BOATBUILDING__Work_Order__c != null) {
-                    return objTM[0].BOATBUILDING__Work_Order__c;
-                }
-                else if(objTM[0].BOATBUILDING__Related_Work_Order_Job__c != null) {
-                    return objTM[0].BOATBUILDING__Related_Work_Order_Job__r.BOATBUILDING__Work_Order_Warranty_Work_Order__c;
-                } 
-                else {
-                    return 'NONE';
-                }
+            if(objTM.BOATBUILDING__Work_Order__c != null) {
+                return objTM.BOATBUILDING__Work_Order__c;
             }
+            if(objTM.BOATBUILDING__Related_Work_Order_Job__c != null) {
+                return objTM.BOATBUILDING__Related_Work_Order_Job__r.BOATBUILDING__Work_Order_Warranty_Work_Order__c;
+            } 
             return 'NONE';
         } catch(Exception ex) {
             System.debug('Error: '+ex.getMessage()+' Line Number: '+ex.getLineNumber());

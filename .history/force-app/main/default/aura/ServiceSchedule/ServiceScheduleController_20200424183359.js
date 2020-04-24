@@ -163,14 +163,14 @@
     },
     opeWO : function(component, event, helper) {
         var recId = component.get("v.RecordId");
-        console.log('recId ', recId);
         var action = component.get("c.openWO");
         action.setParams({ 
             strTMId : recId 
         });
         action.setCallback(this, function(response) {
+            component.set("v.showSpinner", false);
             if(!response.getReturnValue().includes("NONE")) {
-                window.open("/"+response.getReturnValue(), '_blank');
+                window.open("/"+response.getReturnValue(), 'blank');
             } 
         }); 
         $A.enqueueAction(action);

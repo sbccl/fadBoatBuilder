@@ -280,8 +280,5 @@
       $A.util.addClass(prevLIel, "slds-is-active");
       $A.util.addClass(prevLIel, "slds-is-current"); 
       
-  },
-  backToInvList : function(component, event, helper) {
-    window.open('/lightning/n/BOATBUILDING__Boat_Inventory', '_self');
   }
  })

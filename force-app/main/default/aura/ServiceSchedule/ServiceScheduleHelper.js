@@ -17,7 +17,8 @@
         }
     });
     console.log('resources', resources);
-    console.log('Script Loaded');
+    console.log('Script Loaded ',usrId, type);
+
     var action = component.get("c.fetchRelatedEvents");
     action.setParams({
         "strUserId" : usrId,

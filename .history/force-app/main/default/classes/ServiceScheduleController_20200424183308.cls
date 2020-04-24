@@ -187,12 +187,10 @@ public class ServiceScheduleController {
                 if(objTM[0].BOATBUILDING__Work_Order__c != null) {
                     return objTM[0].BOATBUILDING__Work_Order__c;
                 }
-                else if(objTM[0].BOATBUILDING__Related_Work_Order_Job__c != null) {
+                if(objTM[0].BOATBUILDING__Related_Work_Order_Job__c != null) {
                     return objTM[0].BOATBUILDING__Related_Work_Order_Job__r.BOATBUILDING__Work_Order_Warranty_Work_Order__c;
                 } 
-                else {
-                    return 'NONE';
-                }
+                return 'NONE';
             }
             return 'NONE';
         } catch(Exception ex) {

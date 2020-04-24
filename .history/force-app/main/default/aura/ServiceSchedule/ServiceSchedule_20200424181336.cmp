@@ -122,7 +122,7 @@
                                         <lightning:button label="Save" type="submit" variant="brand" class="slds-float_right"/>&nbsp;
                                     </div>
                                     <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-3 slds-large-size--1-of-3 slds-p-top_small">
-                                        <lightning:button variant="brand" label="Cancel" title="Cancel" class="slds-m-left_x-large" onclick="{! c.closeModel }"/>
+                                        <lightning:button variant="brand" label="Cancel" title="Cancel" onclick="{! c.closeModel }"/>
                                     </div>
                                     <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-3 slds-large-size--1-of-3 slds-p-top_small">
                                         &nbsp;<lightning:button variant="brand" label="Open Work Order" title="Open Work Order" onclick="{! c.opeWO }"/>

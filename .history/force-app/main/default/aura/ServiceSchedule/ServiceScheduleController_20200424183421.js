@@ -170,7 +170,7 @@
         });
         action.setCallback(this, function(response) {
             if(!response.getReturnValue().includes("NONE")) {
-                window.open("/"+response.getReturnValue(), '_blank');
+                window.open("/"+response.getReturnValue(), 'blank');
             } 
         }); 
         $A.enqueueAction(action);
