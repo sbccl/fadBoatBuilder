@@ -162,17 +162,6 @@
         //component.find("eDate").set("v.value", dateVal);
     },
     opeWO : function(component, event, helper) {
-        var recId = component.get("v.RecordId");
-        console.log('recId ', recId);
-        var action = component.get("c.openWO");
-        action.setParams({ 
-            strTMId : recId 
-        });
-        action.setCallback(this, function(response) {
-            if(!response.getReturnValue().includes("NONE")) {
-                window.open("/"+response.getReturnValue(), '_blank');
-            } 
-        }); 
-        $A.enqueueAction(action);
+
     }
 })

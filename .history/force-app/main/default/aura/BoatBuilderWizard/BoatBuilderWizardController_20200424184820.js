@@ -282,6 +282,6 @@
       
   },
   backToInvList : function(component, event, helper) {
-    window.open('/lightning/n/BOATBUILDING__Boat_Inventory', '_self');
+    window.open('/lightning/n/BOATBUILDING__Boat_Inventory');
   }
  })
