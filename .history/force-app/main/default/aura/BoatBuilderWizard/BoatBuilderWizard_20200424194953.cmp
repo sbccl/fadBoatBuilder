@@ -86,9 +86,7 @@
                                     <tr>
                                         <td> 
                                             <aura:if isTrue="{!v.IventoryId != '0'}">
-                                                <div>
-                                                    <lightning:button variant="brand" iconPosition="left" iconName="utility:chevronleft" label="Back to Inventory List" onclick="{! c.backToInvList }" class="leftElement"/>/>
-                                                </div>
+                                                <lightning:button variant="brand" iconPosition="left" iconName="utility:chevronleft" label="Back to Inventory List" onclick="{! c.backToInvList }"/>
                                             </aura:if>
                                         </td>
                                         <td>
