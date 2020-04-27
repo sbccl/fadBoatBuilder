@@ -1230,7 +1230,6 @@ Customer_Pay = Decimal.valueOf((String)job.get('Customer_Pay'));
                     
                 }   
                 System.debug('log for Total_existing_job_line_items Update'+Total_existing_job_line_items);
-                List<String> uniqueexistingJobIdlst ;
                 if(Total_existing_job_line_items.size() > 0){
                     uniqueexistingJobIdlst = new List<String>(MapOfExistingId.keySet());
                     System.debug('log for uniqueexistingJobIdlst'+uniqueexistingJobIdlst);
