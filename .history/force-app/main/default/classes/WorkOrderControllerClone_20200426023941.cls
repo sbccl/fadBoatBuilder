@@ -1229,34 +1229,8 @@ Customer_Pay = Decimal.valueOf((String)job.get('Customer_Pay'));
                     }
                     
                 }   
-                System.debug('log for Total_existing_job_line_items Update'+Total_existing_job_line_items);
-                List<String> uniqueexistingJobIdlst ;
-                if(Total_existing_job_line_items.size() > 0){
-                    uniqueexistingJobIdlst = new List<String>(MapOfExistingId.keySet());
-                    System.debug('log for uniqueexistingJobIdlst'+uniqueexistingJobIdlst);
-                    List<BOATBUILDING__Work_Order_Job__c> newlstjob = [Select id,Unique_Job_id__c from BOATBUILDING__Work_Order_Job__c where Unique_Job_id__c in : uniqueexistingJobIdlst];    
-                    for(BOATBUILDING__Work_Order_Job_Line_Item__c joblineitemlist2 : Total_existing_job_line_items) {
-                        BOATBUILDING__Work_Order_Job_Line_Item__c obj_job_line_item2 = new BOATBUILDING__Work_Order_Job_Line_Item__c();
-                        obj_job_line_item2.Part_Name__c = joblineitemlist2.Part_Name__c;
-                        obj_job_line_item2.Part_Number__c = joblineitemlist2.Part_Number__c;
-                        obj_job_line_item2.Quantity__c = joblineitemlist2.Quantity__c;
-                        obj_job_line_item2.Price__c = joblineitemlist2.Price__c;
-                        for (String key : MapOfExistingId.keySet()) {
-                            String value = MapOfExistingId.get(key);
-                            if(value.equals(joblineitemlist2.Related_to_Job__c)){
-                                String keyvalue = key;
-                                for(BOATBUILDING__Work_Order_Job__c Jobid : newlstjob){
-                                    if(key.equals(Jobid.Unique_Job_id__c)){
-                                        obj_job_line_item2.Related_to_Job__c = Jobid.id;
-                                        System.debug('log for Related_to_Job__c'+Jobid.id);
-                                    }   
-                                }
-                            }
-                        }
-                        lstJoblineitem.add(obj_job_line_item2);
-                        //mapPartNumberQuantity.put(obj_job_line_item2.Part_Number__c, Integer.valueOf(obj_job_line_item2.Quantity__c));
-                    }
-                }
+                System.debug('log for Total_existing_job_line_items'+Total_existing_job_line_items);
+                
                 //try { 
                 insert lstJoblineitem;
                 /*}
