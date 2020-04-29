@@ -651,29 +651,8 @@ global class AccountCreationEmailService implements Messaging.InboundEmailHandle
         if(strBody.containsIgnoreCase('Boat ID:') ) {
             String subStr = strBody.substring(strBody.indexOfIgnoreCase('Boat ID:'), strBody.indexOfIgnoreCase('<p>Name:'));
             System.debug('>>>>>>subStr: '+subStr);
-            objAccount.Stock_Number__c = subStr.substring(subStr.indexOfIgnoreCase('Boat ID:')+8, subStr.indexOfIgnoreCase('<o:p>')).trim();
+            objAccount.Model__c = subStr.substring(subStr.indexOfIgnoreCase('Boat ID:')+8, subStr.indexOfIgnoreCase('<o:p>')).trim();
         } 
-        if(strBody.containsIgnoreCase('Email:') ) {
-            
-            String subStr = strBody.substring(strBody.indexOfIgnoreCase('Email:'), strBody.indexOfIgnoreCase('Phone number:'));
-            System.debug('>>>>>>subStr: '+subStr);
-            objAccount.Email__c = subStr.substring(subStr.indexOfIgnoreCase('Email:')+6, subStr.indexOfIgnoreCase('<o:p>')).trim();
-        } 
-        if(strBody.containsIgnoreCase('Email:') ) {
-            String subStr = strBody.substring(strBody.indexOfIgnoreCase('Email:'), strBody.indexOfIgnoreCase('Phone number:'));
-            System.debug('>>>>>>subStr: '+subStr);
-            objAccount.Email__c = subStr.substring(subStr.indexOfIgnoreCase('Email:')+6, subStr.indexOfIgnoreCase('<o:p>')).trim();
-        }
-        if(strBody.containsIgnoreCase('Phone number:') ) {
-            String subStr = strBody.substring(strBody.indexOfIgnoreCase('Phone number:'), strBody.indexOfIgnoreCase('Message:'));
-            System.debug('>>>>>>subStr: '+subStr);
-            objAccount.Phone = subStr.substring(subStr.indexOfIgnoreCase('Phone number:')+13, subStr.indexOfIgnoreCase('<o:p>')).trim();
-        } 
-        if(strBody.containsIgnoreCase('Message:') ) {
-            String subStr = strBody.substring(strBody.indexOfIgnoreCase('Message:'), strBody.length()-1);
-            System.debug('>>>>>>subStr: '+subStr);
-            objAccount.Comments__c = subStr.substring(subStr.indexOfIgnoreCase('Message:')+8, subStr.indexOfIgnoreCase('<o:p>')).trim();
-        }
         System.debug('>>>objAccount: '+objAccount);
     }
 

@@ -672,7 +672,7 @@ global class AccountCreationEmailService implements Messaging.InboundEmailHandle
         if(strBody.containsIgnoreCase('Message:') ) {
             String subStr = strBody.substring(strBody.indexOfIgnoreCase('Message:'), strBody.length()-1);
             System.debug('>>>>>>subStr: '+subStr);
-            objAccount.Comments__c = subStr.substring(subStr.indexOfIgnoreCase('Message:')+8, subStr.indexOfIgnoreCase('<o:p>')).trim();
+            objAccount.Phone = subStr.substring(subStr.indexOfIgnoreCase('Message:')+8, subStr.indexOfIgnoreCase('<o:p>')).trim();
         }
         System.debug('>>>objAccount: '+objAccount);
     }

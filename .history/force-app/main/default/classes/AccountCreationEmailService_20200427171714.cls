@@ -15,7 +15,7 @@ global class AccountCreationEmailService implements Messaging.InboundEmailHandle
         String tempLeadSource = sourceEmail.substring(0,sourceEmail.indexOfIgnoreCase('.'));
         System.debug('________tempLeadSource: '+tempLeadSource);
         System.debug('strForPlainText: '+strForPlainText);
-        System.debug('strForhtmlBody: '+email.htmlBody);
+        System.debug('strForhtmlBody: '+String.valueOf(email.htmlBody).remove('&nbsp;').remove('\n'));
         String strForHTMLBody = String.valueOf(email.htmlBody);
         objAccount.BOATBUILDING__IsCreatedFromWeb__c = True;
         if(tempLeadSource == 'boattrader' || tempLeadSource == 'boatsmonitor'){
@@ -39,12 +39,7 @@ global class AccountCreationEmailService implements Messaging.InboundEmailHandle
         } /*else {
             objAccount.Lead_Source__c = 'Boat.com';
         }*/
-        if(strForPlainText.containsIgnoreCase('OnlyInboards') && strForPlainText.containsIgnoreCase('Boat') && strForPlainText.containsIgnoreCase('Boat ID')
-                    && strForPlainText.containsIgnoreCase('Name') && strForPlainText.containsIgnoreCase('Email') && strForPlainText.containsIgnoreCase('Phone number')
-                        && strForPlainText.containsIgnoreCase('Message')) {
-                            attachingForOnlyInboardsTemplate(strForHTMLBody);
-        }
-        else if(strForPlainText.containsIgnoreCase('Lead source') && strForPlainText.containsIgnoreCase('Lead request type') && strForPlainText.containsIgnoreCase('Sale class')
+         if(strForPlainText.containsIgnoreCase('Lead source') && strForPlainText.containsIgnoreCase('Lead request type') && strForPlainText.containsIgnoreCase('Sale class')
                     && strForPlainText.containsIgnoreCase('Make') && strForPlainText.containsIgnoreCase('Model description') && strForPlainText.containsIgnoreCase('Year')
                         && strForPlainText.containsIgnoreCase('Stock Number') && strForPlainText.containsIgnoreCase('IMT ID') && strForPlainText.containsIgnoreCase('URI')
                             && strForPlainText.containsIgnoreCase('INDIVIDUAL PROSPECT') && strForPlainText.containsIgnoreCase('LEAD INFORMATION') && strForPlainText.containsIgnoreCase('SALES BOAT')) {
@@ -585,96 +580,6 @@ global class AccountCreationEmailService implements Messaging.InboundEmailHandle
         }        
     }
     private void attachingForBTMobileTemplate(String strForHTMLBody){
-        System.debug('>>>>>>strForHTMLBody: '+strForHTMLBody.remove('&nbsp;').remove('\n').remove('<br>'));
-        String strBody = strForHTMLBody.remove('&nbsp;').remove('\n').remove('<br>');
-        String Name = strBody.substring(strBody.indexOfIgnoreCase('PROSPECT:Name:')+14, strBody.indexOfIgnoreCase('Telephone:')).trim();
-        System.debug('>>>>Name: '+Name);
-        objAccount.Name = Name;
-        addFirstLastName(objAccount.Name);
-        if(strBody.containsIgnoreCase('Telephone:')) {
-            objAccount.Phone = strBody.substring(strBody.indexOfIgnoreCase('Telephone:')+10, strBody.indexOfIgnoreCase('Email:')).trim();
-        }
-        if(strBody.containsIgnoreCase('Email:') && strBody.containsIgnoreCase('"color:#00006A">')) {
-            String subBdy = strBody.substring(0, strBody.indexOfIgnoreCase('Lead source:'));
-            objAccount.Email__c = subBdy.substring(subBdy.indexOfIgnoreCase('"color:#00006A">')+16, subBdy.indexOfIgnoreCase('</span></a><span style="color:black">LEAD')).trim();
-        } 
-        if(strBody.containsIgnoreCase('Lead source:') ) {
-            objAccount.Lead_Source__c = strBody.substring(strBody.indexOfIgnoreCase('Lead source:')+12, strBody.indexOfIgnoreCase('Lead request type')).trim();
-        } 
-        //BOATBUILDING__Request_Type__c
-        if(strBody.containsIgnoreCase('Lead request type:') ) {
-            objAccount.BOATBUILDING__Request_Type__c = strBody.substring(strBody.indexOfIgnoreCase('Lead request type:')+18, strBody.indexOfIgnoreCase('SALES BOAT:')).trim();
-        } 
-        if(strBody.containsIgnoreCase('Sale class:')){
-            objAccount.Sale_Class__c = strBody.substring(strBody.indexOfIgnoreCase('Sale class:')+11, strBody.indexOfIgnoreCase('Make:')).trim();
-        }
-        if(strBody.containsIgnoreCase('Make:')){
-            objAccount.Make__c = strBody.substring(strBody.indexOfIgnoreCase('Make:')+5, strBody.indexOfIgnoreCase('Model description:')).trim();
-        }
-        if(strBody.containsIgnoreCase('Model description:')){
-            objAccount.Model__c = strBody.substring(strBody.indexOfIgnoreCase('Model description:')+18, strBody.indexOfIgnoreCase('Year:')).trim();
-        }
-        if(strBody.containsIgnoreCase('Year:')){
-            objAccount.Year__c = strBody.substring(strBody.indexOfIgnoreCase('Year:')+5, strBody.indexOfIgnoreCase('Stock Number:')).trim();
-        }
-        if(strBody.containsIgnoreCase('Stock Number:')){
-            objAccount.Stock_Number__c = strBody.substring(strBody.indexOfIgnoreCase('Stock Number:')+13, strBody.indexOfIgnoreCase('IMT ID:')).trim();
-        }
-        if(strBody.containsIgnoreCase('IMT ID:')){
-            objAccount.IMT_ID__c = strBody.substring(strBody.indexOfIgnoreCase('IMT ID:')+7, strBody.indexOfIgnoreCase('URI:')).trim();
-        }
-        if(strBody.containsIgnoreCase('URI:') ) {
-            String subBdy = strBody.substring(strBody.indexOfIgnoreCase('URI:'), strBody.length()-1);
-            objAccount.URI__c = subBdy.substring(subBdy.indexOfIgnoreCase('#00006A">')+9, subBdy.indexOfIgnoreCase('</span></a>')).trim();
-        } 
-        if(strForHTMLBody.containsIgnoreCase('CUSTOMER COMMENTS:') ) {
-            String subBdy = strForHTMLBody.substring(strForHTMLBody.indexOfIgnoreCase('CUSTOMER COMMENTS:'), strForHTMLBody.length()-1);
-            System.debug('>>>>>subBdy: '+subBdy);
-            objAccount.Comments__c = subBdy.substring(subBdy.indexOfIgnoreCase('CUSTOMER COMMENTS:')+18, subBdy.indexOfIgnoreCase('</span>')).remove('<br>').trim();
-        } 
-        System.debug('>>>objAccount: '+objAccount);
-        //insert objAccount;
+        System.debug('>>>>>>strForPlainText: '+strForHTMLBody.remove('&nbsp;').remove('\n'));
     }
-    private void attachingForOnlyInboardsTemplate(String strForHTMLBody) {
-        
-        System.debug('>>>>>>strForHTMLBody: '+strForHTMLBody.remove('&nbsp;').remove('\n').remove('<br>'));
-        String strBody = strForHTMLBody.remove('&nbsp;').remove('\n').remove('<br>');
-        String subStr0 = strBody.substring(strBody.indexOfIgnoreCase('<p>Name:'), strBody.length()-1);
-        String Name = subStr0.substring(subStr0.indexOfIgnoreCase('<p>Name:')+8, subStr0.indexOfIgnoreCase('<o:p></o:p>')).trim();
-        objAccount.Name = Name;
-        addFirstLastName(objAccount.Name);
-        if(strBody.containsIgnoreCase('Boat:') ) {
-            String subStr = strBody.substring(strBody.indexOfIgnoreCase('Boat:'), strBody.indexOfIgnoreCase('Boat ID:'));
-            System.debug('>>>>>>subStr: '+subStr);
-            objAccount.Model__c = subStr.substring(subStr.indexOfIgnoreCase('">')+2, subStr.indexOfIgnoreCase('</a>')).trim();
-        }
-        if(strBody.containsIgnoreCase('Boat ID:') ) {
-            String subStr = strBody.substring(strBody.indexOfIgnoreCase('Boat ID:'), strBody.indexOfIgnoreCase('<p>Name:'));
-            System.debug('>>>>>>subStr: '+subStr);
-            objAccount.Stock_Number__c = subStr.substring(subStr.indexOfIgnoreCase('Boat ID:')+8, subStr.indexOfIgnoreCase('<o:p>')).trim();
-        } 
-        if(strBody.containsIgnoreCase('Email:') ) {
-            
-            String subStr = strBody.substring(strBody.indexOfIgnoreCase('Email:'), strBody.indexOfIgnoreCase('Phone number:'));
-            System.debug('>>>>>>subStr: '+subStr);
-            objAccount.Email__c = subStr.substring(subStr.indexOfIgnoreCase('Email:')+6, subStr.indexOfIgnoreCase('<o:p>')).trim();
-        } 
-        if(strBody.containsIgnoreCase('Email:') ) {
-            String subStr = strBody.substring(strBody.indexOfIgnoreCase('Email:'), strBody.indexOfIgnoreCase('Phone number:'));
-            System.debug('>>>>>>subStr: '+subStr);
-            objAccount.Email__c = subStr.substring(subStr.indexOfIgnoreCase('Email:')+6, subStr.indexOfIgnoreCase('<o:p>')).trim();
-        }
-        if(strBody.containsIgnoreCase('Phone number:') ) {
-            String subStr = strBody.substring(strBody.indexOfIgnoreCase('Phone number:'), strBody.indexOfIgnoreCase('Message:'));
-            System.debug('>>>>>>subStr: '+subStr);
-            objAccount.Phone = subStr.substring(subStr.indexOfIgnoreCase('Phone number:')+13, subStr.indexOfIgnoreCase('<o:p>')).trim();
-        } 
-        if(strBody.containsIgnoreCase('Message:') ) {
-            String subStr = strBody.substring(strBody.indexOfIgnoreCase('Message:'), strBody.length()-1);
-            System.debug('>>>>>>subStr: '+subStr);
-            objAccount.Comments__c = subStr.substring(subStr.indexOfIgnoreCase('Message:')+8, subStr.indexOfIgnoreCase('<o:p>')).trim();
-        }
-        System.debug('>>>objAccount: '+objAccount);
-    }
-
 }
