@@ -53,7 +53,6 @@ public class BBWizardControllerTest {
         
         list<String> lstPP = new list<String>();
         BOATBUILDING__ProductPrice__c objPP = new BOATBUILDING__ProductPrice__c();
-        objPP.BOATBUILDING__Beam__c = 12234;
         objPP.BOATBUILDING__Product_Code__c = 'ghjk';
    
         objPP.BOATBUILDING__Sorting_Order__c =7890;

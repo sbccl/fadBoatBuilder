@@ -77,22 +77,6 @@
             <section>Quotation Related Details</section>
         </sections>
     </layouts>
-    <quickActions>
-        <label><!-- Boat Builder --></label>
-        <name>Boat_Builder_Quote</name>
-    </quickActions>
-    <quickActions>
-        <label><!-- Create ordered boat --></label>
-        <name>Created_ordered_boat</name>
-    </quickActions>
-    <quickActions>
-        <label><!-- Dealer Quote --></label>
-        <name>Dealer_Quote</name>
-    </quickActions>
-    <quickActions>
-        <label><!-- Schedule --></label>
-        <name>Schedule</name>
-    </quickActions>
     <recordTypes>
         <label><!-- Dealer Quote --></label>
         <name>Dealer_Quote</name>
@@ -146,8 +130,4 @@
         <label><!-- Sold_Boat_Invoice --></label>
         <name>Sold_Boat_Invoice</name>
     </webLinks>
-    <workflowTasks>
-        <name>Please_follow_up_with_customer</name>
-        <subject><!-- Please follow up with customer --></subject>
-    </workflowTasks>
 </CustomObjectTranslation>

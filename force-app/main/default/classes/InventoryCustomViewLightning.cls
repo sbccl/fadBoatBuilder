@@ -10,13 +10,14 @@ public class InventoryCustomViewLightning {
         List<BOATBUILDING__Inventory__c> listInventoryToReturn = new List<BOATBUILDING__Inventory__c>();
         
         strQuery = 'SELECT Id, Name,BOATBUILDING__Total_MSRP_Price__c, BOATBUILDING__Boat_Type__c,BOATBUILDING__Stage__c, RecordType.Name, '; 
-        strQuery += 'Model_Variant__c, Manufacturer__c, BOATBUILDING__Year__c, Model__c, Store_Location__c, HIN_Number__c, ';
-        strQuery += 'Suggested_List_Price__c, Engine_SN__c, Trailer_VIN__c, Boat_Length_in_feets__c, Location__c, Status_for_Days_on_the_Lot__c, ';
+        strQuery += 'Model_Variant__c, Manufacturer__c, BOATBUILDING__Year__c, Model__c, Store_Location__c, HIN_Number__c, BOATBUILDING__Location__c,';
+        strQuery += 'Suggested_List_Price__c, Engine_SN__c, Trailer_VIN__c, Boat_Length_in_feets__c,Status_for_Days_on_the_Lot__c, ';
         strQuery += 'Status_for_Interest_Start_Date__c,Status_for_Curtailment_Start_Date__c,BOATBUILDING__Curtailment_Start_Date__c, ';
         strQuery += 'BOATBUILDING__Interest_Start_Date__c,BOATBUILDING__Days_on_Lot__c, Main_color__c, Accent_color__c, ';
         strQuery += '(SELECT Id FROM Attachments WHERE Name LIKE \'%side__c%\' LIMIT 1) FROM ';
         strQuery += 'BOATBUILDING__Inventory__c WHERE BOATBUILDING__Stage__c != \'Sold\' ';
         strQuery += 'AND RecordType.Name != \'Inventory for Parts\' ';
+        strQuery += 'AND BOATBUILDING__Stage__c != \'No Longer For Sale\' ';
         
         System.debug('strQuery----'+strQuery);
         listInventoryToReturn = database.query(strQuery);
@@ -25,7 +26,7 @@ public class InventoryCustomViewLightning {
         return listInventoryToReturn;
     }
 
-    @AuraEnabled 
+ /*   @AuraEnabled 
     public static List<AggregateResult> getInventoryRecordType(){
         //  List<RecordType> lstRecTypeBoats = [SELECT  Name FROM RecordType
         //                                      WHERE  SobjectType = 'BOATBUILDING__Inventory__c' AND DeveloperName != 'Inventory_for_Parts']; 
@@ -289,5 +290,5 @@ public class InventoryCustomViewLightning {
         @AuraEnabled
         public String  Makes {get; set;}
         
-    }
+    } */
 }

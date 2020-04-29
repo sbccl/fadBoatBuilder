@@ -100,26 +100,6 @@
             <section>Interior Design</section>
         </sections>
     </layouts>
-    <quickActions>
-        <label><!-- Boat Builder --></label>
-        <name>Boat_Builder</name>
-    </quickActions>
-    <quickActions>
-        <label><!-- Part Swapping --></label>
-        <name>Part_Swapping</name>
-    </quickActions>
-    <quickActions>
-        <label><!-- Publish Changes On Website --></label>
-        <name>Publish_Changes_On_Website</name>
-    </quickActions>
-    <quickActions>
-        <label><!-- Schedule --></label>
-        <name>Schedule</name>
-    </quickActions>
-    <quickActions>
-        <label><!-- Select Template --></label>
-        <name>Select_Template</name>
-    </quickActions>
     <recordTypes>
         <label><!-- Engine --></label>
         <name>Engine</name>

@@ -280,11 +280,12 @@ public class WODetailPageController {
         Map<String, List<WOrkOrderData.LstJobLineItems>> mapJobTOJLI = new Map<String, List<WOrkOrderData.LstJobLineItems>>();
         List<BOATBUILDING__Work_Order_Job__c> lstJobsTOProcess = new List<BOATBUILDING__Work_Order_Job__c>();
         for(WorkOrderData wod : lstWOData){
+            System.debug('-----------_@@@@wod'+wod);
             BOATBUILDING__Work_Order_Job__c objWOJ = new BOATBUILDING__Work_Order_Job__c();
             if(String.isNotBlank(wod.workOrderId) && String.isBlank(workOrderId)){
                 workOrderId = wod.workOrderId;
             }
-            if(String.isNotBlank(wod.Id)){
+            if(String.isNotBlank(wod.Id) && wod.Id != 'CJ'){
                 
                 objWOJ.Id = wod.Id;
             }
@@ -458,7 +459,7 @@ public class WODetailPageController {
 
         if(!lstJobsTOProcess.isEmpty()){
             upsert lstJobsTOProcess;
-        
+            System.debug('-----------_@@@@'+lstJobsTOProcess);
             BOATBUILDING__Work_Order__c objWO = [Select Id, RecordType.Name from BOATBUILDING__Work_Order__c where id =: lstJobsTOProcess[0].BOATBUILDING__Work_Order_Warranty_Work_Order__c];
             if(objWO.RecordType.Name == 'Warranty Work Order'){
                 Set<String> setJobId = new Set<String>();

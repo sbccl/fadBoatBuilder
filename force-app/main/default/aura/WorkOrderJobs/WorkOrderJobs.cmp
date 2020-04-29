@@ -1,7 +1,8 @@
 <aura:component controller="WODetailPageController">
     <aura:attribute name="WOJ" type="Object" access="global" />
     <aura:attribute name="jobLI" type="Object" access="global" />
-    <aura:attribute name="mapWTP" type="Map" access="global" />
+    <aura:attribute name="workOrderId" type="String" access="global" />
+    <aura:attribute name="mapWTP" type="Map" access="global" /> 
     <aura:attribute name="wojWithJLI" type="Object" access="global" />
     <aura:attribute name="mapWTPNew" type="Map" access="global" />
     <aura:attribute name="mapCannedJob" type="Map" access="global" />
@@ -65,6 +66,7 @@
 
         </div>
         <div class="slds-col slds-size_1-of-1  slds-medium-size_3-of-4 slds-large-size_3-of-4">
+            
             <lightning:accordionSection name="" label="{!if(or(v.WOJ.BOATBUILDING__Taxable__c == false,v.recordType == 'Warranty Work Order'),'Job Total : $'+v.jobTotal , 'Job Total : $'+v.jobTotalwTax)}" class="addMiscCharges">
         
             <dl class="slds-list_horizontal slds-wrap slds-p-left_xx-large">

@@ -1,6 +1,7 @@
 public class JLITriggerHandler {
 
     public Static void onBeforeInsert(List<Work_Order_Job_Line_Item__c> lstNewJobLnItem){
+        updatePartLookup(lstNewJobLnItem);
     }
     
     public Static void onBeforeUpdate(List<Work_Order_Job_Line_Item__c> lstNewJobLnItem, Map<Id, Work_Order_Job_Line_Item__c> mapOldJobLineItem){
@@ -21,7 +22,7 @@ public class JLITriggerHandler {
         updateInventoryQuantity(lstOldJobLnItem, null);
     }
 
-    public static void onBeforeInsertAndUpdate(List<BOATBUILDING__Work_Order_Job_Line_Item__c> lstJLI) {
+    public static void updatePartLookup(List<BOATBUILDING__Work_Order_Job_Line_Item__c> lstJLI) {
         
         set<String>setPrtNum = new Set<String>();
         Map<String, Decimal> mapPartDetail = new Map<String, Decimal>();
@@ -46,7 +47,7 @@ public class JLITriggerHandler {
             }
         }
     }   
-    
+    /*
     public static void onJLIQuantityChange(Map<Id, Work_Order_Job_Line_Item__c> newMapJLI, Map<Id, Work_Order_Job_Line_Item__c> oldMapJLI) {
         try {
             Map<String, Work_Order_Job_Line_Item__c> newMapJLI2 = new Map<String, Work_Order_Job_Line_Item__c>();
@@ -95,7 +96,7 @@ public class JLITriggerHandler {
             System.debug('Debug Log For Exception: '+ex);
         }
     }
-    
+    */
     /*public static void onBeforeDelete(List<Work_Order_Job_Line_Item__c> oldLstJLI) {
         /*Map<String, Work_Order_Job_Line_Item__c> oldMapJLI = new Map<String, Work_Order_Job_Line_Item__c>();  
         for(Work_Order_Job_Line_Item__c objJlI: oldLstJLI) {

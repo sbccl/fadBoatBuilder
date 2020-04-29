@@ -19,22 +19,6 @@
             <section>Part Variation</section>
         </sections>
     </layouts>
-    <quickActions>
-        <label><!-- Create Part Request --></label>
-        <name>Create_Part_Request</name>
-    </quickActions>
-    <quickActions>
-        <label><!-- Push Image to Woocommerce --></label>
-        <name>Push_Image_to_Woocommerce</name>
-    </quickActions>
-    <quickActions>
-        <label><!-- Push To Shopify --></label>
-        <name>Push_To_Shopify</name>
-    </quickActions>
-    <quickActions>
-        <label><!-- Push To Woocommerce --></label>
-        <name>Push_To_Woocommerce</name>
-    </quickActions>
     <recordTypes>
         <label><!-- Part --></label>
         <name>Part</name>

@@ -147,14 +147,6 @@
             <section>Sales Taxes</section>
         </sections>
     </layouts>
-    <quickActions>
-        <label><!-- Add Payment --></label>
-        <name>Add_Payment</name>
-    </quickActions>
-    <quickActions>
-        <label><!-- Refund --></label>
-        <name>Refund</name>
-    </quickActions>
     <recordTypes>
         <label><!-- Sold Boat Invoice --></label>
         <name>Sold_Boat_Invoice</name>
