@@ -70,9 +70,17 @@
            component.set("v.cannedJobSelected", true);
            
            var JobObject = component.get("v.mapCannedJob")[cannedJobName];
+           JobObject.Id = 'CJ';
+           JobObject.BOATBUILDING__Work_Order_Warranty_Work_Order__c = component.get("v.workOrderId");
            //console.log('JobObject',JSON.stringify(component.get("v.mapCannedJob")));
+           //console.log('JobObject',component.get("v.recordId")+'==='+component.get("v.workOrderId"));
            component.set("v.WOJ",JobObject);
+
            component.set("v.WOJ.BOATBUILDING__Work_Type__c",JobObject.BOATBUILDING__Work_Type__c)
+           var multiplier = component.get("v.mapWTP")[component.get("v.WOJ.BOATBUILDING__Work_Type__c")];
+           component.set("v.laborPriceMultiplier",multiplier);
+           component.set("v.WOJ.laborPriceMultiplier",multiplier);
+           helper.updatejobTotalHelper(component, event, helper);
            var multiplier = component.get("v.mapWTP")[component.get("v.WOJ.BOATBUILDING__Work_Type__c")];
            //console.log('multiplier',component.get("v.mapWTPNew"));
            component.set("v.laborPriceMultiplier",multiplier);

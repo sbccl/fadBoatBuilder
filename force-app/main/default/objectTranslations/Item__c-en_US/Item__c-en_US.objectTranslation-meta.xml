@@ -78,10 +78,6 @@
             <section>Transmission &amp; Gearbox Details</section>
         </sections>
     </layouts>
-    <quickActions>
-        <label><!-- Update Item --></label>
-        <name>UpdateItem</name>
-    </quickActions>
     <startsWith>Vowel</startsWith>
     <webLinks>
         <label><!-- Create_Used_Boat_Inventory --></label>

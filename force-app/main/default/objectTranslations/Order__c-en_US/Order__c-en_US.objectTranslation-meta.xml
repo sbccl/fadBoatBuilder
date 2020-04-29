@@ -65,10 +65,6 @@
             <section>Fields</section>
         </sections>
     </layouts>
-    <quickActions>
-        <label><!-- Add Attachment --></label>
-        <name>Add_Attachment</name>
-    </quickActions>
     <recordTypes>
         <label><!-- Company Purchase Requests --></label>
         <name>Company_Purchase_Requests</name>

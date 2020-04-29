@@ -164,7 +164,7 @@
         <profile>System Admin Clone</profile>
     </profileActionOverrides>
     <tabs>standard-home</tabs>
-    <tabs>Schedule</tabs>
+    <tabs>Schedule_Lightning</tabs>
     <tabs>Payments__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>FAD_Service_Tech_UtilityBar</utilityBar>

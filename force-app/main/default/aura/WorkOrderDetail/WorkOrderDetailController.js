@@ -30,7 +30,7 @@
                 helper.hideSpinner(component,event,helper);
             } else if (state === "ERROR") {
                 
-                var errors = response.getError();
+                //var errors = response.getErrors();
                 //console.log( errors );
                 helper.hideSpinner(component,event,helper);
             }
@@ -89,7 +89,7 @@
             }
         }
       
-        //console.log('finalDataArray', JSON.stringify(finalDataArray));
+       // console.log('finalDataArray', JSON.stringify(finalDataArray));
         var action =  component.get("c.saveWOJob");
         action.setParams({
             "woDataJSON" : JSON.stringify(finalDataArray)

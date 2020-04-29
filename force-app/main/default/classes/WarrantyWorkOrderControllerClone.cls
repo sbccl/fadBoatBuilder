@@ -34,7 +34,8 @@ public with sharing class WarrantyWorkOrderControllerClone {
         lstJobs.add(new SelectOption('', '--None--'));
         Id wwojId = Schema.SObjectType.BOATBUILDING__Work_Order_Job__c.getRecordTypeInfosByName().get('Canned Job').getRecordTypeId();
         for(BOATBUILDING__Work_Order_Job__c objJob : [Select Id, Job_Name__c, Name from BOATBUILDING__Work_Order_Job__c Where RecordTypeId =: wwojId limit 999]){
-            lstJobs.add(new SelectOption(objJob.id, objJob.Job_Name__c ));
+            if(String.isNotBlank(objJob.Job_Name__c))
+                lstJobs.add(new SelectOption(objJob.id, objJob.Job_Name__c ));
         }
         List<User> u = [Select Id, Name From User Where UserRole.Name =: 'Service Tech' AND IsActive = true];
         selectedTech = '0'; 

@@ -171,7 +171,15 @@
         action.setCallback(this, function(response) {
             if(!response.getReturnValue().includes("NONE")) {
                 window.open("/"+response.getReturnValue(), '_blank');
-            } 
+            } else {
+                var errorEvent = $A.get("e.force:showToast");
+                errorEvent.setParams({
+                    "type" : "error",
+                    "title": "Error!",
+                    "message": 'There is no Work Order or Work Order Job attached.'
+                });
+                errorEvent.fire();
+            }
         }); 
         $A.enqueueAction(action);
     }

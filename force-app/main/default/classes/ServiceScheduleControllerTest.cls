@@ -23,7 +23,9 @@ public class ServiceScheduleControllerTest {
         insert objTm;
         ServiceScheduleController.updateTechOnALlJobs(objTm.Id);
         ServiceScheduleController.fetchRelatedEvents(u.Id,'All');
-        ServiceScheduleController.getUserList();
+        ServiceScheduleController.getUserList('other');
+        ServiceScheduleController.getUserListSLGroup('other');
+        ServiceScheduleController.getUsersSLocation();
         ServiceScheduleController.getrecordType();
 
     }

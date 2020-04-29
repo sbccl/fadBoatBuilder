@@ -42,6 +42,9 @@
             var newJob = response.getReturnValue();
             //newJob.objWOJ.RecordType.Name = component.get("v.woRecordData").RecordType.Name;
             //newJob.ObjWOJ.BOATBUILDING__Store_Location__c = component.get("v.woRecordData").BOATBUILDING__Store_Location__c;
+            //newJob.ObjWOJ.BOATBUILDING__Store_Location__c = component.find("storeLocationWO").get("v.value");
+           // console.log('component.get("v.woRecordData")',JSON.stringify(component.get("v.woRecordData")));
+            //console.log('component.find("storeLocationWO").get("v.value")',component.find("storeLocationWO").get("v.value"));
             if(component.get("v.woRecordData.RecordType.Name") == 'Warranty Work Order'){
                 newJob.objWOJ.BOATBUILDING__Taxable__c = false;
             }
@@ -241,13 +244,17 @@
                     if(woJobWithJL[i].objWOJ.BOATBUILDING__Taxable__c == true){
                         //woJobWithJL[i].objWOJ.
                         if(typeof woJobWithJL[i].objWOJ.partsTotal != "undefined"){
-                            //console.log('----------partsTotal',woJobWithJL[i].objWOJ.partsTotal);
+                           // console.log('----------partsTotal',woJobWithJL[i].objWOJ.partsTotal);
                             partsTotalOnWorkOrder = partsTotalOnWorkOrder + woJobWithJL[i].objWOJ.partsTotal;
                             //console.log('----------partsTotalAfter',partsTotalOnWorkOrder);
                         }
+                        //console.log('woJobWithJL[i].objWOJ.laborPriceMultiplier',JSON.stringify(woJobWithJL[i].objWOJ));
                         
                         if(typeof woJobWithJL[i].objWOJ.laborPriceMultiplier != "undefined" && typeof woJobWithJL[i].objWOJ.BOATBUILDING__No_of_Labors__c != "undefined"){
+                            //console.log('----------inside Labor');
+
                             totalLabor = parseFloat(totalLabor) + (parseFloat(woJobWithJL[i].objWOJ.laborPriceMultiplier) * parseFloat(woJobWithJL[i].objWOJ.BOATBUILDING__No_of_Labors__c));
+                           // console.log('----------inside Labor',totalLabor);
                         }
                         
                         if(typeof woJobWithJL[i].objWOJ.totalMiscCharges != "undefined"){
@@ -256,6 +263,7 @@
                         
                         
                         if(typeof woJobWithJL[i].objWOJ.BOATBUILDING__Shop_Supplies_Total__c != "undefined" ){
+                            //console.log('----------inside SS');
                             shopSupplies = parseFloat(shopSupplies) + parseFloat(woJobWithJL[i].objWOJ.BOATBUILDING__Shop_Supplies_Total__c);
                         }
                         if(typeof woJobWithJL[i].objWOJ.BOATBUILDING__Discount__c != "undefined"){

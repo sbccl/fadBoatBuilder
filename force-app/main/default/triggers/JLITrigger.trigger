@@ -27,22 +27,13 @@ trigger JLITrigger on Work_Order_Job_Line_Item__c (before insert, before update,
             JLITriggerHandler.onAfterDelete(Trigger.old);
         }
 
-        if(trigger.isBefore) {
-            if(trigger.isInsert) {
-                JLITriggerHandler.onBeforeInsertAndUpdate(trigger.new);
-            }
-            if(trigger.isUpdate) {
-                //JLITriggerHandler.onBeforeInsertAndUpdate(trigger.new);
-            }
-            if(trigger.isDelete) {
-                JLITriggerHandler.onBeforeDelete(trigger.old);
-            }
-        } 
+
         if(trigger.isAfter && trigger.isUpdate) {
-            JLITriggerHandler.onJLIQuantityChange(trigger.newMap, trigger.oldMap);
+            //JLITriggerHandler.onJLIQuantityChange(trigger.newMap, trigger.oldMap);
         }
     }
     
+    /*
     if(Trigger.isBefore && Trigger.isDelete) {
         Map<String, Integer> mapPQ = new Map<String, Integer>();
         
@@ -81,5 +72,5 @@ trigger JLITrigger on Work_Order_Job_Line_Item__c (before insert, before update,
             update lstPA;
         }
 
-    }
+    }*/
 }

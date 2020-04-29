@@ -19,6 +19,10 @@
         <translation><!-- Marketing Photos --></translation>
     </picklistValues>
     <picklistValues>
+        <masterLabel>No Longer For Sale</masterLabel>
+        <translation><!-- No Longer For Sale --></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Ordered</masterLabel>
         <translation><!-- Ordered --></translation>
     </picklistValues>

@@ -135,6 +135,7 @@
             //console.log("recordType????",component.get("v.recordType"));
             //console.log('totalJob---'+jobTotal);
             if(!isNaN(jobTotal)){
+               // console.log('inside if');
                 component.set("v.jobTotal",jobTotal);
                 component.set("v.WOJ.BOATBUILDING__Total_Amount_Job__c",jobTotal);
             }
@@ -154,8 +155,11 @@
         //tax calcualtion per job
         var isJobTaxable = component.get("v.WOJ.BOATBUILDING__Taxable__c");
         if(isJobTaxable == true && component.get("v.recordType") != 'Warranty Work Order'){
-            var storeLocation = component.get("v.WOJ.BOATBUILDING__Work_Order_Warranty_Work_Order__r.BOATBUILDING__Store_Location__c")
+            //console.log('wojjj',JSON.stringify(component.get("v.WOJ")));
+            var storeLocation = component.get("v.storeLocation");
+            //console.log('storeLocation',storeLocation);
             if(typeof storeLocation != "undefined"){
+               // console.log('method is calling');
                 this.jobTaxCalcualtion(component, event, helper, storeLocation);
             }
         }
@@ -186,6 +190,7 @@
 
     },
     jobTaxCalcualtion : function(component, event, helper, storeLocation){
+      //  console.log("this is tax calcualtion");
         this.showSpinner(component,event,helper);
         var totalLabor = component.get("v.WOJ.BOATBUILDING__No_of_Labors__c") * component.get("v.laborPriceMultiplier");
         var totalMisc = component.get("v.totalMiscCharges");
@@ -203,13 +208,14 @@
         }
 
         var woJob = component.get("v.WOJ");
+       // console.log('job log',woJob);
         var wojWithJLI = component.get("v.wojWithJLI");
         if(typeof wojWithJLI != "undefined"){
                 var salestaxConfig = wojWithJLI.salesTaxConfig;
             
                 if(typeof woJob != "undefined" && typeof wojWithJLI.salesTaxConfig != "undefined" && typeof storeLocation != "undefined" && salestaxConfig[storeLocation] != "undefined" && woJob.BOATBUILDING__Taxable__c == true){
                     
-                    //console.log('sales tax config---', salestaxConfig);
+                   // console.log('sales tax config---', salestaxConfig);
                     var jobTotal = 0.00;
                     var salestaxconfigObject = salestaxConfig[storeLocation];
                     if(typeof salestaxconfigObject != "undefined"){
@@ -273,6 +279,7 @@
                 }
             }
             else{
+               // console.log('inside elsessssss part');
                 component.set("v.WOJ.jobTotalwTax",0.00);
                 component.set("v.WOJ.taxOnJob",0.00);
             }
@@ -286,6 +293,7 @@
     saveJobWithJLI : function(component, event, helper){
         ////console.log('saveJobFromJobCMP',JSON.parse(JSON.stringify(component.get("v.WOJ"))));
         var objWOJ = component.get("v.WOJ");
+        console.log('saveJobFromJobCMP',JSON.stringify(component.get("v.WOJ")));
         var woObject = new Object();
         if(typeof objWOJ.BOATBUILDING__Work_Order_Warranty_Work_Order__c != "undefined"){
             woObject.workOrderId = objWOJ.BOATBUILDING__Work_Order_Warranty_Work_Order__c;
@@ -420,10 +428,10 @@
             for(var i = 0 ; i < objWOJ.BOATBUILDING__Work_Order_Job_Line_Items__r.length; i++){
                 var lineItem = new Object();
                 var currentLI = objWOJ.BOATBUILDING__Work_Order_Job_Line_Items__r[i];
-                if(typeof currentLI.Id != "undefined"){
+                if(typeof currentLI.Id != "undefined" && woObject.Id != "CJ"){
                     lineItem.lineItemId = currentLI.Id;
                 }
-                if(typeof currentLI.BOATBUILDING__Related_to_Job__c != "undefined"){
+                if(typeof currentLI.BOATBUILDING__Related_to_Job__c != "undefined" && woObject.Id != "CJ"){
                     lineItem.parentJob = currentLI.BOATBUILDING__Related_to_Job__c;
                 }
                 if(typeof currentLI.BOATBUILDING__Price__c != "undefined"){

@@ -76,18 +76,28 @@
                                     </a>
                                 </li>
                             </ul>
-                            <aura:if isTrue="{!v.IventoryId != '0'}">
-                                <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-3 slds-large-size--1-of-3 slds-p-top_small">
-                                    <lightning:button variant="brand" label="Back to Inventory List" title="Back to Inventory List" onclick="{! c.backToInvList }"/>
-                                </div>
-                            </aura:if>
+                            
                             <div id="tab-default-1" class="slds-tabs_default__content slds-show" role="tabpanel" aria-labelledby="tab-default-1__item" style="height: auto;">
                                 <c:AccountComponent selectedLookUpRecord="{!v.selectedLookUpRecordvalueAcc}" fromBBNav1="{!v.fromBBNav}"/>
                                 
                                 <!-- <lightning:button variant="brand" label="Previous" iconName="utility:chevronleft" iconPosition="left" onclick="{! c.handleClick }" /> -->
-                                <div onclick="{!c.handleClick}" data-value="1" style="height:0px;max-width:auto;">
-                                    <lightning:button variant="brand" label="Next" iconName="utility:chevronright" iconPosition="right" class="rightElement" value="1" />
-                                </div>
+                                
+                                <table>
+                                    <tr>
+                                        <td> 
+                                            <aura:if isTrue="{!v.IventoryId != '0'}">
+                                                <div>
+                                                    <lightning:button variant="brand" iconPosition="left" iconName="utility:chevronleft" label="Back to Inventory List" onclick="{! c.backToInvList }" class="leftElement"/>/>
+                                                </div>
+                                            </aura:if>
+                                        </td>
+                                        <td>
+                                            <div onclick="{!c.handleClick}" data-value="1" style="height:0px;max-width:auto;">
+                                                <lightning:button variant="brand" label="Next" iconName="utility:chevronright" iconPosition="right" class="rightElement" value="1" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
                             </div>
                             <div id="tab-default-2" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab-default-2__item">
                                 <c:InventorySelection lstDealerOptionWraperC="{!v.lstDealerOptionWraper}" NoSalesmanWithoutCostC="{!v.NoSalesmanWithoutCost}" InvIdC="{!v.InvId}" ProIdC="{!v.ProId}" ProductPriceIdListC="{!v.ProductPriceIdList}" DealerOptionIdListC="{!v.DealerOptionIdList}" InvlistId="{!v.IventoryId}"/> 

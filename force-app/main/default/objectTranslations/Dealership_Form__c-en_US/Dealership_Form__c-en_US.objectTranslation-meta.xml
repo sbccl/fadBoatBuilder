@@ -15,10 +15,6 @@
             <section>Custom Links</section>
         </sections>
     </layouts>
-    <quickActions>
-        <label><!-- Print Form --></label>
-        <name>Print_Form</name>
-    </quickActions>
     <recordTypes>
         <label><!-- Inspection Form --></label>
         <name>Inspection_Form</name>

@@ -333,7 +333,7 @@
                                     
                                
                                 
-                                <c:WorkOrderJobs mapWTP="{!woj.lstWorkType}" mapCannedJob="{!woj.mapCannedJob}" storeLocation="{!v.woRecordData.BOATBUILDING__Store_Location__c}" recordType="{!v.woRecordData.RecordType.Name}" WOJ="{!woj.objWOJ}" jobLI="{!woj.objWOJ.BOATBUILDING__Work_Order_Job_Line_Items__r}" shopSuppliePercent="{!woj.shopSuppliesPer}" wojWithJLI="{!woj}" shopSuppliesCapping="{!woj.shopSuppliesCap}" />
+                                <c:WorkOrderJobs mapWTP="{!woj.lstWorkType}" mapCannedJob="{!woj.mapCannedJob}" storeLocation="{!v.woRecordData.BOATBUILDING__Store_Location__c}" recordType="{!v.woRecordData.RecordType.Name}" WOJ="{!woj.objWOJ}" jobLI="{!woj.objWOJ.BOATBUILDING__Work_Order_Job_Line_Items__r}" shopSuppliePercent="{!woj.shopSuppliesPer}" wojWithJLI="{!woj}" shopSuppliesCapping="{!woj.shopSuppliesCap}" workOrderId="{!v.recordId}"/>
                             </div>
                             </lightning:tile>
                         </div>

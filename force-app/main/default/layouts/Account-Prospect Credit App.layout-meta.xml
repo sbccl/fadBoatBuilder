@@ -201,6 +201,10 @@
                 <behavior>Edit</behavior>
                 <field>Starboard_engine__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Stock_Number__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
