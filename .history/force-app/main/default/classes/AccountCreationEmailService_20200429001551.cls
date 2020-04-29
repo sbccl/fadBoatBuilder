@@ -639,17 +639,17 @@ global class AccountCreationEmailService implements Messaging.InboundEmailHandle
         
         System.debug('>>>>>>strForHTMLBody: '+strForHTMLBody.remove('&nbsp;').remove('\n').remove('<br>'));
         String strBody = strForHTMLBody.remove('&nbsp;').remove('\n').remove('<br>');
-        String subStr0 = strBody.substring(strBody.indexOfIgnoreCase('<p>Name:'), strBody.length()-1);
-        String Name = subStr0.substring(subStr0.indexOfIgnoreCase('<p>Name:')+8, subStr0.indexOfIgnoreCase('<o:p></o:p>')).trim();
+        String subStr0 = strBody.substring(strBody.indexOfIgnoreCase('>Name:'), strBody.length()-1);
+        String Name = subStr0.substring(subStr0.indexOfIgnoreCase('>Name:')+6, subStr0.indexOfIgnoreCase('<o:p></o:p>')).trim();
         objAccount.Name = Name;
         addFirstLastName(objAccount.Name);
         if(strBody.containsIgnoreCase('Boat:') ) {
             String subStr = strBody.substring(strBody.indexOfIgnoreCase('Boat:'), strBody.indexOfIgnoreCase('Boat ID:'));
             System.debug('>>>>>>subStr: '+subStr);
-            objAccount.Model__c = subStr.substring(subStr.indexOfIgnoreCase('">')+2, subStr.indexOfIgnoreCase('</a>')).trim();
-        }
+            objAccount.Model__c = subStr.substring(subStr.indexOfIgnoreCase('"EN-IN">')+8, subStr.indexOfIgnoreCase('</')).trim();
+        } 
         if(strBody.containsIgnoreCase('Boat ID:') ) {
-            String subStr = strBody.substring(strBody.indexOfIgnoreCase('Boat ID:'), strBody.indexOfIgnoreCase('<p>Name:'));
+            String subStr = strBody.substring(strBody.indexOfIgnoreCase('Boat ID:'), strBody.indexOfIgnoreCase('>Name:')); 
             System.debug('>>>>>>subStr: '+subStr);
             objAccount.Stock_Number__c = subStr.substring(subStr.indexOfIgnoreCase('Boat ID:')+8, subStr.indexOfIgnoreCase('<o:p>')).trim();
         } 
