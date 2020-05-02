@@ -631,7 +631,7 @@ global class AccountCreationEmailService implements Messaging.InboundEmailHandle
             objAccount.URI__c = strBody.substring(strBody.indexOfIgnoreCase('URI:')+4, strBody.indexOfIgnoreCase('OFFICEINFO:')).trim();
         } 
         if(strForHTMLBody.containsIgnoreCase('CUSTOMER COMMENTS:') ) {
-            objAccount.Comments__c = strBody.substring(strBody.indexOfIgnoreCase('CUSTOMER COMMENTS:')+18, strBody.length()).trim();
+            objAccount.Comments__c = strBody.substring(strBody.indexOfIgnoreCase('CUSTOMER COMMENTS:')+18, strBody.length()).remove('<br>').trim();
         } 
         System.debug('>>>objAccount: '+objAccount);
     } 
@@ -666,7 +666,7 @@ global class AccountCreationEmailService implements Messaging.InboundEmailHandle
         if(strBody.containsIgnoreCase('Message:') ) {
             objAccount.Comments__c = strBody.substring(strBody.indexOfIgnoreCase('Message:')+8, strBody.length()).trim();
         }
-        System.debug('>>>objAccount: '+objAccount); 
+        System.debug('>>>objAccount: '+objAccount);
     }
 
 }

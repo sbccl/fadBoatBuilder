@@ -1,7 +1,7 @@
 <aura:component access="global" controller="ScheduleController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction">
     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
     <aura:attribute name="recordTypeId" type="String" default=""/>
-    <aura:attribute name="type" type="String" default="Work Order/Jobs"/>
+    <aura:attribute name="type" type="String" default=""/>
     <aura:attribute name="isPD" type="Boolean" default=""/>
     <aura:attribute name="showSpinner" type="boolean" default="false" access="global"/>
     <aura:if isTrue="{!v.showSpinner}">
@@ -15,10 +15,8 @@
                         <lightning:inputField fieldName="BOATBUILDING__Type__c" value="{!v.type}" variant="label-stacked"/>
                     </span>
                     <lightning:select value="{!v.type}" label="Type" required="true" aura:id="type" onchange="{!c.updateCustomerlookup}"> 
-                        <option value="Work Order/Jobs">Work Order/Jobs</option>
-                        <option value="Standard">Standard</option>
+                        <Option value="Standard">Standard</Option>
                         <Option value="Pickup">Pickup</Option>
-                        <option value="Event">Event</option>
                         <Option value="Drop">Drop</Option>
                     </lightning:select> 
                 </div>
