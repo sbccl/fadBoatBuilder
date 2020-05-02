@@ -154,12 +154,31 @@
                     </div> 
                 </div> 
             </div>
+            
              <div class = "slds-col--padded">
                 <div class = "slds-form-element">
                     <div class = "slds-form-element__control">
                        
                             <lightning:input  type="number" name="input7" fieldLevelHelp="Part's Total + Sales Tax + Shpping Charge" label="Grand Total" value="{!v.invoiceGrandTotal}" formatter="currency" step="0.01" disabled="true"/>
                         
+                    </div> 
+                </div> 
+            </div>
+            <div class = "slds-col--padded">
+                <div class = "slds-form-element">
+                    <div class = "slds-form-element__control">
+                        
+                        <lightning:inputField fieldName="BOATBUILDING__Total_Payment__c" aura:id="tp" variant="label-stacked" disabled="true"/>                
+                       
+                    </div> 
+                </div> 
+            </div>
+            <div class = "slds-col--padded">
+                <div class = "slds-form-element">
+                    <div class = "slds-form-element__control">
+                        
+                        <lightning:inputField fieldName="BOATBUILDING__Balance__c" aura:id="Balance" variant="label-stacked" disabled="true"/>                
+                       
                     </div> 
                 </div> 
             </div>
