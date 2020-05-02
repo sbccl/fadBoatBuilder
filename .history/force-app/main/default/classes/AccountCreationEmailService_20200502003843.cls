@@ -596,11 +596,7 @@ global class AccountCreationEmailService implements Messaging.InboundEmailHandle
             objAccount.Phone = strBody.substring(strBody.indexOfIgnoreCase('Telephone:')+10, strBody.indexOfIgnoreCase('Email:')).trim();
         }
         if(strBody.containsIgnoreCase('Email:') ) {
-            if(!strBody.containsIgnoreCase('<mailto') ) {
-                objAccount.Email__c = strBody.substring(strBody.indexOfIgnoreCase('Email:')+6, strBody.indexOfIgnoreCase('LEAD INFO')).trim();
-            } else {
-                objAccount.Email__c = strBody.substring(strBody.indexOfIgnoreCase('Email:')+6, strBody.indexOfIgnoreCase('<')).trim();
-            }
+            objAccount.Email__c = strBody.substring(strBody.indexOfIgnoreCase('Email:')+6, strBody.indexOfIgnoreCase('LEAD INFO')).trim();
         } 
         if(strBody.containsIgnoreCase('Lead source:') ) {
             objAccount.Lead_Source__c = strBody.substring(strBody.indexOfIgnoreCase('Lead source:')+12, strBody.indexOfIgnoreCase('Lead request type')).trim();
@@ -631,10 +627,10 @@ global class AccountCreationEmailService implements Messaging.InboundEmailHandle
             objAccount.URI__c = strBody.substring(strBody.indexOfIgnoreCase('URI:')+4, strBody.indexOfIgnoreCase('OFFICEINFO:')).trim();
         } 
         if(strForHTMLBody.containsIgnoreCase('CUSTOMER COMMENTS:') ) {
-            objAccount.Comments__c = strBody.substring(strBody.indexOfIgnoreCase('CUSTOMER COMMENTS:')+18, strBody.length()).trim();
+            objAccount.Comments__c = strBody.substring(strBody.indexOfIgnoreCase('CUSTOMER COMMENTS:')+18, strBody.length()-1).remove('<br>').trim();
         } 
         System.debug('>>>objAccount: '+objAccount);
-    } 
+    }
     private void attachingForOnlyInboardsTemplate(String strForHTMLBody) {
         
         System.debug('>>>>>>strForHTMLBody: '+strForHTMLBody.remove('\n'));
@@ -656,15 +652,15 @@ global class AccountCreationEmailService implements Messaging.InboundEmailHandle
         if(strBody.containsIgnoreCase('Email:') ) {
             String subStr = strBody.substring(strBody.indexOfIgnoreCase('Email:'), strBody.indexOfIgnoreCase('Phone number:'));
             System.debug('>>>>>>subStr: '+subStr);
-            objAccount.Email__c = subStr.substring(subStr.indexOfIgnoreCase('Email:')+6, subStr.length()).trim();
+            objAccount.Email__c = subStr.substring(subStr.indexOfIgnoreCase('Email:')+6, subStr.length()-1).trim();
         }
         if(strBody.containsIgnoreCase('Phone number:') ) {
             String subStr = strBody.substring(strBody.indexOfIgnoreCase('Phone number:'), strBody.indexOfIgnoreCase('Message:'));
             System.debug('>>>>>>subStr: '+subStr);
-            objAccount.Phone = subStr.substring(subStr.indexOfIgnoreCase('Phone number:')+13, subStr.length()).trim();
+            objAccount.Phone = subStr.substring(subStr.indexOfIgnoreCase('Phone number:')+13, subStr.length()-1).trim();
         } 
         if(strBody.containsIgnoreCase('Message:') ) {
-            objAccount.Comments__c = strBody.substring(strBody.indexOfIgnoreCase('Message:')+8, strBody.length()).trim();
+            objAccount.Comments__c = strBody.substring(strBody.indexOfIgnoreCase('Message:')+8, strBody.length()-1).trim();
         }
         System.debug('>>>objAccount: '+objAccount);
     }

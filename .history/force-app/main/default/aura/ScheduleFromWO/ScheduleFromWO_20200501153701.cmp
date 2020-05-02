@@ -1,7 +1,7 @@
 <aura:component access="global" controller="ScheduleController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction">
     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
-    <aura:attribute name="recordTypeId" type="String" default=""/>
-    <aura:attribute name="type" type="String" default="Work Order/Jobs"/>
+    <aura:attribute name="recordTypeId" type="String" default="Work Order/Jobs"/>
+    <aura:attribute name="type" type="String" default=""/>
     <aura:attribute name="isPD" type="Boolean" default=""/>
     <aura:attribute name="showSpinner" type="boolean" default="false" access="global"/>
     <aura:if isTrue="{!v.showSpinner}">

@@ -12,16 +12,21 @@ public class PaymentsTriggerHandler {
     public Static void onAfterInsert(List<Payments__c> listNewPayment){
         updateQuoteDownPayment(listNewPayment);
         rollUpPaymentsToWorkOrder(listNewPayment);
+        updatePaymentOnInvoice(listNewPayment);
+
     }
     
     public Static void onAfterUpdate(List<Payments__c> listNewPayment, Map<Id, Payments__c> mapNewPayment, Map<Id, Payments__c> mapOldPayment){
         updateQuoteDownPayment(listNewPayment);
         rollUpPaymentsToWorkOrder(listNewPayment);
         //WorkOrderPaymentHandler.createQBServicePayment(listNewPayment, mapOldPayment);
+        updatePaymentOnInvoice(listNewPayment);
+        
     }
     
     public Static void onAfterDelete(List<Payments__c> listOldPayment){
         rollUpPaymentsToWorkOrder(listOldPayment);
+        updatePaymentOnInvoice(listOldPayment);
     }
     
     public Static void updateQuoteDownPayment(List<Payments__c> listNewPayment){
@@ -82,5 +87,29 @@ public class PaymentsTriggerHandler {
                 }
             }
         }        
+    }
+
+    public Static void updatePaymentOnInvoice(List<Payments__c> listNewPayment){
+        Set<String> setInvId = new Set<String>();
+        String strPaymntRecId = Schema.SObjectType.BOATBUILDING__Payments__c.getRecordTypeInfosByName().get('Standard Invoice').getRecordTypeId();
+        for(Payments__c objP: listNewPayment) {
+            if(objP.RecordTypeId == strPaymntRecId && objP.Invoice__c != null) {
+                setInvId.add(objP.Invoice__c);
+            }
+        }
+        if(!setInvId.isEmpty()) {
+            List<Invoice__c> lstInv = [Select Id, BOATBUILDING__Total_Payment__c, (SELECT Id, BOATBUILDING__Amount__c FROM BOATBUILDING__Payments1__r ) 
+                                                                                    From Invoice__c Where Id IN: setInvId];
+            for(Invoice__c objInv: lstInv) {
+                Decimal totalAmp = 0.00;
+                for(Payments__c objP: objInv.BOATBUILDING__Payments1__r) {
+                    if(objP.BOATBUILDING__Amount__c != null) {
+                        totalAmp += objP.BOATBUILDING__Amount__c;
+                    }
+                }
+                objInv.BOATBUILDING__Total_Payment__c = totalAmp;
+            }
+            update lstInv;
+        }
     }
 }

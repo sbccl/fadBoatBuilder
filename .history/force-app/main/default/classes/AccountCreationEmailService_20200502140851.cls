@@ -596,11 +596,7 @@ global class AccountCreationEmailService implements Messaging.InboundEmailHandle
             objAccount.Phone = strBody.substring(strBody.indexOfIgnoreCase('Telephone:')+10, strBody.indexOfIgnoreCase('Email:')).trim();
         }
         if(strBody.containsIgnoreCase('Email:') ) {
-            if(!strBody.containsIgnoreCase('<mailto') ) {
-                objAccount.Email__c = strBody.substring(strBody.indexOfIgnoreCase('Email:')+6, strBody.indexOfIgnoreCase('LEAD INFO')).trim();
-            } else {
-                objAccount.Email__c = strBody.substring(strBody.indexOfIgnoreCase('Email:')+6, strBody.indexOfIgnoreCase('<')).trim();
-            }
+            objAccount.Email__c = strBody.substring(strBody.indexOfIgnoreCase('Email:')+6, strBody.indexOfIgnoreCase('LEAD INFO')).trim();
         } 
         if(strBody.containsIgnoreCase('Lead source:') ) {
             objAccount.Lead_Source__c = strBody.substring(strBody.indexOfIgnoreCase('Lead source:')+12, strBody.indexOfIgnoreCase('Lead request type')).trim();
@@ -631,7 +627,7 @@ global class AccountCreationEmailService implements Messaging.InboundEmailHandle
             objAccount.URI__c = strBody.substring(strBody.indexOfIgnoreCase('URI:')+4, strBody.indexOfIgnoreCase('OFFICEINFO:')).trim();
         } 
         if(strForHTMLBody.containsIgnoreCase('CUSTOMER COMMENTS:') ) {
-            objAccount.Comments__c = strBody.substring(strBody.indexOfIgnoreCase('CUSTOMER COMMENTS:')+18, strBody.length()).trim();
+            objAccount.Comments__c = strBody.substring(strBody.indexOfIgnoreCase('CUSTOMER COMMENTS:')+18, strBody.length()-1).remove('<br>').trim();
         } 
         System.debug('>>>objAccount: '+objAccount);
     } 
