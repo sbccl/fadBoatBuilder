@@ -46,7 +46,7 @@ global class GetAQuote {
                 }
             }
             List<BOATBUILDING__Inventory__c> listInvToFetch = [SELECT Id, Name FROM BOATBUILDING__Inventory__c WHERE Name =: strInventoryName LIMIT 1];
-            objQuote = GetAQuoteUtility.generateQuote(String.valueOf(newAcc.Id), listInvToFetch[0].Id, null, null, objQuote, zipCodeExist);
+            objQuote = GetAQuoteUtility.generateQuote(String.valueOf(newAcc.Id), listInvToFetch[0].Id, null, null, objQuote);
             
             System.debug('objQuote---'+objQuote);
             

@@ -182,12 +182,12 @@ public class InvoiceLightningController {
                 }
                 if(dataNode.containsKey('Quantity') && dataNode.get('Quantity') != null){
                     objInLI.BOATBUILDING__Quantity__c = Integer.valueOf(dataNode.get('Quantity'));
-                } 
+                }
                 if(dataNode.containsKey('partMSRP') && String.isNotBlank(String.valueOf(dataNode.get('partMSRP')))){
                     objInLI.BOATBUILDING__Part_Cost__c = Decimal.valueOf(String.valueOf(dataNode.get('partMSRP')));
                 }
                 if(dataNode.containsKey('Cost') && String.isNotBlank(String.valueOf(dataNode.get('Cost')))){
-                    objInLI.BOATBUILDING__Dealer_Price__c = Decimal.valueOf(String.valueOf(dataNode.get('Cost'))); 
+                    objInLI.BOATBUILDING__Dealer_Price__c = Decimal.valueOf(String.valueOf(dataNode.get('Cost')));
                 }
                 if(dataNode.containsKey('discountPer') && String.isNotBlank(String.valueOf(dataNode.get('discountPer')))){
                     objInLI.BOATBUILDING__Discount_in_Percent__c = Decimal.valueOf(String.valueOf(dataNode.get('discountPer')));

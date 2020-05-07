@@ -38,7 +38,7 @@ public class InvoiceLightningController {
             objPOLIW.PartNumber = objPOLI.BOATBUILDING__Part_Number__c;
             objPOLIW.PartName = objPOLI.Name;
             objPOLIW.partMSRP = objPOLI.BOATBUILDING__Part_Cost__c != null ? objPOLI.BOATBUILDING__Part_Cost__c : 0.00;
-            objPOLIW.Cost = objPOLI.BOATBUILDING__Dealer_Price__c != null ? objPOLI.BOATBUILDING__Dealer_Price__c: 0.0;
+            objPOLIW.Cost = objPOLI.BOATBUILDING__Dealer_Price__c != null ? objPOLI.BOATBUILDING__Part_Cost__c: 0.0;
             objPOLIW.discount = objPOLI.BOATBUILDING__Discount_Price__c != null ? objPOLI.BOATBUILDING__Discount_Price__c: 0.0;
             objPOLIW.discountPer = objPOLI.BOATBUILDING__Discount_in_Percent__c != null ? objPOLI.BOATBUILDING__Discount_in_Percent__c: 0.0;
             objPOLIW.Total = (objPOLIW.Cost * objPOLIW.Quantity) -  objPOLIW.discount;
@@ -182,12 +182,12 @@ public class InvoiceLightningController {
                 }
                 if(dataNode.containsKey('Quantity') && dataNode.get('Quantity') != null){
                     objInLI.BOATBUILDING__Quantity__c = Integer.valueOf(dataNode.get('Quantity'));
-                } 
+                }
                 if(dataNode.containsKey('partMSRP') && String.isNotBlank(String.valueOf(dataNode.get('partMSRP')))){
                     objInLI.BOATBUILDING__Part_Cost__c = Decimal.valueOf(String.valueOf(dataNode.get('partMSRP')));
                 }
                 if(dataNode.containsKey('Cost') && String.isNotBlank(String.valueOf(dataNode.get('Cost')))){
-                    objInLI.BOATBUILDING__Dealer_Price__c = Decimal.valueOf(String.valueOf(dataNode.get('Cost'))); 
+                    objInLI.BOATBUILDING__Dealer_Price__c = Decimal.valueOf(String.valueOf(dataNode.get('Cost')));
                 }
                 if(dataNode.containsKey('discountPer') && String.isNotBlank(String.valueOf(dataNode.get('discountPer')))){
                     objInLI.BOATBUILDING__Discount_in_Percent__c = Decimal.valueOf(String.valueOf(dataNode.get('discountPer')));
