@@ -271,7 +271,59 @@ public class GetAQuoteUtility {
             }
             
             insert lstQLI;
+            Attachment myAttach = new Attachment();
+            String myAttchId = '';
+            if(objQuote.Id != null){
+                myAttach.ParentId = objQuote.Id;//Id of the object to which the page is attached
+                myAttach.name = 'Quotation.pdf';
+                PageReference myPdf = new PageReference(System.URL.getSalesforceBaseUrl().toExternalForm()+'/apex/QuotePDFPreview?id='+objQuote.Id);
+                if(!Test.isRunningTest()) { 
+                    myAttach.body = myPdf.getContentAsPdf(); 
+                    try{
+                        insert myAttach;
+                        System.debug('DebugLog For myAttach: '+myAttach + ' ' +objQuote.Id);
+                        myAttchId = myAttach.Id;
+                    }catch(Exception ex){
+                        Apexpages.addMessage(new Apexpages.Message(Apexpages.Severity.FATAL,ex.getMessage()));
+                    }
+                }
+                
+            }else if(objQuote.Id != null){
+                
+                myAttach.ParentId = objQuote.Id;
+                myAttach.name = 'Quotation.pdf';
+                PageReference myPdf = ApexPages.currentPage();//myPdfPage is the name of your pdf page
+                if(!Test.isRunningTest()){
+                    myAttach.body = myPdf.getContentAsPdf();
+                    try{
+                        insert myAttach;
+                        System.debug('DebugLog For myAttach: '+myAttach + ' ' +objQuote.Id);
+                        myAttchId = myAttach.Id;
+                    }catch(Exception ex){
+                        Apexpages.addMessage(new Apexpages.Message(Apexpages.Severity.FATAL,ex.getMessage()));
+                    }
+                }
+            }
             
+            Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
+            mail.setSubject('** Quote **');
+            mail.setPlainTextBody('Please Find The Attachment.');
+            if(objAccount.Email__c != null){
+                mail.setToAddresses(new String[]{objAccount.Email__c});
+            }
+            List<Messaging.Emailfileattachment> fileAttachments = new List<Messaging.Emailfileattachment>();
+            for (Attachment a : [select Name, Body, BodyLength from Attachment where Id = :myAttach.Id limit 1])
+            {
+                // Add to attachment file list
+                Messaging.Emailfileattachment efa = new Messaging.Emailfileattachment();
+                efa.setFileName(a.Name);
+                efa.setBody(a.Body);
+                fileAttachments.add(efa);
+            }
+            mail.setFileAttachments(fileAttachments);
+            
+            mail.setSenderDisplayName(UserInfo.getOrganizationName());
+            Messaging.sendEmail(new Messaging.SingleEmailMessage[]{ mail });
             return objQuote;
         } catch(Exception ex) {
             System.debug('Debug log for exception: '+ex.getStackTraceString()+' : '+ex.getLineNumber()+'messagr'+ex.getCause()+ex.getMessage()); 
