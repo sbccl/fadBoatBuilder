@@ -5,6 +5,7 @@ public class PartTriggerHandler {
             BOATBUILDING__WooCmmerce_Config__c objWC = BOATBUILDING__WooCmmerce_Config__c.getOrgDefaults();
             if(objWC != null) {
                 Set<String> setPartId = new Set<String>();
+                Set<String> setPartIdShopify = new Set<String>();
                 for(Part__c objPart: newMapPrt.values()) {
                     if(String.isNotBlank(objPart.Woocommerce_Id__c) && objPart.Quantity__c != null  && objPart.Quantity__c != oldMapPrt.get(objPart.Id).Quantity__c) {
                         if(objPart.Part__c != null) {
@@ -13,10 +14,22 @@ public class PartTriggerHandler {
                             setPartId.add(objPart.Id); 
                         } 
                     } 
+                    if(String.isNotBlank(objPart.BOATBUILDING__Shopify_Product_Id__c) && objPart.Quantity__c != null  && objPart.Quantity__c != oldMapPrt.get(objPart.Id).Quantity__c) {
+                        if(objPart.Part__c != null) {
+                            setPartIdShopify.add(objPart.Part__c);
+                        } else { 
+                            setPartIdShopify.add(objPart.Id); 
+                        } 
+                    } 
                 } 
-                if(!setPartId.isEmpty() && setPartId.size() < 50) { 
+                if(!setPartId.isEmpty() && setPartId.size() < 10) { 
                     for(String str: setPartId) {  
                         WooCommerce_Connect.savePartsToWooCommerce(str);
+                    }
+                }
+                if(!setPartIdShopify.isEmpty() && setPartIdShopify.size() <=2) { 
+                    for(String str: setPartIdShopify) {  
+                        Shopify_Connect.savePartsToShopifyLightning(str); 
                     }
                 }
             } 
