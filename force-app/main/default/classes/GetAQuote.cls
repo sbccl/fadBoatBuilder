@@ -38,10 +38,6 @@ global class GetAQuote {
                 //
                 
             }
-            List<BOATBUILDING__Inventory__c> listInvToFetch = [SELECT Id, Name FROM BOATBUILDING__Inventory__c WHERE Name =: strInventoryName LIMIT 1];
-            objQuote = BBWizardController.generateQuote(String.valueOf(newAcc.Id), listInvToFetch[0].Id, null, null, null, null, null, null, null, objQuote, null);
-            
-            System.debug('objQuote---'+objQuote);
             Boolean zipCodeExist = False;
             if(String.isNotBlank(strZipCode)){
                 List<BOATBUILDING__OurPriceZipCode__mdt> listMDT = [SELECT Label FROM BOATBUILDING__OurPriceZipCode__mdt WHERE Label =: strZipCode];
@@ -49,6 +45,11 @@ global class GetAQuote {
                     zipCodeExist = True;
                 }
             }
+            List<BOATBUILDING__Inventory__c> listInvToFetch = [SELECT Id, Name FROM BOATBUILDING__Inventory__c WHERE Name =: strInventoryName LIMIT 1];
+            objQuote = GetAQuoteUtility.generateQuote(String.valueOf(newAcc.Id), listInvToFetch[0].Id, null, null, objQuote, zipCodeExist);
+            
+            System.debug('objQuote---'+objQuote);
+            
             
             objWrap = new GetAQuoteWrapper('SUCCESS', zipCodeExist, objQuote);
             return objWrap;
