@@ -139,36 +139,36 @@
     <profileActionOverrides>
         <actionName>View</actionName>
         <content>Order_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Order__c</pageOrSobjectType>
+        <recordType>Order__c.Company_Purchase_Requests</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Order_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Order__c</pageOrSobjectType>
-        <recordType>Order__c.Purchase_Order_Approved</recordType>
+        <recordType>Order__c.Company_Purchase_Requests</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Order_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Order__c</pageOrSobjectType>
+        <recordType>Order__c.Company_Purchase_Requests</recordType>
         <type>Flexipage</type>
         <profile>System Admin Clone</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
         <content>Order_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Order__c</pageOrSobjectType>
-        <recordType>Order__c.Company_Purchase_Requests</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Order__c</pageOrSobjectType>
-        <recordType>Order__c.Company_Purchase_Requests</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Order__c</pageOrSobjectType>
-        <recordType>Order__c.Company_Purchase_Requests</recordType>
+        <recordType>Order__c.Purchase_Order_Approved</recordType>
         <type>Flexipage</type>
         <profile>System Admin Clone</profile>
     </profileActionOverrides>

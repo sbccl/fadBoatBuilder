@@ -283,6 +283,16 @@
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>
+            <actionName>BOATBUILDING__Send_Invoice</actionName>
+            <actionType>CustomButton</actionType>
+            <sortOrder>4</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>BOATBUILDING__Invoice__c.Refund</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>5</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
             <actionName>BOATBUILDING__Invoice__c.Add_Payment</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>0</sortOrder>
@@ -301,16 +311,6 @@
             <actionName>NewTask</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>3</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>BOATBUILDING__Send_Invoice</actionName>
-            <actionType>CustomButton</actionType>
-            <sortOrder>4</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>BOATBUILDING__Invoice__c.Refund</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>5</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
             <actionName>BOATBUILDING__Print</actionName>
@@ -369,16 +369,6 @@
         <relatedList>Invoice_Line_Item__c.Related_To_Invoice__c</relatedList>
     </relatedLists>
     <relatedLists>
-        <excludeButtons>MassChangeOwner</excludeButtons>
-        <excludeButtons>New</excludeButtons>
-        <fields>NAME</fields>
-        <fields>Invoice_Number__c</fields>
-        <fields>Amount__c</fields>
-        <fields>Check_Number__c</fields>
-        <fields>Credit_Card_Type__c</fields>
-        <relatedList>Payment__c.Related_to_Invoice__c</relatedList>
-    </relatedLists>
-    <relatedLists>
         <relatedList>RelatedNoteList</relatedList>
     </relatedLists>
     <relatedLists>
@@ -408,7 +398,12 @@
         <relatedList>Order__c.Invoice_for__c</relatedList>
     </relatedLists>
     <relatedLists>
+        <excludeButtons>MassChangeOwner</excludeButtons>
+        <excludeButtons>New</excludeButtons>
         <fields>NAME</fields>
+        <fields>Amount__c</fields>
+        <fields>Payment_Type__c</fields>
+        <fields>LAST_UPDATE</fields>
         <relatedList>Payments__c.Invoice__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
