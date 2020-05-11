@@ -781,6 +781,9 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>Amount__c</fields>
+        <fields>Payment_Type__c</fields>
+        <fields>LAST_UPDATE</fields>
         <relatedList>Payments__c.Invoice__c</relatedList>
     </relatedLists>
     <relatedLists>
