@@ -306,8 +306,8 @@ public class GetAQuoteUtility {
             }
             
             Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
-            mail.setSubject('** Quote **');
-            mail.setPlainTextBody('Please Find The Attachment.');
+            mail.setSubject('Quote');
+            mail.setPlainTextBody('Please Find The Attachment.\nThanks');
             if(objAccount.Email__c != null){
                 mail.setToAddresses(new String[]{objAccount.Email__c});
             }
