@@ -19,3 +19,6 @@ declare module "@salesforce/apex/ServiceScheduleController.updateTechOnALlJobs" 
 declare module "@salesforce/apex/ServiceScheduleController.openWO" {
   export default function openWO(param: {strTMId: any}): Promise<any>;
 }
+declare module "@salesforce/apex/ServiceScheduleController.updateEvent" {
+  export default function updateEvent(param: {strTMId: any, strStartDT: any, strEndDT: any, strTechId: any}): Promise<any>;
+}

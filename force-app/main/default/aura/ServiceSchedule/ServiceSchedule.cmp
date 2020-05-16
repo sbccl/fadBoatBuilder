@@ -11,7 +11,7 @@
     <aura:attribute name="isPD" type="Boolean" default=""/>
     <aura:attribute name="showSpinner" type="boolean" default="false" access="global"/>
     <aura:attribute name="selectedUser" type="String" default="All"/>
-    <aura:attribute name="typeP" type="String" default="Work Order/Jobs"/>
+    <aura:attribute name="typeP" type="String" default="0"/>
     <aura:attribute name="slLoca" type="String" default="All"/>
     <aura:if isTrue="{!v.showSpinner}">
         <lightning:spinner  variant= "brand"/>
@@ -43,12 +43,13 @@
                 </div> 
                 <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-4 slds-large-size--1-of-4 slds-p-right_medium">
                     <lightning:select name="Type" label="Type" value="{!v.typeP}" onchange="{!c.getRelatedTMDetails}">
-                        <option value="Work Order/Jobs">Work Order/Jobs</option>
-                        <option value="Test Drive">Test Drive</option>
-                        <option value="Sales">Sales</option>
-                        <Option value="Pickup">Pickup</Option>
+                        <option value="0">All</option>
+                        <option value="Drop">Drop</option>
                         <option value="Event">Event</option>
-                        <Option value="Drop">Drop</Option>
+                        <Option value="Pickup">Pickup</Option>
+                        <option value="Sales">Sales</option>
+                        <option value="Test Drive">Test Drive</option>
+                        <option value="Work Order/Jobs">Work Order/Jobs</option>
                     </lightning:select>
                 </div>
             </div>
