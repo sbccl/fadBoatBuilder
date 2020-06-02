@@ -74,12 +74,21 @@
             action.setCallback(this, function(response) {
                 component.set("v.clickType", "");
                 console.log('>>>>>methodCalling '+ response.getReturnValue());
-                if(response.getReturnValue().includes("Error")) {
+                var state = response.getState();
+                if(state == 'ERROR') {
+                    var errors = response.getError();
+                    var message = 'Unknown error'; // Default error message
+                    // Retrieve the error message sent by the server
+                    if (errors && Array.isArray(errors) && errors.length > 0) {
+                        message = errors[0].message;
+                    }
+                    // Display the message
+                    console.error(message);
                     var errorEvent = $A.get("e.force:showToast");
                     errorEvent.setParams({
                         "type" : "error",
-                        "title": "Error!",
-                        "message": response.getReturnValue()
+                        "title": "Error!", 
+                        "message": message
                     });
                     errorEvent.fire();
                 } else {
