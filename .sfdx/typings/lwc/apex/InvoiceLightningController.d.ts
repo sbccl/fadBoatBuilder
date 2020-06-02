@@ -14,7 +14,7 @@ declare module "@salesforce/apex/InvoiceLightningController.searchPartsfromInven
   export default function searchPartsfromInventoryAndParts(param: {searchStr: any}): Promise<any>;
 }
 declare module "@salesforce/apex/InvoiceLightningController.InvRecordTypeId" {
-  export default function InvRecordTypeId(): Promise<any>;
+  export default function InvRecordTypeId(param: {RecordId: any}): Promise<any>;
 }
 declare module "@salesforce/apex/InvoiceLightningController.UpdateInvoicewithLineItems" {
   export default function UpdateInvoicewithLineItems(param: {strInvId: any, strLineItems: any}): Promise<any>;

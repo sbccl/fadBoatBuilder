@@ -5,7 +5,7 @@ declare module "@salesforce/apex/PurchaseOrderLightningController.getLineItems" 
   export default function getLineItems(param: {strPOId: any}): Promise<any>;
 }
 declare module "@salesforce/apex/PurchaseOrderLightningController.searchPartsfromInventoryAndParts" {
-  export default function searchPartsfromInventoryAndParts(param: {searchStr: any}): Promise<any>;
+  export default function searchPartsfromInventoryAndParts(param: {searchStr: any, vendorVal: any}): Promise<any>;
 }
 declare module "@salesforce/apex/PurchaseOrderLightningController.updatePOwithLineItems" {
   export default function updatePOwithLineItems(param: {strPOId: any, strLineItems: any}): Promise<any>;

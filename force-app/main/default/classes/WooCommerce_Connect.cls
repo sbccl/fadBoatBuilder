@@ -48,208 +48,236 @@ global with sharing class WooCommerce_Connect {
                                    BOATBUILDING__Part__c b
                                    Where    
                                    Id =: strPartId];
-                System.debug('Debug Log For objPart: '+objPart);
-                Set<String> setPVId = new Set<String>(); 
-                if(!objPart.Part_Variation__r.isEmpty()) {
-                    for(Part__c objPrt: objPart.Part_Variation__r) {
-                        setPVId.add(objPrt.Id); 
+                Boolean pushToWoocom = true;
+                if(String.isNotBlank(objPart.BOATBUILDING__WooCommerce_Id__c)) {
+                    HttpRequest req = new HttpRequest(); 
+                    req.setMethod('GET');
+                    req.setheader('Content-Type', 'application/json');
+                    String URL = objWC.BOATBUILDING__API_URL__c+'/wp-json/wc/v3/products/'+objPart.BOATBUILDING__WooCommerce_Id__c+'?consumer_key='+objWC.BOATBUILDING__Consumer_key__c+'&consumer_secret='+objWC.BOATBUILDING__Consumer_secret__c;
+                    req.setEndPoint(URL);
+                    req.setTimeout(120000);
+                    Http h = new Http(); 
+                    HttpResponse res = h.send(req);
+                    System.debug('>>>Product Reso: '+res.getBody());
+                    if(res.getBody().containsIgnoreCase('woocommerce_rest_product_invalid_id')) {
+                        pushToWoocom = false;
                     }
                 }
-                Map<String, Map<String,Set<String>>> mapAttOption = new Map<String, Map<String,Set<String>>>();
-                Map<String, Set<String>> mapAttNameOptionForPro = new Map<String, Set<String>>();
-                List<BOATBUILDING__Woocom_Variant_Option__c> lstWVO = [Select 
-                                                                                Id, Name, BOATBUILDING__Option__c, BOATBUILDING__Part__c, BOATBUILDING__Woocommerce_Attribute__c
-                                                                        From 
-                                                                                BOATBUILDING__Woocom_Variant_Option__c 
-                                                                        Where 
-                                                                                BOATBUILDING__Part__c IN: setPVId];
-                System.debug('Debug Log For lstWVO: '+lstWVO);
-                
-                Map<String, String> MapWVO_PId = new Map<String, String>(); 
-                if(!lstWVO.isEmpty()) {
-                    for(Part__c objPrt: objPart.Part_Variation__r) {
-                        for(BOATBUILDING__Woocom_Variant_Option__c objWVO: lstWVO) {
-                            if(objWVO.BOATBUILDING__Part__c == objPrt.Id) {
-                                MapWVO_PId.put(objWVO.BOATBUILDING__Woocommerce_Attribute__c, objWVO.BOATBUILDING__Part__c);
+                if(pushToWoocom) {
+                    System.debug('Debug Log For objPart: '+objPart);
+                    Set<String> setPVId = new Set<String>(); 
+                    if(!objPart.Part_Variation__r.isEmpty()) {
+                        for(Part__c objPrt: objPart.Part_Variation__r) {
+                            setPVId.add(objPrt.Id); 
+                        }
+                    }
+                    Map<String, Map<String,Set<String>>> mapAttOption = new Map<String, Map<String,Set<String>>>();
+                    Map<String, Set<String>> mapAttNameOptionForPro = new Map<String, Set<String>>();
+                    List<BOATBUILDING__Woocom_Variant_Option__c> lstWVO = [Select 
+                                                                                    Id, Name, BOATBUILDING__Option__c, BOATBUILDING__Part__c, BOATBUILDING__Woocommerce_Attribute__c
+                                                                            From 
+                                                                                    BOATBUILDING__Woocom_Variant_Option__c 
+                                                                            Where 
+                                                                                    BOATBUILDING__Part__c IN: setPVId];
+                    System.debug('Debug Log For lstWVO: '+lstWVO);
+                    
+                    Map<String, String> MapWVO_PId = new Map<String, String>(); 
+                    if(!lstWVO.isEmpty()) {
+                        for(Part__c objPrt: objPart.Part_Variation__r) {
+                            for(BOATBUILDING__Woocom_Variant_Option__c objWVO: lstWVO) {
+                                if(objWVO.BOATBUILDING__Part__c == objPrt.Id) {
+                                    MapWVO_PId.put(objWVO.BOATBUILDING__Woocommerce_Attribute__c, objWVO.BOATBUILDING__Part__c);
+                                }
                             }
                         }
                     }
-                }
-                
-                List<BOATBUILDING__Woocommerce_Attribute__c> lstWA = [Select 
-                                                                                Id, Name, BOATBUILDING__WooCom_Attribute_Id__c 
-                                                                        From 
-                                                                                BOATBUILDING__Woocommerce_Attribute__c 
-                                                                        Where 
-                                                                                Id IN: MapWVO_PId.keySet()];
-                
-                
-                System.debug('Debug Log For lstWA: '+lstWA);
-                
-                if(!lstWA.isEmpty()) {
-                    for(Part__c objPrt: objPart.Part_Variation__r) {
-                        if(!mapAttOption.containsKey(objPart.Id)) {
-                            mapAttOption.put(objPrt.Id, new Map<String, Set<String>>());
-                        }
-                        if(mapAttOption.containsKey(objPrt.Id)) {
-                            for(Woocommerce_Attribute__c objWA: lstWA) {
-                                for(BOATBUILDING__Woocom_Variant_Option__c objWVO: lstWVO) {
-                                    if(objWVO.BOATBUILDING__Woocommerce_Attribute__c == objWA.Id && objWVO.Part__c == objPrt.Id) {          
-                                        if(!mapAttOption.get(objPrt.Id).containsKey(objWA.Name)) {
-                                            mapAttOption.get(objPrt.Id).put(objWA.Name, new Set<String>());
-                                            if(!mapAttNameOptionForPro.containsKey(objWA.Name))
-                                                mapAttNameOptionForPro.put(objWA.Name, new Set<String>());
-                                        }
-                                        if(mapAttOption.get(objPrt.Id).containsKey(objWA.Name)) {
-                                            mapAttOption.get(objPrt.Id).get(objWA.Name).add(objWVO.Option__c);
-                                            if(mapAttNameOptionForPro.containsKey(objWA.Name))
-                                                mapAttNameOptionForPro.get(objWA.Name).add(objWVO.Option__c);
+                    
+                    List<BOATBUILDING__Woocommerce_Attribute__c> lstWA = [Select 
+                                                                                    Id, Name, BOATBUILDING__WooCom_Attribute_Id__c 
+                                                                            From 
+                                                                                    BOATBUILDING__Woocommerce_Attribute__c 
+                                                                            Where 
+                                                                                    Id IN: MapWVO_PId.keySet()];
+                    
+                    
+                    System.debug('Debug Log For lstWA: '+lstWA);
+                    
+                    if(!lstWA.isEmpty()) {
+                        for(Part__c objPrt: objPart.Part_Variation__r) {
+                            if(!mapAttOption.containsKey(objPart.Id)) {
+                                mapAttOption.put(objPrt.Id, new Map<String, Set<String>>());
+                            }
+                            if(mapAttOption.containsKey(objPrt.Id)) {
+                                for(Woocommerce_Attribute__c objWA: lstWA) {
+                                    for(BOATBUILDING__Woocom_Variant_Option__c objWVO: lstWVO) {
+                                        if(objWVO.BOATBUILDING__Woocommerce_Attribute__c == objWA.Id && objWVO.Part__c == objPrt.Id) {          
+                                            if(!mapAttOption.get(objPrt.Id).containsKey(objWA.Name)) {
+                                                mapAttOption.get(objPrt.Id).put(objWA.Name, new Set<String>());
+                                                if(!mapAttNameOptionForPro.containsKey(objWA.Name))
+                                                    mapAttNameOptionForPro.put(objWA.Name, new Set<String>());
+                                            }
+                                            if(mapAttOption.get(objPrt.Id).containsKey(objWA.Name)) {
+                                                mapAttOption.get(objPrt.Id).get(objWA.Name).add(objWVO.Option__c);
+                                                if(mapAttNameOptionForPro.containsKey(objWA.Name))
+                                                    mapAttNameOptionForPro.get(objWA.Name).add(objWVO.Option__c);
+                                            }
                                         }
                                     }
                                 }
                             }
                         }
+                        
+                    }
+                    System.debug('Debug Log For mapAttOption: '+mapAttOption);
+                    System.debug('Debug Log For mapAttNameOptionForPro: '+mapAttNameOptionForPro);
+                    
+                    
+                    Map<String, String> mapAttNameId = getAllAttribute(objWC);
+                    Set<String> setAttNameToCreate = new Set<String>();
+                    if(!lstWA.isEmpty()) {
+                        for(Woocommerce_Attribute__c objWA: lstWA) {
+                            //System.debug('Debug Log for mapAttNameId in: '+mapAttNameId);
+                            if(mapAttNameId.containsKey(objWA.Name.toUpperCase()) && String.isBlank(objWA.BOATBUILDING__WooCom_Attribute_Id__c)) {
+                                objWA.BOATBUILDING__WooCom_Attribute_Id__c = mapAttNameId.get(objWA.Name.toUpperCase());
+                            } 
+                            if(!mapAttNameId.containsKey(objWA.Name.toUpperCase())){
+                                //setAttNameToCreate.add(objWA.BOATBUILDING__Attribute_Name__c);
+                                Map<String, String>mapAttNameIdTemp = createAttributeToWoocommerce(objWA.Name, objWC);
+                                mapAttNameId.putAll(mapAttNameIdTemp);
+                                objWA.BOATBUILDING__WooCom_Attribute_Id__c = mapAttNameIdTemp.values()[0];
+                            }
+                        }
+                    } 
+                    
+                    System.debug('Debug Log For mapAttNameId: '+mapAttNameId);
+                    
+                    List<Attachment> lstAttachment = [SELECT Id, Name, Body
+                                                    FROM Attachment
+                                                    WHERE ParentId =: strPartId];
+                                                    
+                    System.debug('Debug Log For lstAttachment: '+lstAttachment);
+                    List<ContentDocumentLink> lstContentDocLink = [SELECT ContentDocumentId, LinkedEntityId FROM ContentDocumentLink WHERE LinkedEntityId =:strPartId];
+                    System.debug('Debug Log For lstContentDocLink: '+lstContentDocLink);
+                    Set<String> setCDLId = new Set<String>();
+                    for(ContentDocumentLink cdl: lstContentDocLink){
+                        setCDLId.add(cdl.ContentDocumentId);
                     }
                     
-                }
-                System.debug('Debug Log For mapAttOption: '+mapAttOption);
-                System.debug('Debug Log For mapAttNameOptionForPro: '+mapAttNameOptionForPro);
-                 
-                
-                Map<String, String> mapAttNameId = getAllAttribute(objWC);
-                Set<String> setAttNameToCreate = new Set<String>();
-                if(!lstWA.isEmpty()) {
-                    for(Woocommerce_Attribute__c objWA: lstWA) {
-                        //System.debug('Debug Log for mapAttNameId in: '+mapAttNameId);
-                        if(mapAttNameId.containsKey(objWA.Name.toUpperCase()) && String.isBlank(objWA.BOATBUILDING__WooCom_Attribute_Id__c)) {
-                            objWA.BOATBUILDING__WooCom_Attribute_Id__c = mapAttNameId.get(objWA.Name.toUpperCase());
-                        } 
-                        if(!mapAttNameId.containsKey(objWA.Name.toUpperCase())){
-                            //setAttNameToCreate.add(objWA.BOATBUILDING__Attribute_Name__c);
-                            Map<String, String>mapAttNameIdTemp = createAttributeToWoocommerce(objWA.Name, objWC);
-                            mapAttNameId.putAll(mapAttNameIdTemp);
-                            objWA.BOATBUILDING__WooCom_Attribute_Id__c = mapAttNameIdTemp.values()[0];
-                        }
-                    }
-                } 
-                
-                System.debug('Debug Log For mapAttNameId: '+mapAttNameId);
-                
-                List<Attachment> lstAttachment = [SELECT Id, Name, Body
-                                                  FROM Attachment
-                                                  WHERE ParentId =: strPartId];
-                                                  
-                System.debug('Debug Log For lstAttachment: '+lstAttachment);
-                List<ContentDocumentLink> lstContentDocLink = [SELECT ContentDocumentId, LinkedEntityId FROM ContentDocumentLink WHERE LinkedEntityId =:strPartId];
-                System.debug('Debug Log For lstContentDocLink: '+lstContentDocLink);
-                Set<String> setCDLId = new Set<String>();
-                for(ContentDocumentLink cdl: lstContentDocLink){
-                    setCDLId.add(cdl.ContentDocumentId);
-                }
-                
-                List<ContentVersion> lstContentVersion = [select id,FileType, Title,FileExtension, Versiondata from ContentVersion where islatest=true AND ContentDocumentId IN : setCDLId];
-                
-                Map<String, String> mapAttBase64 = new Map<String, String>(); 
-                if(!lstAttachment.isEmpty()) {
-                    for(Attachment objAtt: lstAttachment) {
-                        if(objAtt.Body != null) {
-                            String strBase64 = EncodingUtil.base64Encode(objAtt.Body);
-                            System.debug('Debug Log for ATT strBase64: '+strBase64);
-                            mapAttBase64.put(objAtt.Name, strBase64);
-                        }
-                    }
-                }   
-                
-                if(!lstContentVersion.isEmpty()) {
-                    for(ContentVersion objAtt: lstContentVersion) {
-                        if(objAtt.Versiondata != null) {
-                            String strBase64 = EncodingUtil.base64Encode(objAtt.Versiondata);
-                            System.debug('Debug Log for strBase64: '+strBase64);
-                            System.debug('Debug Log for objAtt.Title: '+objAtt.Title);
-                            System.debug('Debug Log for objAtt.Title: '+objAtt.FileType);
-                            mapAttBase64.put(objAtt.Title+'.'+objAtt.FileExtension, strBase64);
-                        }
-                    }
-                }   
-                //System.debug('lstAttBase64---'+lstAttBase64); 
-                String prntId = '0';
-                
-                if(String.isNotBlank(objPart.BOATBUILDING__Category1__c)) {
-                    mapCollectionNameId = getWooCommerceCategories(objWC, objPart.BOATBUILDING__Category1__c, prntId);// objPart.BOATBUILDING__Category1__c.toUpperCase()
-                    System.debug('Debug Log for mapCollectionNameId C: '+mapCollectionNameId);
-                    String Category = objPart.BOATBUILDING__Category1__c.toUpperCase(); 
-                    if(!mapCollectionNameId.containsKey(Category)) {
-                        Map<String, String> mapNewCollection = createCustomCategoryToWoocommerce(objPart.BOATBUILDING__Category1__c, objWC, prntId);
-                        if(!mapNewCollection.isEmpty()){
-                            mapCollectionNameId.putAll(mapNewCollection);
-                            prntId = mapCollectionNameId.get(Category);
-                        }
-                    } else {
-                        prntId = mapCollectionNameId.get(Category);
-                    }
+                    List<ContentVersion> lstContentVersion = [select id,FileType, Title,FileExtension, Versiondata from ContentVersion where islatest=true AND ContentDocumentId IN : setCDLId];
                     
-                    //String tag = '';
-                    //String tag1 = '';
+                    Map<String, String> mapAttBase64 = new Map<String, String>(); 
+                    if(!lstAttachment.isEmpty()) {
+                        for(Attachment objAtt: lstAttachment) {
+                            if(objAtt.Body != null) {
+                                String strBase64 = EncodingUtil.base64Encode(objAtt.Body);
+                                System.debug('Debug Log for ATT strBase64: '+strBase64);
+                                mapAttBase64.put(objAtt.Name, strBase64);
+                            }
+                        }
+                    }   
                     
-                    Map<String, String> mapTagNameId = new Map<String, String>();
-                    if(objPart.Family1__c != null) {
-                        Map<String, String> mapCollectionNameIdFam = getWooCommerceCategories(objWC, objPart.Family1__c, prntId);// objPart.BOATBUILDING__Category1__c.toUpperCase()
-                        mapCollectionNameId.putAll(mapCollectionNameIdFam);
-                        System.debug('Debug Log for mapCollectionNameId F: '+mapCollectionNameId);
-                        String Family = objPart.Family1__c.toUpperCase(); 
-                        if(!mapCollectionNameId.containsKey(Family)) {
-                            Map<String, String> mapNewCollection = createCustomCategoryToWoocommerce(objPart.Family1__c, objWC, prntId);
+                    if(!lstContentVersion.isEmpty()) {
+                        for(ContentVersion objAtt: lstContentVersion) {
+                            if(objAtt.Versiondata != null) {
+                                String strBase64 = EncodingUtil.base64Encode(objAtt.Versiondata);
+                                System.debug('Debug Log for strBase64: '+strBase64);
+                                System.debug('Debug Log for objAtt.Title: '+objAtt.Title);
+                                System.debug('Debug Log for objAtt.Title: '+objAtt.FileType);
+                                mapAttBase64.put(objAtt.Title+'.'+objAtt.FileExtension, strBase64);
+                            }
+                        }
+                    }   
+                    //System.debug('lstAttBase64---'+lstAttBase64); 
+                    String prntId = '0';
+                    
+                    if(String.isNotBlank(objPart.BOATBUILDING__Category1__c)) {
+                        mapCollectionNameId = getWooCommerceCategories(objWC, objPart.BOATBUILDING__Category1__c, prntId);// objPart.BOATBUILDING__Category1__c.toUpperCase()
+                        System.debug('Debug Log for mapCollectionNameId C: '+mapCollectionNameId);
+                        String Category = objPart.BOATBUILDING__Category1__c.toUpperCase(); 
+                        if(!mapCollectionNameId.containsKey(Category)) {
+                            Map<String, String> mapNewCollection = createCustomCategoryToWoocommerce(objPart.BOATBUILDING__Category1__c, objWC, prntId);
                             if(!mapNewCollection.isEmpty()){
                                 mapCollectionNameId.putAll(mapNewCollection);
-                                prntId = mapCollectionNameId.get(Family);
+                                prntId = mapCollectionNameId.get(Category);
                             }
                         } else {
-                            prntId = mapCollectionNameId.get(Family);
+                            prntId = mapCollectionNameId.get(Category);
                         }
-                         
-                        if(objPart.Sub_Family__c != null) {
-                            Map<String, String> mapCollectionNameIdSBFam = getWooCommerceCategories(objWC, objPart.Sub_Family__c, prntId);// objPart.BOATBUILDING__Category1__c.toUpperCase()
-                            mapCollectionNameId.putAll(mapCollectionNameIdSBFam);
-                            System.debug('Debug Log for mapCollectionNameId SF: '+mapCollectionNameIdSBFam);
-                            String SubFamily = objPart.Sub_Family__c.toUpperCase(); 
-                            if(!mapCollectionNameId.containsKey(SubFamily)) {
-                                Map<String, String> mapNewCollection = createCustomCategoryToWoocommerce(objPart.Sub_Family__c, objWC, prntId);
+                        
+                        //String tag = '';
+                        //String tag1 = '';
+                        
+                        Map<String, String> mapTagNameId = new Map<String, String>();
+                        if(objPart.Family1__c != null) {
+                            Map<String, String> mapCollectionNameIdFam = getWooCommerceCategories(objWC, objPart.Family1__c, prntId);// objPart.BOATBUILDING__Category1__c.toUpperCase()
+                            mapCollectionNameId.putAll(mapCollectionNameIdFam);
+                            System.debug('Debug Log for mapCollectionNameId F: '+mapCollectionNameId);
+                            String Family = objPart.Family1__c.toUpperCase(); 
+                            if(!mapCollectionNameId.containsKey(Family)) {
+                                Map<String, String> mapNewCollection = createCustomCategoryToWoocommerce(objPart.Family1__c, objWC, prntId);
                                 if(!mapNewCollection.isEmpty()){
                                     mapCollectionNameId.putAll(mapNewCollection);
+                                    prntId = mapCollectionNameId.get(Family);
+                                }
+                            } else {
+                                prntId = mapCollectionNameId.get(Family);
+                            }
+                            
+                            if(objPart.Sub_Family__c != null) {
+                                Map<String, String> mapCollectionNameIdSBFam = getWooCommerceCategories(objWC, objPart.Sub_Family__c, prntId);// objPart.BOATBUILDING__Category1__c.toUpperCase()
+                                mapCollectionNameId.putAll(mapCollectionNameIdSBFam);
+                                System.debug('Debug Log for mapCollectionNameId SF: '+mapCollectionNameIdSBFam);
+                                String SubFamily = objPart.Sub_Family__c.toUpperCase(); 
+                                if(!mapCollectionNameId.containsKey(SubFamily)) {
+                                    Map<String, String> mapNewCollection = createCustomCategoryToWoocommerce(objPart.Sub_Family__c, objWC, prntId);
+                                    if(!mapNewCollection.isEmpty()){
+                                        mapCollectionNameId.putAll(mapNewCollection);
+                                    }
                                 }
                             }
+                            
                         }
+                        System.debug('Debug Log for After Add mapCollectionNameId: '+mapCollectionNameId);
                         
+                        //System.debug('Debug Log for After Add mapTagNameId: '+mapTagNameId);
+                        List<String> lstURL = new List<String>();
+                        if(objPart.BOATBUILDING__Push_Image__c)
+                            lstURL = uploadImage(mapAttBase64, objWC).values();
+                                    
+                        System.debug('Debug Log for lstURL: '+lstURL);
+                        String wooComProductId = pushPartToWooCommerce(objPart, objWC, mapCollectionNameId, mapTagNameId, lstURL, mapAttNameOptionForPro, mapAttNameId);
+                        
+                        if(String.isNotBlank(wooComProductId)) {
+                            objPart.BOATBUILDING__WooCommerce_Id__c = wooComProductId;
+                            
+                            //Variaton Check
+                            List<Part__c> lstPart = pushPartVariation(objPart, objWC, mapAttOption, mapAttNameId);
+                            objPart.BOATBUILDING__Push_Image__c = false;
+                            update objPart;
+                            
+                            //if(!lstPart.isEmpty())
+                                //update lstPart;
+                        }
+                        update lstWA;
+                        System_Configure__c objSC = System_Configure__c.getOrgDefaults();
+                        if(objSC != null && objSC.Enable_Debug_Mails__c)  {
+                            BOATBUILDING__Custom_Log__c objCL = new BOATBUILDING__Custom_Log__c();
+                            objCL.Name = 'Woocommerce Log';
+                            objCL.BOATBUILDING__Summary__c = '' + catagoryResponse + '  >>>  \n\n'+catagoryCreationResponse + '  >>>  \n\n '+tagResponse + '  >>>  \n\n '+tagCreationResponse + '  >>>  \n\n '+imageResponse + '  >>>  \n\n '+productCreationResponse+'\n\n\n\n\n Product Id: '+wooComProductId+'\n\n\n\n\n mapCollectionNameId:'+mapCollectionNameId;
+                            insert objCL;
+                        }
                     }
-                     System.debug('Debug Log for After Add mapCollectionNameId: '+mapCollectionNameId);
-                    
-                    //System.debug('Debug Log for After Add mapTagNameId: '+mapTagNameId);
-                    List<String> lstURL = new List<String>();
-                    if(objPart.BOATBUILDING__Push_Image__c)
-                    	lstURL = uploadImage(mapAttBase64, objWC).values();
-                    	        
-                    System.debug('Debug Log for lstURL: '+lstURL);
-                    String wooComProductId = pushPartToWooCommerce(objPart, objWC, mapCollectionNameId, mapTagNameId, lstURL, mapAttNameOptionForPro, mapAttNameId);
-                     
-                    if(String.isNotBlank(wooComProductId)) {
-                        objPart.BOATBUILDING__WooCommerce_Id__c = wooComProductId;
-                        
-                        //Variaton Check
-                        List<Part__c> lstPart = pushPartVariation(objPart, objWC, mapAttOption, mapAttNameId);
-                        objPart.BOATBUILDING__Push_Image__c = false;
-                        update objPart;
-                        
-                        //if(!lstPart.isEmpty())
-                            //update lstPart;
+                } else {
+                    List<Part__c> lstP = new List<Part__c>(); 
+                    objPart.BOATBUILDING__WooCommerce_Id__c = '';
+                    lstP.add(objPart);
+                    if(!objPart.Part_Variation__r.isEmpty()) {
+                        for(Part__c objP: objPart.Part_Variation__r) {
+                            objP.BOATBUILDING__WooCommerce_Id__c = '';
+                            lstP.add(objP);
+                        }
                     }
-                    update lstWA;
-                    System_Configure__c objSC = System_Configure__c.getOrgDefaults();
-                     if(objSC != null && objSC.Enable_Debug_Mails__c)  {
-                        BOATBUILDING__Custom_Log__c objCL = new BOATBUILDING__Custom_Log__c();
-                        objCL.Name = 'Woocommerce Log';
-                        objCL.BOATBUILDING__Summary__c = '' + catagoryResponse + '  >>>  \n\n'+catagoryCreationResponse + '  >>>  \n\n '+tagResponse + '  >>>  \n\n '+tagCreationResponse + '  >>>  \n\n '+imageResponse + '  >>>  \n\n '+productCreationResponse+'\n\n\n\n\n Product Id: '+wooComProductId+'\n\n\n\n\n mapCollectionNameId:'+mapCollectionNameId;
-                        insert objCL;
-                     }
+                    update lstP;
                 }
             }
             
