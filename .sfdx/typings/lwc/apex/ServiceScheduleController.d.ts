@@ -11,11 +11,14 @@ declare module "@salesforce/apex/ServiceScheduleController.getrecordType" {
   export default function getrecordType(): Promise<any>;
 }
 declare module "@salesforce/apex/ServiceScheduleController.fetchRelatedEvents" {
-  export default function fetchRelatedEvents(param: {strUserId: any, type: any}): Promise<any>;
+  export default function fetchRelatedEvents(param: {strUserId: any, type: any, sLoca: any}): Promise<any>;
 }
 declare module "@salesforce/apex/ServiceScheduleController.updateTechOnALlJobs" {
   export default function updateTechOnALlJobs(param: {strTMId: any}): Promise<any>;
 }
 declare module "@salesforce/apex/ServiceScheduleController.openWO" {
   export default function openWO(param: {strTMId: any}): Promise<any>;
+}
+declare module "@salesforce/apex/ServiceScheduleController.updateEvent" {
+  export default function updateEvent(param: {strTMId: any, strStartDT: any, strEndDT: any, strTechId: any}): Promise<any>;
 }
