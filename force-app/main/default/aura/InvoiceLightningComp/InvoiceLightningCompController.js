@@ -1,20 +1,33 @@
 ({
 
     doInit : function(component, event, helper) {   
+        component.set("v.Spinner", true);
         console.log('recordId: '+component.get("v.recordId"));
+
         var recId = component.get("v.recordId");
+        console.log('recId :', recId != undefined? recId : '')
         if(recId != '' && recId != null && recId != undefined) {
           
-            helper.getLineItemHelper(component, recId); 
+            helper.getLineItemHelper(component, recId);  
             
         } 
+
+        
         var action = component.get("c.InvRecordTypeId");
+        action.setParams({
+            "RecordId" : recId != undefined? recId : ''
+        });
         action.setCallback(this, function(response){
-            component.set("v.InvRecordTypeId", response.getReturnValue());
+            console.log('RecTId =: '+component.get("v.InvRecordTypeId"));
+            console.log('RecTName =: '+response.getReturnValue().Name);
+            component.set("v.InvRecordTypeId", response.getReturnValue().Id);
+            component.set("v.RecordTypeName", response.getReturnValue().Name);
+            
+            
         }); 
         $A.enqueueAction(action);
 
-        var getSalesTax = component.get("c.getSalesTaxCustomSetting");
+        var getSalesTax = component.get("c.getSalesTaxCustomSetting"); 
         getSalesTax.setCallback(this, function(response){
             if(response.getState() == "SUCCESS"){
               component.set("v.salesTaxConfig", response.getReturnValue());
@@ -243,9 +256,12 @@
 
            },
         calculateGrandTotal : function(component, event, helper){
+            component.set("v.Spinner", false);
             helper.calculateInvoiceTotalHelper(component, helper, event);
             var salesTaxObject =  JSON.parse(component.get("v.salesTaxConfig"));
-            console.log('salesTaxObject',salesTaxObject);
+            console.log('salesTaxObject: ',salesTaxObject);
+            var recordType = component.get("v.RecordTypeName")
+            console.log('recordType',recordType);
             var salesTax = 0.00;
             var salesTaxPercent = 0.00;
             if(salesTaxObject != null && typeof salesTaxObject != "undefined"){
@@ -254,10 +270,18 @@
                     var bState = state.get("v.value");
                     console.log('bstate',bState);
                     var salesTaxSetting = salesTaxObject[bState];
+
                     console.log('salesTaxSetting',salesTaxSetting);
                     if(typeof salesTaxSetting != "undefined"){
-                        salesTaxPercent = salesTaxSetting.BOATBUILDING__Regular_Sales_Tax__c;
-                        console.log('salesTaxPercent inside',salesTaxPercent);
+                        console.log('BOATBUILDING__Web_Invoice_Taxable__c: ', salesTaxSetting.BOATBUILDING__Web_Invoice_Taxable__c)
+                        if(recordType == 'Web Invoices') {
+                            if(salesTaxSetting.BOATBUILDING__Web_Invoice_Taxable__c != undefined && salesTaxSetting.BOATBUILDING__Web_Invoice_Taxable__c) {
+                                salesTaxPercent = salesTaxSetting.BOATBUILDING__Regular_Sales_Tax__c;
+                            }
+                        } else {
+                            salesTaxPercent = salesTaxSetting.BOATBUILDING__Regular_Sales_Tax__c;
+                            console.log('salesTaxPercent inside',salesTaxPercent);
+                        }
 
                     }
                 }
@@ -267,11 +291,14 @@
             var shippingCharge = 0.00;
             if(typeof component.find("shippingCharge") != "undefined"){
                 shippingCharge = component.find("shippingCharge").get("v.value");
-                if(shippingCharge == null){
+                if(shippingCharge == null || shippingCharge == ''){
                     shippingCharge = 0.00;
                 }
+            } else {
+                shippingCharge = 0.00;
             }
             var salesTax = (parseFloat(partTotal)/100)  * salesTaxPercent;
+            console.log('salesTax',salesTax);
             console.log('shippingCharge',shippingCharge);
             component.set("v.salesTaxAmount",salesTax);
             

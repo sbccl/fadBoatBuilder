@@ -21,6 +21,7 @@ public with sharing class QuoteTriggerHandler {
     
     public Static void onAfterInsert(List<Quote__c> listNewQuote){
         createAccountActivity(listNewQuote);
+        sendInstantQuoteEmail(listNewQuote);
     }
     
     public Static void onAfterUpdate(List<Quote__c> listNewQuote, Map<Id, Quote__c> mapNewQuote, Map<Id, Quote__c> mapOldQuote){
@@ -596,6 +597,65 @@ public with sharing class QuoteTriggerHandler {
                    }
                } 
         } 
+    }
+    
+    public static void sendInstantQuoteEmail(List<Quote__c> lstNewQuote){
+        Set<Id> setQuote = new Set<Id>();
+        for(Quote__c objQuote : lstNewQuote){
+            if(objQuote.BOATBUILDING__Instant_Quote__c){
+                setQuote.add(objQuote.Id);
+            }
+        }
+        sendInstantQuoteEmailFuture(setQuote);
+    }
+    
+    @future(callout=true)
+    public static void sendInstantQuoteEmailFuture(Set<Id> setQuoteId){
+        
+        List<Attachment> listAttach = new List<Attachment>();
+        Set<String> setQuote = new Set<String>();
+        for(Id strId : setQuoteId){
+            Attachment objAttach = new Attachment();
+            objAttach.ParentId = strId;//Id of the object to which the page is attached
+            objAttach.name = 'Quotation.pdf';
+            PageReference myPdf = new PageReference(System.URL.getSalesforceBaseUrl().toExternalForm()+'/apex/QuotePDFPreview?id='+strId);
+            System.debug('myPdf---'+myPdf);
+            objAttach.body = myPdf.getContentAsPdf();
+            listAttach.add(objAttach);
+        }
+        
+        Map<String, Attachment> mapQuoteToAttach = new Map<String, Attachment>();
+        if(!listAttach.isEmpty()){
+            insert listAttach;
+            
+            for(Attachment objAttach : listAttach){
+                mapQuoteToAttach.put(objAttach.ParentId, objAttach);
+            }
+        }
+        
+        List<Quote__c> listQuoteToProcess = [SELECT Id, BOATBUILDING__Account_Name__c,
+                                             BOATBUILDING__Account_Name__r.BOATBUILDING__Email__c
+                                             FROM BOATBUILDING__Quote__c WHERE Id IN: setQuoteId];
+      
+        for(Quote__c objQuote: listQuoteToProcess){
+            Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
+            mail.setSubject('Quote');
+            mail.setPlainTextBody('Please Find The Attachment.\nThanks');
+            if(objQuote.BOATBUILDING__Account_Name__r.BOATBUILDING__Email__c != null){
+                mail.setToAddresses(new String[]{objQuote.BOATBUILDING__Account_Name__r.Email__c});
+            }
+            List<Messaging.Emailfileattachment> fileAttachments = new List<Messaging.Emailfileattachment>();
+
+            // Add to attachment file list
+            Messaging.Emailfileattachment efa = new Messaging.Emailfileattachment();
+            efa.setFileName(mapQuoteToAttach.get(objQuote.Id).Name);
+            efa.setBody(mapQuoteToAttach.get(objQuote.Id).Body);
+            fileAttachments.add(efa);
+            mail.setFileAttachments(fileAttachments);
+            
+            mail.setSenderDisplayName(UserInfo.getOrganizationName());
+            //Messaging.sendEmail(new Messaging.SingleEmailMessage[]{ mail });
+        }        
     }
     
     public static Boolean isInteger(String strInt) {

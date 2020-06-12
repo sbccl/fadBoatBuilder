@@ -1237,6 +1237,9 @@ Customer_Pay = Decimal.valueOf((String)job.get('Customer_Pay'));
                     List<BOATBUILDING__Work_Order_Job__c> newlstjob = [Select id,Unique_Job_id__c from BOATBUILDING__Work_Order_Job__c where Unique_Job_id__c in : uniqueexistingJobIdlst];    
                     for(BOATBUILDING__Work_Order_Job_Line_Item__c joblineitemlist2 : Total_existing_job_line_items) {
                         BOATBUILDING__Work_Order_Job_Line_Item__c obj_job_line_item2 = new BOATBUILDING__Work_Order_Job_Line_Item__c();
+                        if(joblineitemlist2.Id != null) {
+                            obj_job_line_item2.Id = joblineitemlist2.Id;
+                        }
                         obj_job_line_item2.Part_Name__c = joblineitemlist2.Part_Name__c;
                         obj_job_line_item2.Part_Number__c = joblineitemlist2.Part_Number__c;
                         obj_job_line_item2.Quantity__c = joblineitemlist2.Quantity__c;
@@ -1247,7 +1250,9 @@ Customer_Pay = Decimal.valueOf((String)job.get('Customer_Pay'));
                                 String keyvalue = key;
                                 for(BOATBUILDING__Work_Order_Job__c Jobid : newlstjob){
                                     if(key.equals(Jobid.Unique_Job_id__c)){
-                                        obj_job_line_item2.Related_to_Job__c = Jobid.id;
+                                        if(obj_job_line_item2.Id == null) {
+                                            obj_job_line_item2.Related_to_Job__c = Jobid.id;
+                                        }
                                         System.debug('log for Related_to_Job__c'+Jobid.id);
                                     }   
                                 }
@@ -1258,7 +1263,7 @@ Customer_Pay = Decimal.valueOf((String)job.get('Customer_Pay'));
                     }
                 }
                 //try { 
-                insert lstJoblineitem;
+                upsert lstJoblineitem;
                 /*}
 catch(Exception ex) {
 isError = true;
