@@ -1,0 +1,302 @@
+[
+    [
+        "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app",
+        {
+            "state": "u",
+            "sourcePath": "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 96,
+            "modifiedTime": 1594578364000,
+            "changeTime": 1594578364889,
+            "contentHash": "b28b7af69320201d1cf206ebf28373980add1451",
+            "isWorkspace": false,
+            "isArtifactRoot": true
+        }
+    ],
+    [
+        "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main",
+        {
+            "state": "u",
+            "sourcePath": "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 96,
+            "modifiedTime": 1594578364000,
+            "changeTime": 1594578364938,
+            "contentHash": "7505d64a54e061b7acd54ccd58b49dc43500b635",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main/default",
+        {
+            "state": "u",
+            "sourcePath": "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main/default",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 448,
+            "modifiedTime": 1594578365000,
+            "changeTime": 1594578365079,
+            "contentHash": "134fb9100108b9aaba9aee713cf235d514fd8f88",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main/default/applications",
+        {
+            "state": "u",
+            "sourcePath": "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main/default/applications",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 64,
+            "modifiedTime": 1594578346000,
+            "changeTime": 1594578346634,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main/default/aura",
+        {
+            "state": "u",
+            "sourcePath": "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main/default/aura",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 64,
+            "modifiedTime": 1594578346000,
+            "changeTime": 1594578346626,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main/default/classes",
+        {
+            "state": "u",
+            "sourcePath": "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main/default/classes",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 64,
+            "modifiedTime": 1594578337000,
+            "changeTime": 1594578337843,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main/default/contentassets",
+        {
+            "state": "u",
+            "sourcePath": "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main/default/contentassets",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 64,
+            "modifiedTime": 1594578337000,
+            "changeTime": 1594578337864,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main/default/flexipages",
+        {
+            "state": "u",
+            "sourcePath": "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main/default/flexipages",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 64,
+            "modifiedTime": 1594578337000,
+            "changeTime": 1594578337730,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main/default/layouts",
+        {
+            "state": "u",
+            "sourcePath": "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main/default/layouts",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 64,
+            "modifiedTime": 1594578346000,
+            "changeTime": 1594578346664,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main/default/lwc",
+        {
+            "state": "u",
+            "sourcePath": "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main/default/lwc",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 160,
+            "modifiedTime": 1594578682312,
+            "changeTime": 1594578682312,
+            "contentHash": "f4583d5a48808dcbf21a01302c79dec6aea5885b",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main/default/lwc/myFirstWebComponent",
+        {
+            "state": "u",
+            "sourcePath": "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main/default/lwc/myFirstWebComponent",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 160,
+            "modifiedTime": 1594578682325,
+            "changeTime": 1594578682325,
+            "contentHash": "35e618f5dfdafda9f1b94f5e031bbed9550ecf56",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main/default/lwc/myFirstWebComponent/myFirstWebComponent.html",
+        {
+            "state": "u",
+            "sourcePath": "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main/default/lwc/myFirstWebComponent/myFirstWebComponent.html",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 27,
+            "modifiedTime": 1594578682325,
+            "changeTime": 1594578685487,
+            "contentHash": "f77f405276fce2c457b8423303ffccb5a455abce",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main/default/lwc/myFirstWebComponent/myFirstWebComponent.js",
+        {
+            "state": "u",
+            "sourcePath": "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main/default/lwc/myFirstWebComponent/myFirstWebComponent.js",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 109,
+            "modifiedTime": 1594578682321,
+            "changeTime": 1594578684495,
+            "contentHash": "724cd53a296a4ff653cce6bd7a8e3c39dac1c1c1",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main/default/lwc/myFirstWebComponent/myFirstWebComponent.js-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main/default/lwc/myFirstWebComponent/myFirstWebComponent.js-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 365,
+            "modifiedTime": 1594578740131,
+            "changeTime": 1594578740131,
+            "contentHash": "b136e59d041bbbfd56bd6b8979e63d44b9af0ea6",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main/default/objects",
+        {
+            "state": "u",
+            "sourcePath": "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main/default/objects",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 64,
+            "modifiedTime": 1594578346000,
+            "changeTime": 1594578346620,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main/default/permissionsets",
+        {
+            "state": "u",
+            "sourcePath": "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main/default/permissionsets",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 64,
+            "modifiedTime": 1594578337000,
+            "changeTime": 1594578337860,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main/default/staticresources",
+        {
+            "state": "u",
+            "sourcePath": "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main/default/staticresources",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 64,
+            "modifiedTime": 1594578346000,
+            "changeTime": 1594578346588,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main/default/tabs",
+        {
+            "state": "u",
+            "sourcePath": "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main/default/tabs",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 64,
+            "modifiedTime": 1594578337000,
+            "changeTime": 1594578337740,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main/default/triggers",
+        {
+            "state": "u",
+            "sourcePath": "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead/force-app/main/default/triggers",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 64,
+            "modifiedTime": 1594578346000,
+            "changeTime": 1594578346641,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead",
+        {
+            "state": "u",
+            "sourcePath": "/Users/frankey/Documents/GitHub/fadBoatBuilder/force-app/main/default/classes/BB22JUNE2020/force-app/main/default/classes/trailhead",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 448,
+            "modifiedTime": 1594578740126,
+            "changeTime": 1594578740126,
+            "contentHash": "f44185eb571c8d1ca1e5b73eade5eea1a4eca261",
+            "isWorkspace": true,
+            "isArtifactRoot": false
+        }
+    ]
+]
